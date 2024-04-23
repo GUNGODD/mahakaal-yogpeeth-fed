@@ -8,7 +8,7 @@ const Header = () => {
         {name:"ABOUT",link:"/"},
         {name:"CONTACT",link:"/"},
       ];
-      let [open, setOpen] =useState(false);
+      const [open, setOpen] =useState(false);
 
     return (
         <div className='shadow-md w-full fixed top-0 left-0'>
@@ -34,7 +34,7 @@ const Header = () => {
                 }
                 <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Get Started</button>
             </ul>
-            {/* button */}
+           
            </div>
         </div>
     );
