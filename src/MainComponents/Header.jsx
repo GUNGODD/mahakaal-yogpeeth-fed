@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <>
       <header>
-        <h2 className="head"> Header</h2>
+        <h2> Header</h2>
       </header>
     </>
   );
