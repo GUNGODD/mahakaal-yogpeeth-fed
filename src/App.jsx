@@ -1,9 +1,9 @@
-import Header from "./MainComponents/Header";
+import Nabvar from "./MainComponents/Navbar";
 
 export default function App() {
   return (
     <>
-      <Header />
+   <Nabvar/>
     </>
   );
 }
