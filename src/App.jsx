@@ -1,5 +1,6 @@
 import Slider from "./Design/Slider";
 import Header from "./MainComponents/Header";
+import MovingCards from "./MainComponents/MovingCards";
 import Navbar from "./MainComponents/Navbar";
 
 export default function App() {
@@ -8,8 +9,8 @@ export default function App() {
       <Navbar />
       
       <Slider />
-      <Header></Header>
-
+      <Header/>
+      <MovingCards/>
     </>
   );
 }
