@@ -1,11 +1,14 @@
 import Slider from "./Design/Slider";
-import Nabvar from "./MainComponents/Navbar";
+import Header from "./MainComponents/Header";
+import Navbar from "./MainComponents/Navbar";
 
 export default function App() {
   return (
     <>
-      <Nabvar />
+      <Navbar />
+      
       <Slider />
+      <Header></Header>
 
     </>
   );

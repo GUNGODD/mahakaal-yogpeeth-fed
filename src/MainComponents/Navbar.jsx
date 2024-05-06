@@ -1,4 +1,4 @@
-export default function Nabvar() {
+export default function Navbar() {
   return (
     <header className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">

@@ -4,8 +4,14 @@
 
 
 
-
-
+/* Header Styles */
+#header {
+    padding-left: 30vw;
+    font-size:3vh;
+    color: rgb(10, 160, 45);
+    font-weight: 600;
+    /* background-color: yellow; */
+}
 
 
 
