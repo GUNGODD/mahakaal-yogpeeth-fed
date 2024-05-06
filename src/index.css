@@ -4,18 +4,67 @@
 
 
 
+/* Header Styles */
+#heading {
+    padding-left: 30vw;
+    font-size:3vh;
+    color: rgb(10, 160, 45);
+    font-weight: 600;
+    /* background-color: yellow; */
+}
 
+#header p{
+    padding-left: 72vw;
+    
+}
 
+#scroll{
+    height: 50vh;
+    width: 100%;
+    /* background-color: red; */
+    /* display: inline-block; */
+    white-space: nowrap; 
+    /* overflow-x:hidden ;
+    overflow-y: hidden; */
+}
+#scroll img{
+    margin-left: 0%;
+    /* display: none; */
+    height: 80%;
+    width: 14%;
+    display: inline-block;
+    border-radius: 25%;
+    object-fit: cover;
+    object-position: top;
+    /* margin: 1vw;  */
+    padding: 30px;
+   
+}
+/* #scroll img:nth-child(3){
+    object-position: 0%;
+} */
 
+#container{
+    height: 100%;
+    width: 110%;
+    display: flex;
+    /* background-color: blue; */
+    display: inline-block;
+    padding:2vw;    
+    animation-name:anime;
+    animation-duration:20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
-
-
-
-
-
-
-
-
+@keyframes anime{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 
 
 
