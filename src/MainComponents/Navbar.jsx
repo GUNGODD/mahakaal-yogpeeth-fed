@@ -1,11 +1,6 @@
-import {
-  BrickWallIcon,
-  Contact,
-  SearchIcon,
-  ShoppingBagIcon,
-} from "lucide-react";
+import { BrickWallIcon } from "lucide-react";
 
-const navLists = ["Home", " flex", "grids", "tailwind"];
+const navLists = ["Home", "Yoga Courses", "Retreat", "Photo Gallery"];
 const Navbar = () => {
   return (
     <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center">
@@ -24,8 +19,12 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
-          <img src={SearchIcon} alt="search" width={18} height={18} />
-          <img src={Contact} alt="bag" width={18} height={18} />
+          <div className=" hidden lg:inline-block w-18 h-12">Contact Us </div>
+          <div className="w-18 h-12">Enroll Now</div>
+
+          <div className=" hamburgur md:hidden ">
+            <AlignJustify />
+          </div>
         </div>
       </nav>
     </header>
