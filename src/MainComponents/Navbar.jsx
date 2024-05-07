@@ -1,4 +1,5 @@
-import { BrickWallIcon } from "lucide-react";
+import { AlignJustifyIcon, BrickWallIcon } from "lucide-react";
+import { useState } from "react";
 
 const navLists = ["Home", "Yoga Courses", "Retreat", "Photo Gallery"];
 const Navbar = () => {
@@ -19,12 +20,17 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
-          <div className=" hidden lg:inline-block w-18 h-12">Contact Us </div>
-          <div className="w-18 h-12">Enroll Now</div>
-
-          <div className=" hamburgur md:hidden ">
-            <AlignJustify />
+          <div className=" border border-blue-400 hidden lg:inline-block w-18 h-12">
+            Enroll Now{" "}
           </div>
+          <div className=" border border-blue-400 hidden lg:inline-block w-18 h-12">
+            Contact Us{" "}
+          </div>
+        </div>
+
+        <div className=" flex gap-4 md:hidden ">
+          <butotn>Enroll Now</butotn>
+          <AlignJustifyIcon onClick={() => <NavbModal />} />
         </div>
       </nav>
     </header>
@@ -32,3 +38,19 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+const NavbModal = () => {
+  const [open, SetOpen] = useState(false);
+  const handleModal = () => {
+    SetOpen(true);
+  };
+  return (
+    <>
+      <div className="bg-gray-400 opacity-75 ">
+        <div className="bg-transparent">
+          <div className="felx justify-self-center"> Hello i am modal</div>
+        </div>
+      </div>
+    </>
+  );
+};
