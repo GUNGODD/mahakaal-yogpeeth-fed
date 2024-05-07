@@ -24,8 +24,8 @@
     /* background-color: red; */
     /* display: inline-block; */
     white-space: nowrap; 
-    /* overflow-x:hidden ;
-    overflow-y: hidden; */
+    overflow-x:hidden ;
+    overflow-y: hidden;
 }
 #scroll img{
     margin-left: 0%;
