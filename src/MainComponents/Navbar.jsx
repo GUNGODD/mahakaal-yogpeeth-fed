@@ -8,6 +8,7 @@ const Navbar = () => {
       <nav className="flex w-full screen-max-width">
         <img src={BrickWallIcon} alt="Apple" width={14} height={18} />
 
+
         <div className="flex flex-1 justify-center max-sm:hidden">
           {navLists.map((nav) => (
             <div
@@ -19,6 +20,7 @@ const Navbar = () => {
           ))}
         </div>
 
+
         <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
           <div className=" border border-blue-400 hidden lg:inline-block w-18 h-12">
             Enroll Now{" "}
@@ -27,6 +29,7 @@ const Navbar = () => {
             Contact Us{" "}
           </div>
         </div>
+        
 
         <div className=" flex gap-4 md:hidden ">
           <butotn>Enroll Now</butotn>
