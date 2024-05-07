@@ -1,3 +1,5 @@
+import React from "react";
+
 const Header = () => {
   return (
     <>
@@ -12,12 +14,12 @@ const Header = () => {
         >
           {" "}
           <a className="block w-[12rem] xl:mr-8" href="#hero">
-            <img
-              src={next.svg}
+            {/* <img
+              src=""
               width={190}
               height={40}
               alt="mahakaalYogppeeth"
-            />
+            /> */}
           </a>
           <nav
             className="hidden fixed top-[5rem] left-0 *:right-0 bottom-0 bg-n-8 lg:static lg:flex
@@ -30,3 +32,4 @@ const Header = () => {
     </>
   );
 };
+export default Header;
