@@ -3,6 +3,7 @@ import Navbar from './MainComponents/Navbar'
 import Slider from './Design/Slider'
 import Header from './MainComponents/Header'
 import MovingCards from './MainComponents/MovingCards'
+import GlimpseHead from './MainComponents/GlimpseHead'
 
 const Final = () => {
   return (
@@ -10,6 +11,7 @@ const Final = () => {
         <Navbar/>
         <Slider/>
         <Header/>
+        <GlimpseHead/>
         <MovingCards/>
     </div>
   )
