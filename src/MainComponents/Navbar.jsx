@@ -30,7 +30,14 @@ const Navbar = () => {
 
         <div className=" flex gap-4 md:hidden ">
           <butotn>Enroll Now</butotn>
-          <AlignJustifyIcon onClick={() => <NavbModal />} />
+
+          <button>
+            <AlignJustifyIcon
+              onClick={() => {
+                <NavbModal />;
+              }}
+            />
+          </button>
         </div>
       </nav>
     </header>
@@ -44,13 +51,5 @@ const NavbModal = () => {
   const handleModal = () => {
     SetOpen(true);
   };
-  return (
-    <>
-      <div className="bg-gray-400 opacity-75 ">
-        <div className="bg-transparent">
-          <div className="felx justify-self-center"> Hello i am modal</div>
-        </div>
-      </div>
-    </>
-  );
+  return <></>;
 };
