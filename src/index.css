@@ -83,7 +83,23 @@
 }
 
 
-
+@media (max-width:600px) {
+    #heading {
+        padding-top: 6vh;
+        padding-right: 20vw;
+        font-size:2vh;
+        color: rgb(10, 160, 45);
+        font-weight: 600;
+        /* background-color: yellow; */
+    }
+    
+    #header p{
+        padding-left: 50vw;
+        font-size: 1.4vh;
+        
+    }
+    
+}
 
 
 
