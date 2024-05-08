@@ -16,8 +16,9 @@ const Final = () => {
 
       <ShuffleHero />
       <TextParallaxContentExample />
-      <HoverImageLinks />
+      
       <TextParallaxContentExample />
+      <HoverImageLinks />
       <RevealBento />
       {/* 
       <Slider />
