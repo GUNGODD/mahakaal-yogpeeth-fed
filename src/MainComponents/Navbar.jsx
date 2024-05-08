@@ -1,59 +1,37 @@
-import { AlignJustifyIcon, BrickWallIcon } from "lucide-react";
-import { useState } from "react";
+import { NavList } from "../utils";
 
-const navLists = ["Home", "Yoga Courses", "Retreat", "Photo Gallery"];
 const Navbar = () => {
   return (
-    <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center">
-      <nav className="flex w-full screen-max-width">
-        <img src={BrickWallIcon} alt="Apple" width={14} height={18} />
-
-
-        <div className="flex flex-1 justify-center max-sm:hidden">
-          {navLists.map((nav) => (
-            <div
-              key={nav}
-              className="px-5 text-sm cursor-pointer text-gray hover:text-green-600 transition-all"
-            >
-              {nav}
-            </div>
-          ))}
-        </div>
-
-
-        <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
-          <div className=" border border-blue-400 hidden lg:inline-block w-18 h-12">
-            Enroll Now{" "}
-          </div>
-          <div className=" border border-blue-400 hidden lg:inline-block w-18 h-12">
-            Contact Us{" "}
-          </div>
-        </div>
-        
-
-        <div className=" flex gap-4 md:hidden ">
-          <butotn>Enroll Now</butotn>
-          <AlignJustifyIcon onClick={() => <NavbModal />} />
-        </div>
-      </nav>
-    </header>
-  );
-};
-
-export default Navbar;
-
-const NavbModal = () => {
-  const [open, SetOpen] = useState(false);
-  const handleModal = () => {
-    SetOpen(true);
-  };
-  return (
     <>
-      <div className="bg-gray-400 opacity-75 ">
-        <div className="bg-transparent">
-          <div className="felx justify-self-center"> Hello i am modal</div>
+      <div
+        className="fixed top-0 z-50 bg-n-8/90 *:
+     backdrop-blur-sm border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm"
+      >
+        <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+          <a className="block w-[12rem] xl:mr-8 " href="#hero">
+            <h2 className="cursor-pointer">Logo </h2>
+          </a>
+
+          <nav
+            className="hidden fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static
+           lg:flex lg:mx-auto lg:bg-transparent "
+          >
+            <div className="relative z-2 flex flex-col items-center  justify-center  m-auto  lg:flex-row">
+              {NavList.map((item) => (
+                <a
+                  key={item.id}
+                  href={item.url}
+                  className={`block relative font-mono text-2xl  uppercase gap-3  transition-colors  hover:text-green-500 ${item.onlyMobile ? "lg:hidden" : ""}  pl-9 px-6 py-8 lg:mr-0.25 lg:text-sm lg:font-semibold`}
+                >
+                  {item.title}
+                </a>
+              ))}
+            </div>
+          </nav>
         </div>
       </div>
     </>
   );
 };
+
+export default Navbar;

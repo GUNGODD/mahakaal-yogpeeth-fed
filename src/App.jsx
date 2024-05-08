@@ -1,10 +1,11 @@
-import Navbar from "./MainComponents/Navbar";
 import Final from "./Final";
 
 export default function App() {
   return (
     <>
-      <Final/>
+      <div className="pt-[4.75rem] lg:pt-[5.]">
+        <Final />
+      </div>
     </>
   );
 }
