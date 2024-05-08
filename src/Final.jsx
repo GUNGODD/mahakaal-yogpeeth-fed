@@ -8,6 +8,7 @@ import ShuffleHero from "./Design/SuffleHero";
 import { TextParallaxContentExample } from "./Design/TextParallaxContent";
 import { HoverImageLinks } from "./Design/HoverImageLink";
 import { RevealBento } from "./Design/About";
+import Footer from "./MainComponents/Footer";
 
 const Final = () => {
   return (
@@ -19,6 +20,7 @@ const Final = () => {
       <HoverImageLinks />
       <TextParallaxContentExample />
       <RevealBento />
+      <Footer />
       {/* 
       <Slider />
       <Header />
