@@ -42,7 +42,7 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
             className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static
            lg:flex lg:mx-auto lg:bg-transparent`}
           >
-            <div className="relative z-2 flex flex-col rounded-lg bg-gray-100 items-center justify-center m-auto lg:flex-row">
+            <div className="relative z-2 flex flex-col rounded-lg bg-white items-center justify-center m-auto lg:flex-row">
               {NavList.map((item) => (
                 <a
                   key={item.id}
