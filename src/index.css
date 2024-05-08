@@ -99,6 +99,37 @@
         
     }
     
+#scroll {
+    height: 20vh;
+    width: 100%;
+    white-space: nowrap; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#scroll img {
+    height: 80%;
+    width: 16%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin: 1vw; 
+    /* margin-right:5vw; */
+    padding: 20px;
+}
+
+#container {
+    /* Set width based on the number of images */
+    width: 200%;
+    height: 100%;
+    display: inline-block;
+    padding: 2vw;    
+    animation-name: anime;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+    
 }
 
 

@@ -18,17 +18,18 @@ const Final = () => {
       <ShuffleHero />
       <TextParallaxContentExample />
       
-      <TextParallaxContentExample />
+      {/* <TextParallaxContentExample /> */}
       <HoverImageLinks />
-      <RevealBento />
-      <Footer />
-      {/* 
-      <Slider />
-      <Header />
-      <GlimpseHead />
       <MovingCards />
+      {/* <RevealBento /> */}
+      <Footer />
+{/*      
+      <Slider /> */}
+      {/* <Header />
+      <GlimpseHead /> */}
+      
 
-      */}
+    
     </div>
   );
 };
