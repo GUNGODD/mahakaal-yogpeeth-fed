@@ -5,9 +5,12 @@ import React, { useState } from "react";
 // import { AnimatePresence, motion } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 
+
+import { navigation } from "../utils/index"
+
 const Navbar = () => {
 
-  const [openNavigation, setOpenNavigation] = useState(false);
+  const [openNavigation, setOpenNavigation] = useState(true);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -45,7 +48,7 @@ const Navbar = () => {
                 
                 </a>
               ))}
-              <GiHamburger/>
+            
             </div>
           </nav>
 
@@ -61,8 +64,11 @@ const Navbar = () => {
           </button>
 
 
-          <button className="ml-auto lg:hidden px-3  " >
-          <RxHamburgerMenu />
+          <button className="ml-auto lg:hidden  "
+          px="px-3"
+          onClick={toggleNavigation}
+          >
+          <RxHamburgerMenu openNavigatio={openNavigation} />
           </button>
         </div>
       </div>
