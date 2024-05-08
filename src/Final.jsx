@@ -7,6 +7,7 @@ import GlimpseHead from "./MainComponents/GlimpseHead";
 import ShuffleHero from "./Design/SuffleHero";
 import { TextParallaxContentExample } from "./Design/TextParallaxContent";
 import { HoverImageLinks } from "./Design/HoverImageLink";
+import { RevealBento } from "./Design/About";
 
 const Final = () => {
   return (
@@ -16,7 +17,8 @@ const Final = () => {
       <ShuffleHero />
       <TextParallaxContentExample />
       <HoverImageLinks />
-
+      <TextParallaxContentExample />
+      <RevealBento />
       {/* 
       <Slider />
       <Header />
