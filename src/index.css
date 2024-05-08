@@ -110,7 +110,7 @@
 #scroll img {
     height: 80%;
     width: 16%;
-    border-radius: 50%;
+    border-radius: 25%;
     object-fit: cover;
     object-position: top;
     margin: 1vw; 
@@ -123,7 +123,7 @@
     width: 200%;
     height: 150%;
     display: inline-block;
-    margin-bottom: 1000px;
+    /* margin-bottom: 1000px; */
     padding: 2vw;    
     animation-name: anime;
     animation-duration: 20s;
