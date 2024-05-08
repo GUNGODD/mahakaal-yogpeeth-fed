@@ -9,13 +9,17 @@ import { TextParallaxContentExample } from "./Design/TextParallaxContent";
 import { HoverImageLinks } from "./Design/HoverImageLink";
 import { RevealBento } from "./Design/About";
 import Footer from "./MainComponents/Footer";
+import {TDmobile} from "./Design/TDmobile"
+
 
 const Final = () => {
   return (
     <div>
       <Navbar />
-
+      
       <ShuffleHero />
+      <TDmobile/>
+      
       <TextParallaxContentExample />
       
       {/* <TextParallaxContentExample /> */}
