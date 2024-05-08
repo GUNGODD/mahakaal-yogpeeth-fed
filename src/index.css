@@ -123,6 +123,7 @@
     width: 200%;
     height: 150%;
     display: inline-block;
+    margin-bottom: 1000px;
     padding: 2vw;    
     animation-name: anime;
     animation-duration: 20s;
