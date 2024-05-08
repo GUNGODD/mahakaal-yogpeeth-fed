@@ -6,8 +6,18 @@ export const NavList = [
   },
   {
     id: "1",
-    title: "Center",
+    title: "Yoga Center",
     url: "#YogaCenter",
+    submenu: [
+      {
+        title: "Class Schedule",
+        url: "#ClassSchedule",
+      },
+      {
+        title: "Instructors",
+        url: "#Instructors",
+      },
+    ],
   },
   {
     id: "2",
@@ -23,10 +33,5 @@ export const NavList = [
     id: "4",
     title: "About Us",
     url: "#AboutUs",
-  },
-  {
-    id: "5",
-    title: "Enroll Now",
-    url: "#EnrollNow",
   },
 ];
