@@ -1,7 +1,6 @@
 import { NavList } from "../utils";
-import { useLocation } from "react-router-dom";
+
 const Navbar = () => {
-  const pathname = useLocation();
   return (
     <>
       <div
@@ -22,9 +21,7 @@ const Navbar = () => {
                 <a
                   key={item.id}
                   href={item.url}
-                  className={`block relative font-mono text-2xl justify-center  uppercase gap-3 
-                   transition-colors  hover:text-green-500 ${item.onlyMobile ? "lg:hidden" : ""} 
-                    pl-9 px-6 md:py-8 lg:mr-0.25 lg:text-sm lg:font-semibold `}
+                  className={`block relative font-mono text-2xl  uppercase gap-3  transition-colors  hover:text-green-500 ${item.onlyMobile ? "lg:hidden" : ""}  pl-9 px-6 py-8 lg:mr-0.25 lg:text-sm lg:font-semibold`}
                 >
                   {item.title}
                 </a>
