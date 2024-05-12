@@ -10,7 +10,7 @@ const MovingCards = () => {
           alt="error"
         />
         <img
-          src="https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img1.jpg?raw=true"
+          src="https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img2.jpg?raw=true"
           alt=""
         />
         <img
@@ -40,7 +40,7 @@ const MovingCards = () => {
           alt="error"
         />
         <img
-          src="https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img1.jpg?raw=true"
+          src="https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img2.jpg?raw=true"
           alt=""
         />
         <img
