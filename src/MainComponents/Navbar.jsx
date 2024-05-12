@@ -8,7 +8,7 @@ import { navigation } from "../utils/index";
 import { IoCloseSharp } from "react-icons/io5";
 import Button from "../Design/SVG/Button";
 import { HamburgerMenu } from "../Design/SvgDesign/Header";
-import AnimatedHamburgerButton from "../Design/HamburgurMenue";
+import AnimatedHamburgerButton from "../Design/HamburgurMenu";
 const Navbar = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
