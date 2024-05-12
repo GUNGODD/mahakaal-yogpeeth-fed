@@ -7,6 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 import { navigation } from "../utils/index";
 import { IoCloseSharp } from "react-icons/io5";
+import Button from "../Design/SVG/Button";
 
 const Navbar = () => {
   const [openNavigation, setOpenNavigation] = useState(true);
@@ -37,10 +38,9 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
           <a className="block w-[12rem] xl:mr-8" href="#hero">
             <h2 className="cursor-pointer">Logo</h2>
           </a>
-
           <nav
             className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static
-           lg:flex lg:mx-auto lg:bg-transparent`}
+           lg:flex lg:mx-auto lg:bg-white`}
           >
             <div className="relative z-2 flex flex-col rounded-lg bg-white items-center justify-center m-auto lg:flex-row">
               {NavList.map((item) => (
@@ -55,15 +55,13 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
               ))}
             </div>
           </nav>
-
           <a
             href="#signup"
             className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
           >
             Enroll Now
           </a>
-
-          <button
+          <Button
             className="hidden lg:flex  rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 
           font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px]
            hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl
@@ -71,15 +69,15 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
             href="#login"
           >
             Contact Us
-          </button>
+          </Button>
 
-          <button
-            className="ml-auto lg:hidden  "
+          <Button
+            className="ml-auto lg:hidden "
             px="px-3"
             onClick={toggleNavigation}
           >
             <RxHamburgerMenu openNavigatio={openNavigation} />
-          </button>
+          </Button>
         </div>
       </div>
     </>
