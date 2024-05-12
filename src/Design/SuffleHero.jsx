@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { mahakaalLogoo } from "../MainComponents";
+// import { mahakaalLogoo } from "../MainComponents";
 import { Parth } from "../MainComponents";
+import mahakaalLogo from "../assets/glimpse/mahakaalLogoo.jpg";
 
 const ShuffleHero = () => {
   return (
@@ -46,11 +47,11 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: {mahakaalLogoo}
+    src: "https://logowik.com/content/uploads/images/dribbble-new-20235066.logowik.com.webp"
   },
   {
     id: 2,
-    src: {Parth}
+    src: "https://ibb.co/0cJWkh5"
   },
   {
     id: 3,
