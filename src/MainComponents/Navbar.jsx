@@ -54,7 +54,7 @@ ${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"}`}
                   key={item.id}
                   href={item.url}
                   onClick={handleClick}
-                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                  className={`block relative font-code text-2xl uppercase text-black font-bold transition-colors hover:text-green-500 ${
                     item.onlyMobile ? "lg:hidden" : ""
                   } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                     item.url === pathname.hash
@@ -69,7 +69,7 @@ ${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"}`}
           </nav>
           <a
             href="#signup"
-            className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
+            className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block uppercase"
           >
             Enroll Now
           </a>
