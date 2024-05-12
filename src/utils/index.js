@@ -7,7 +7,7 @@ export const navigation = [
   {
     id: "1",
     title: "Yoga Center",
-    url: "#YogaCenter",
+    url: "/yogacenter",
     submenu: [
       {
         title: "Class Schedule",
