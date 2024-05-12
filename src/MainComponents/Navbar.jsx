@@ -8,9 +8,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { navigation } from "../utils/index";
 import { IoCloseSharp } from "react-icons/io5";
 import Button from "../Design/SVG/Button";
+import { HamburgerMenu } from "../Design/SvgDesign/Header";
 
 const Navbar = () => {
-  const [openNavigation, setOpenNavigation] = useState(true);
+  const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -39,16 +40,20 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
             <h2 className="cursor-pointer">Logo</h2>
           </a>
           <nav
-            className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static
+            className={`${openNavigation ? "flex" : "hidden bg-white"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static
            lg:flex lg:mx-auto lg:bg-white`}
           >
-            <div className="relative z-2 flex flex-col rounded-lg bg-white items-center justify-center m-auto lg:flex-row">
+            <div
+              className="relative m-30 flex flex-col rounded-lg bg-gradient-to-tr 
+              opacity-70 max-h-full max-w-full m-auto
+              items-center justify-center  lg:flex-row"
+            >
               {NavList.map((item) => (
                 <a
                   key={item.id}
                   href={item.url}
-                  className={`block relative font- text-2xl uppercase gap-3 transition-colors hover:text-green-500
-                   ${item.onlyMobile ? "lg:hidden" : ""} pl-9 px-6 py-8 lg:mr-0.25 lg:text-sm lg:font-semibold`}
+                  className={`block relative font- text-2xl uppercase gap-3 transition-all hover:text-green-500
+                   ${item.onlyMobile ? "lg:hidden" : ""} bg-white pl-9 px-6 py-8 lg:mr-0.25 lg:text-sm lg:font-semibold`}
                 >
                   {item.title}
                 </a>
@@ -76,7 +81,13 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
             px="px-3"
             onClick={toggleNavigation}
           >
-            <RxHamburgerMenu openNavigatio={openNavigation} />
+            <Button
+              className="ml-auto lg:hidden bg-emerald-300 rounded-lg "
+              px="px-3"
+              onClick={toggleNavigation}
+            >
+              <RxHamburgerMenu openNavigatio={openNavigation} />
+            </Button>
           </Button>
         </div>
       </div>
