@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { mahakaalLogoo } from "../MainComponents";
-import { Parth } from "../MainComponents";
 
+import mahakaalLogoo from "../assets/glimpse/mahakaalLogoo.jpg";
+import Parth from "../assets/glimpse/Parth.jpg";
 const ShuffleHero = () => {
   return (
     <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
@@ -46,11 +46,11 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: {mahakaalLogoo}
+    src: { Parth },
   },
   {
     id: 2,
-    src: {Parth}
+    src: "https://github.com/GUNGODD/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/Parth.jpg?raw=true",
   },
   {
     id: 3,
