@@ -8,7 +8,7 @@ import { navigation } from "../utils/index";
 import { IoCloseSharp } from "react-icons/io5";
 import Button from "../Design/SVG/Button";
 import { HamburgerMenu } from "../Design/SvgDesign/Header";
-
+import AnimatedHamburgerButton from "../Design/HamburgurMenue";
 const Navbar = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       <div
         className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none 
-${openNavigation ? " bg-gray-300" : " bg-white backdrop-blur-sm"}`}
+${openNavigation ? " bg-white" : " bg-white backdrop-blur-sm"}`}
       >
         <div className="  flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
           <a className="block w-[12rem] xl:mr-8" href="#hero">
@@ -88,11 +88,11 @@ ${openNavigation ? " bg-gray-300" : " bg-white backdrop-blur-sm"}`}
             onClick={toggleNavigation}
           >
             <Button
-              className="ml-auto opacity-90 lg:hidden bg-emerald-300 rounded-lg "
+              className="ml-auto lg:hidden  bg-purple-700 m-auto rounded-lg "
               px="px-3"
               onClick={toggleNavigation}
             >
-              <RxHamburgerMenu openNavigatio={openNavigation} />
+              <AnimatedHamburgerButton openNavigatio={openNavigation} />
             </Button>
           </Button>
         </div>

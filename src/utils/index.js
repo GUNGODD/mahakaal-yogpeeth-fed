@@ -1,4 +1,4 @@
-export const NavList = [
+export const navigation = [
   {
     id: "0",
     title: "Home",
@@ -36,10 +36,7 @@ export const NavList = [
   },
 ];
 
-
-
-
-export const navigation = [
+export const Demo = [
   {
     id: "0",
     title: "Features",
