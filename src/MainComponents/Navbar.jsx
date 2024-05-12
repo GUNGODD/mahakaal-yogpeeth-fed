@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { Spin as Hamburger, Spin } from "hamburger-react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import React, { useState } from "react";
 // import { AnimatePresence, motion } from "framer-motion";
@@ -33,7 +34,7 @@ const Navbar = () => {
     <>
       <div
         className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none 
-${openNavigation ? " bg-white" : " bg-white backdrop-blur-sm"}`}
+${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"}`}
       >
         <div className="  flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
           <a className="block w-[12rem] xl:mr-8" href="#hero">
@@ -92,8 +93,8 @@ ${openNavigation ? " bg-white" : " bg-white backdrop-blur-sm"}`}
               px="px-3"
               onClick={toggleNavigation}
             >
-              <div className="grid  h-9 rounded-lg place-content-center bg-gradient-to-br from-violet-500 to-indigo-500">
-                <AnimatedHamburgerButton openNavigatio={openNavigation} />
+              <div className="grid  h-9 rounded-lg place-content-center">
+                <Spin openNavigatio={openNavigation} />
               </div>
             </Button>
           </Button>
