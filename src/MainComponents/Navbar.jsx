@@ -1,6 +1,5 @@
-import { GiHamburger } from "react-icons/gi";
-import { NavList } from "../utils";
-
+import { useLocation } from "react-router-dom";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import React, { useState } from "react";
 // import { AnimatePresence, motion } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -11,6 +10,7 @@ import Button from "../Design/SVG/Button";
 import { HamburgerMenu } from "../Design/SvgDesign/Header";
 
 const Navbar = () => {
+  const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
@@ -45,15 +45,21 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
           >
             <div
               className="relative m-30 flex flex-col rounded-lg bg-gradient-to-tr 
-              opacity-70 max-h-full max-w-full m-auto
-              items-center justify-center  lg:flex-row"
+               max-w-full m-auto
+              items-center justify-center   lg:flex-row"
             >
-              {NavList.map((item) => (
+              {navigation.map((item) => (
                 <a
                   key={item.id}
                   href={item.url}
-                  className={`block relative font- text-2xl uppercase gap-3 transition-all hover:text-green-500
-                   ${item.onlyMobile ? "lg:hidden" : ""} bg-white pl-9 px-6 py-8 lg:mr-0.25 lg:text-sm lg:font-semibold`}
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                    item.onlyMobile ? "lg:hidden" : ""
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                    item.url === pathname.hash
+                      ? "z-2 lg:text-n-1"
+                      : "lg:text-n-1/50"
+                  } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
                 >
                   {item.title}
                 </a>
@@ -82,7 +88,7 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
             onClick={toggleNavigation}
           >
             <Button
-              className="ml-auto lg:hidden bg-emerald-300 rounded-lg "
+              className="ml-auto opacity-90 lg:hidden bg-emerald-300 rounded-lg "
               px="px-3"
               onClick={toggleNavigation}
             >
