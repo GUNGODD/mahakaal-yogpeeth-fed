@@ -1,6 +1,5 @@
-import { GiHamburger } from "react-icons/gi";
-import { NavList } from "../utils";
-
+import { useLocation } from "react-router-dom";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import React, { useState } from "react";
 // import { AnimatePresence, motion } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -8,9 +7,11 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { navigation } from "../utils/index";
 import { IoCloseSharp } from "react-icons/io5";
 import Button from "../Design/SVG/Button";
+import { HamburgerMenu } from "../Design/SvgDesign/Header";
 
 const Navbar = () => {
-  const [openNavigation, setOpenNavigation] = useState(true);
+  const pathname = useLocation();
+  const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -32,23 +33,33 @@ const Navbar = () => {
     <>
       <div
         className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none 
-${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
+${openNavigation ? " bg-gray-300" : " bg-white backdrop-blur-sm"}`}
       >
-        <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+        <div className="  flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
           <a className="block w-[12rem] xl:mr-8" href="#hero">
             <h2 className="cursor-pointer">Logo</h2>
           </a>
           <nav
-            className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static
-           lg:flex lg:mx-auto lg:bg-white`}
+            className={`${openNavigation ? "flex bg-white" : "hidden bg-white"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static
+           lg:flex lg:mx-auto  lg:bg-white`}
           >
-            <div className="relative z-2 flex flex-col rounded-lg bg-white items-center justify-center m-auto lg:flex-row">
-              {NavList.map((item) => (
+            <div
+              className="relative m-30 flex flex-col rounded-lg bg-gradient-to-tr 
+               max-w-full m-auto
+              items-center justify-center   lg:flex-row"
+            >
+              {navigation.map((item) => (
                 <a
                   key={item.id}
                   href={item.url}
-                  className={`block relative font- text-2xl uppercase gap-3 transition-colors hover:text-green-500
-                   ${item.onlyMobile ? "lg:hidden" : ""} pl-9 px-6 py-8 lg:mr-0.25 lg:text-sm lg:font-semibold`}
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                    item.onlyMobile ? "lg:hidden" : ""
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                    item.url === pathname.hash
+                      ? "z-2 lg:text-n-1"
+                      : "lg:text-n-1/50"
+                  } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
                 >
                   {item.title}
                 </a>
@@ -76,7 +87,13 @@ ${openNavigation ? "backdrop-filter backdrop-blur-sm bg-opacity-90" : ""}`}
             px="px-3"
             onClick={toggleNavigation}
           >
-            <RxHamburgerMenu openNavigatio={openNavigation} />
+            <Button
+              className="ml-auto opacity-90 lg:hidden bg-emerald-300 rounded-lg "
+              px="px-3"
+              onClick={toggleNavigation}
+            >
+              <RxHamburgerMenu openNavigatio={openNavigation} />
+            </Button>
           </Button>
         </div>
       </div>
