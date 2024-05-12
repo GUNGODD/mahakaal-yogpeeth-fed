@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import { mahakaalLogoo } from "../MainComponents/index.js";
+
 
 export const TDmobile = () => {
   return (
@@ -59,7 +59,7 @@ const Screen = () => {
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
       
-      <img height={100} width={100} src={mahakaalLogoo} alt="Mahakaal Yogpeeth" />
+      <img height={100} width={100} src="https://images.unsplash.com/photo-1713432924449-c01531ef3821?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mahakaal Yogpeeth" />
 
       <svg
         width="50"
