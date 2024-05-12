@@ -88,11 +88,13 @@ ${openNavigation ? " bg-white" : " bg-white backdrop-blur-sm"}`}
             onClick={toggleNavigation}
           >
             <Button
-              className="ml-auto lg:hidden  bg-purple-700 m-auto rounded-lg "
+              className="ml-auto lg:hidden   m-auto rounded-lg "
               px="px-3"
               onClick={toggleNavigation}
             >
-              <AnimatedHamburgerButton openNavigatio={openNavigation} />
+              <div className="grid  h-9 rounded-lg place-content-center bg-gradient-to-br from-violet-500 to-indigo-500">
+                <AnimatedHamburgerButton openNavigatio={openNavigation} />
+              </div>
             </Button>
           </Button>
         </div>
