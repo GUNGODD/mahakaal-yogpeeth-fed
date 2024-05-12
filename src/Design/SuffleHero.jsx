@@ -46,11 +46,11 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: { Parth },
+    src: "https://logowik.com/content/uploads/images/dribbble-new-20235066.logowik.com.webp"
   },
   {
     id: 2,
-    src: "https://github.com/GUNGODD/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/Parth.jpg?raw=true",
+    src: "https://ibb.co/0cJWkh5"
   },
   {
     id: 3,
