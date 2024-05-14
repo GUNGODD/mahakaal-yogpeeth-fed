@@ -1,13 +1,14 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Parth } from "../MainComponents";
 
 export const TextParallaxContentExample = () => {
   return (
     <div className="bg-white">
       <TextParallaxContent
-        imgUrl="https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/Parth.jpg?raw=true"
-        subheading="Collaborate"
+        imgUrl={Parth}
+          subheading="Collaborate"
         heading="Built for all of us."
       >
         <ExampleContent />
@@ -30,7 +31,7 @@ export const TextParallaxContentExample = () => {
   );
 };
 
-const IMG_PADDING = 12;
+const IMG_PADDING = 6;
 
 const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
   return (

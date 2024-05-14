@@ -1,6 +1,8 @@
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
+import Parth from "../assets/glimpse/Images/Parth.jpg"; // Import local image
+
 
 export const HoverImageLinks = () => {
   return (
@@ -9,31 +11,32 @@ export const HoverImageLinks = () => {
         <Link
           heading="About"
           subheading="Learn what we do here"
-          imgSrc="/imgs/random/11.jpg"
+          imgSrc={Parth}  
           href="#"
         />
         <Link
           heading="Clients"
           subheading="We work with great people"
-          imgSrc="/imgs/random/6.jpg"
+          imgSrc={Parth}
+          // imgSrc="/imgs/random/6.jpg"
           href="#"
         />
         <Link
           heading="Portfolio"
           subheading="Our work speaks for itself"
-          imgSrc="/imgs/random/4.jpg"
+          imgSrc={Parth}
           href="#"
         />
         <Link
           heading="Careers"
           subheading="We want cool people"
-          imgSrc="/imgs/random/5.jpg"
+          imgSrc={Parth}
           href="#"
         />
         <Link
           heading="Fun"
           subheading="Incase you're bored"
-          imgSrc="/imgs/random/10.jpg"
+          imgSrc={Parth}
           href="#"
         />
       </div>

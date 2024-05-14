@@ -11,6 +11,7 @@ import { RevealBento } from "./Design/About";
 import Footer from "./MainComponents/Footer";
 import {TDmobile} from "./Design/TDmobile"
 import ShiftingCountdown from "./Design/Countdown";
+import ImageGallery from "./Design/ImageGallery";
 
 
 const Final = () => {
@@ -26,6 +27,7 @@ const Final = () => {
       {/* <TextParallaxContentExample /> */}
       <HoverImageLinks />
       <MovingCards />
+      <ImageGallery/>
 
       {/* <ShiftingCountdown/> */}
       {/* <RevealBento /> */}
