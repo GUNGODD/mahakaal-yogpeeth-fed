@@ -1,5 +1,5 @@
 import React from "react";
-import teacher1 from "./index"
+
 
 const MovingCards = () => {
   return (
