@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-
+import img1 from "../assets/glimpse/teachers/img1.jpg"
 
 const ShuffleHero = () => {
   return (
@@ -14,7 +14,7 @@ const ShuffleHero = () => {
         </h3>
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
-          error repellat voluptatibus ad.
+          error repellat voluptatibus Sad.
         </p>
         <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Find a class
@@ -45,20 +45,20 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: Parth,
+    src: img1,
   },
   {
     id: 2,
-    src: Parth,
+    src: img1,
   },
 
   {
     id: 3,
-    src: Parth,
+    src: img1,
   },
   {
     id: 4,
-    src: Parth,
+    src: img1,
   },
   {
     id: 5,
