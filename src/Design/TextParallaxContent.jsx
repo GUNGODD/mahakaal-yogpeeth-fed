@@ -1,14 +1,13 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-import { Parth } from "../MainComponents";
 
 export const TextParallaxContentExample = () => {
   return (
     <div className="bg-white">
       <TextParallaxContent
-        imgUrl={Parth}
-          subheading="Collaborate"
+        imgSrc="https://i.ibb.co/D1wqz3q/img4.jpg"
+        subheading="Collaborate"
         heading="Built for all of us."
       >
         <ExampleContent />
