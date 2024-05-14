@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import Parth from "../assets/glimpse/Parth.jpg";
+
 
 const ShuffleHero = () => {
   return (
