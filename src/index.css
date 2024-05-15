@@ -58,6 +58,7 @@
 }
 
 #imgContent{
+    background-color: rgb(235, 246, 233);
     margin-top: 40px;
     height: 50vh;
     width: 100%;
@@ -91,6 +92,7 @@
     /* margin-bottom: 8vh; */
 }
 #textArea h4{
+    font-weight: 500;
     /* padding-left: 10%; */
 }
 
