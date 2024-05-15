@@ -6,7 +6,7 @@ export const TextParallaxContentExample = () => {
   return (
     <div className="bg-white">
       <TextParallaxContent
-        imgUrl="https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/Parth.jpg?raw=true"
+        imgSrc="https://i.ibb.co/D1wqz3q/img4.jpg"
         subheading="Collaborate"
         heading="Built for all of us."
       >
@@ -30,7 +30,7 @@ export const TextParallaxContentExample = () => {
   );
 };
 
-const IMG_PADDING = 12;
+const IMG_PADDING = 6;
 
 const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
   return (
