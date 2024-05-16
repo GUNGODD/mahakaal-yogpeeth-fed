@@ -8,28 +8,31 @@ import Footer from "./MainComponents/Footer";
 import { TDmobile } from "./Design/TDmobile";
 import ImageGallery from "./Design/ImageGallery";
 import { YogaCards } from "./Pages/Parts/YogaTTC";
+import ImgContent, { ImgContentMid } from "./Pages/Parts/ImgContent";
 
-const Final = () => {
-  return (
-    <div>
-      <Navbar />
-      <ShuffleHero />
-      <TDmobile />
-      {/*   // <TextParallaxContentExample /> */}
-      {/* <TextParallaxContentExample /> */}
-      <HoverImageLinks />
-      <MovingCards />
-      <YogaCards />
-      <ImageGallery />
-      {/* <ShiftingCountdown/> */}
-      {/* <RevealBento /> */}
-      <Footer />
-      {/*      
-      <Slider /> */}
-      {/* <Header />
-      <GlimpseHead /> */}
-    </div>
-  );
-};
+const Final = () => (
+  <div>
+    <Navbar />
+    <ShuffleHero />
+    <TDmobile />
+    {/*   // <TextParallaxContentExample /> */}
+    {/* <TextParallaxContentExample /> */}
+    <ImgContent/>
+    <ImgContentMid/>
+    <ImgContent/>
+    <MovingCards />
+    
+    {/* <YogaCards /> */}
+    {/* <ImageGallery /> */}
+    {/* <ShiftingCountdown/> */}
+    {/* <RevealBento /> */}
+    <HoverImageLinks />
+    <Footer />
+    {/*
+        <Slider /> */}
+    {/* <Header />
+        <GlimpseHead /> */}
+  </div>
+);
 
 export default Final;

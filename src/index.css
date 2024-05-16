@@ -57,6 +57,56 @@
     animation-timing-function: linear;
 }
 
+#imgContent{
+    background-color: rgb(235, 246, 233);
+    margin-top: 40px;
+    height: 50vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid green;
+    
+    /* padding: 7vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid green;
+    padding: 10px;
+}
+#imgContent img{
+    height: 80%;
+    width: 50%;
+    border-radius: 5%;
+    /* margin-top: 2%;
+    margin-left:4% */
+    
+}
+#textArea{
+    margin-top: 8%;
+    text-align: center;
+    margin-bottom: 15vh;
+    /* padding: 10vh; */
+}
+#textArea h1{
+    font-size: 5vh;
+    font-weight: 600;
+    /* margin-bottom: 8vh; */
+}
+#textArea h4{
+    font-weight: 500;
+    /* padding-left: 10%; */
+}
+
+#textArea button{
+    margin-top: 3%;
+    background-color: rgb(99, 228, 99);
+    border-radius: 8%;
+    padding:1%;
+}
+#textArea button:hover{
+   background-color: green;
+   transition: 0.5s all ease;
+}
+
 @keyframes anime{
     from{
         transform:translateX(0);
