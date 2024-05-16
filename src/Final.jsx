@@ -8,7 +8,7 @@ import Footer from "./MainComponents/Footer";
 import { TDmobile } from "./Design/TDmobile";
 import ImageGallery from "./Design/ImageGallery";
 import { YogaCards } from "./Pages/Parts/YogaTTC";
-import ImgContent, { ImgContentMid } from "./Pages/Parts/ImgContent";
+import ImgContent, { Content, ImgContentMid } from "./Pages/Parts/ImgContent";
 
 const Final = () => (
   <div>
@@ -17,9 +17,7 @@ const Final = () => (
     <TDmobile />
     {/*   // <TextParallaxContentExample /> */}
     {/* <TextParallaxContentExample /> */}
-    <ImgContent/>
-    <ImgContentMid/>
-    <ImgContent/>
+    <Content/>
     <MovingCards />
     
     {/* <YogaCards /> */}
