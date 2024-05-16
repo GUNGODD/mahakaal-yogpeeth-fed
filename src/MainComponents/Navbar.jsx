@@ -4,12 +4,10 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import React, { useState } from "react";
 // import { AnimatePresence, motion } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import { RxCaretDown } from "react-icons/rx";
 import { navigation } from "../utils/index";
 import { IoCloseSharp } from "react-icons/io5";
 import Button from "../Design/SVG/Button";
-import { HamburgerMenu } from "../Design/SvgDesign/Header";
-import AnimatedHamburgerButton from "../Design/HamburgurMenu";
 const Navbar = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -54,15 +52,19 @@ ${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"}`}
                   key={item.id}
                   href={item.url}
                   onClick={handleClick}
-                  className={`block relative font-code text-2xl uppercase text-black font-bold transition-colors hover:text-green-500 ${
-                    item.onlyMobile ? "lg:hidden" : ""
-                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                    item.url === pathname.hash
-                      ? "z-2 lg:text-n-1"
-                      : "lg:text-n-1/50"
-                  } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+                  className={`block relative font-code text-2xl uppercase text-black font-bold 
+                    transition-colors hover:text-green-500 ${
+                      item.onlyMobile ? "lg:hidden" : ""
+                    } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                      item.url === pathname.hash
+                        ? "z-2 lg:text-n-1"
+                        : "lg:text-n-1/50"
+                    } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
                 >
                   {item.title}
+                  {item.Expand === true ? (
+                    <RxCaretDown className="absolute top-1/2 right-0 transform -translate-y-1/2" />
+                  ) : null}
                 </a>
               ))}
             </div>
