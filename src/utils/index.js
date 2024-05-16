@@ -3,36 +3,24 @@ export const navigation = [
     id: "0",
     title: "Home",
     url: "/",
-
-  },
-  {
-    id: "1",
-    title: "Yoga Center",
-    url: "/yogacenter",
-    submenu: [
-      {
-        title: "Class Schedule",
-        url: "#ClassSchedule",
-      },
-      {
-        title: "Instructors",
-        url: "#Instructors",
-      },
-    ],
+    Expand: false,
   },
   {
     id: "2",
     title: "Retreat",
     url: "/Retreat",
+    Expand: true,
   },
   {
     id: "3",
     title: "Gallery",
     url: "/PhotoGallery",
+    Expand: true,
   },
   {
     id: "4",
     title: "About Us",
     url: "/AboutUs",
+    Expand: false,
   },
 ];
