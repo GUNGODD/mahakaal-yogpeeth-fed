@@ -22,26 +22,11 @@ const Navbar = () => {
     }
   };
 
-  const handleClick = (e, id) => {
-    e.preventDefault();
-    if (openNavigation) {
-      setOpenNavigation(false);
-      enablePageScroll();
-    } else {
-      setIsExpand((prev) => (prev === id ? null : id));
-    }
-  };
+  const handleClick = () => {
+    if (!openNavigation) return;
 
-  const handleMouseEnter = (id) => {
-    if (!openNavigation) {
-      setIsExpand(id);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (!openNavigation) {
-      setIsExpand(null);
-    }
+    enablePageScroll();
+    setOpenNavigation(false);
   };
 
   return (
@@ -78,33 +63,24 @@ const Navbar = () => {
                         ? "z-2 lg:text-n-1"
                         : "lg:text-n-1/50"
                     } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-                  >
-                    {item.title}
-                    {item.Expand && (
+                >
+                  {item.title}
+
+                  {item.Expand === true ? (
+                    <div>
                       <RxCaretDown className="absolute top-1/2 sm:right-0 lg:right-4 m-auto transform -translate-y-1/2" />
-                    )}
-                  </a>
-                  {item.Expand && isExpand === item.id && (
-                    <AnimatePresence>
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="absolute left-0 right-0 bg-white shadow-lg"
-                      >
-                        {item.submenu?.map((subItem) => (
-                          <a
-                            key={subItem.id}
-                            href={subItem.url}
-                            className="block px-4 py-2 text-black hover:bg-gray-200"
-                          >
-                            {subItem.title}
-                          </a>
-                        ))}
-                      </motion.div>
-                    </AnimatePresence>
-                  )}
-                </div>
+
+                      {isExpand ? isExpand(true) : null}
+                    </div>
+                  ) : null}
+
+                  {isExpand ? (
+                    <div onMouseEnter={<div>hello {item.title}</div>}>
+                      {" "}
+                      hello
+                    </div>
+                  ) : null}
+                </a>
               ))}
             </div>
           </nav>
@@ -115,10 +91,7 @@ const Navbar = () => {
             Enroll Now
           </a>
           <Button
-            className="hidden lg:flex  rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 
-          font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px]
-           hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl
-            active:shadow-none"
+            className="hidden lg:flex rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
             href="#login"
           >
             Contact Us
@@ -128,9 +101,15 @@ const Navbar = () => {
             px="px-3"
             onClick={toggleNavigation}
           >
-            <div className="  grid h-9 rounded-lg place-content-center">
-              <Hamburger toggled={openNavigation} toggle={toggleNavigation} />
-            </div>
+            <Button
+              className="ml-auto lg:hidden   m-auto rounded-lg "
+              px="px-3"
+              onClick={toggleNavigation}
+            >
+              <div className="grid  h-9 rounded-lg place-content-center">
+                <Spin openNavigatio={openNavigation} />
+              </div>
+            </Button>
           </Button>
         </div>
       </div>
