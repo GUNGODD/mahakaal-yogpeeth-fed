@@ -9,6 +9,7 @@ import { TDmobile } from "./Design/TDmobile";
 import ImageGallery from "./Design/ImageGallery";
 import { YogaCards } from "./Pages/Parts/YogaTTC";
 import ImgContent, { Content, ImgContentMid } from "./Pages/Parts/ImgContent";
+import Cards from "./Pages/Parts/Cards";
 
 const Final = () => (
   <div>
@@ -19,6 +20,7 @@ const Final = () => (
     {/* <TextParallaxContentExample /> */}
     <Content/>
     <MovingCards />
+    <Cards/>
     
     {/* <YogaCards /> */}
     {/* <ImageGallery /> */}
