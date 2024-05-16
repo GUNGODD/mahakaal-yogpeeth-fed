@@ -149,7 +149,7 @@
     width: 100%;
     bottom: -40%;
     position: absolute;
-    transition: all ease 0.2s;;
+    transition: all ease 0.5s;;
     color:white;
     justify-content: space-between;
     padding: 0 20px;
@@ -169,7 +169,8 @@
     border-radius: 50%;
 }   
 .box:hover{
-    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.464);
+    box-shadow: 0px 5px 50px rgb(178, 239, 178);
+    transition: all ease 0.4s;
 }
 
 
