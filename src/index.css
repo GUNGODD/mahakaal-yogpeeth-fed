@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: 2px solid green;
+    border: 2px solid #008000;
     padding: 10px;
 }
 #imgContent img{
@@ -131,6 +131,7 @@
     /* display: flex; */
     border-radius:10px;
     position: relative;
+    border: 3px solid rgb(203, 238, 203);
     display: inline-block;
     margin: 20px;
     margin-left: 80px;
