@@ -22,24 +22,34 @@ const Navbar = () => {
     }
   };
 
-  const handleClick = () => {
-    if (!openNavigation) return;
+  const handleClick = (e, id) => {
+    e.preventDefault();
+    setIsExpand((prev) => (prev === id ? null : id));
+  };
 
-    enablePageScroll();
-    setOpenNavigation(false);
+  const handleMouseEnter = (id) => {
+    if (!openNavigation) {
+      setIsExpand(id);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!openNavigation) {
+      setIsExpand(null);
+    }
   };
 
   return (
     <>
       <div
-        className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none ${
-          openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"
-        }`}
-      >
-        <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-          <a className="block w-[12rem] xl:mr-8" href="#hero">
-            <h2 className="cursor-pointer">Logo</h2>
-          </a>
+        
+         className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none 
+ ${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"}`}
+       >
+         <div className="  flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+           <a className="block w-[12rem] xl:mr-8" href="#hero">
+             <h2 className="cursor-pointer">Logo</h2>
+           </a>
           <nav
             className={`${
               openNavigation ? "flex bg-white" : "hidden bg-white"
@@ -63,24 +73,39 @@ const Navbar = () => {
                         ? "z-2 lg:text-n-1"
                         : "lg:text-n-1/50"
                     } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-                >
-                  {item.title}
-
-                  {item.Expand === true ? (
-                    <div>
-                      <RxCaretDown className="absolute top-1/2 sm:right-0 lg:right-4 m-auto transform -translate-y-1/2" />
-
-                      {isExpand ? isExpand(true) : null}
-                    </div>
-                  ) : null}
-
-                  {isExpand ? (
-                    <div onMouseEnter={<div>hello {item.title}</div>}>
-                      {" "}
-                      hello
-                    </div>
-                  ) : null}
-                </a>
+                  >
+                    {item.title}
+                    {item.Expand && (
+                      <RxCaretDown
+                        className="absolute top-1/2 right-0 transform -translate-y-1/2 lg:right-4"
+                      />
+                    )}
+                  </a>
+                  {item.Expand && isExpand === item.id && (
+                    <AnimatePresence>
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="absolute left-0 right-0 bg-white shadow-lg"
+                      >
+                        {item.submenu?.map((subItem) => (
+                          <a
+                            key={subItem.id}
+                            href={subItem.url}
+                            className="block px-4 py-2 text-black hover:bg-gray-200"
+                            style={{
+                              fontSize: "inherit",
+                              color: "inherit",
+                            }}
+                          >
+                            {subItem.title}
+                          </a>
+                        ))}
+                      </motion.div>
+                    </AnimatePresence>
+                  )}
+                </div>
               ))}
             </div>
           </nav>
@@ -96,21 +121,9 @@ const Navbar = () => {
           >
             Contact Us
           </Button>
-          <Button
-            className="ml-auto lg:hidden"
-            px="px-3"
-            onClick={toggleNavigation}
-          >
-            <Button
-              className="ml-auto lg:hidden   m-auto rounded-lg "
-              px="px-3"
-              onClick={toggleNavigation}
-            >
-              <div className="grid  h-9 rounded-lg place-content-center">
-                <Spin openNavigatio={openNavigation} />
-              </div>
-            </Button>
-          </Button>
+          <div className="ml-auto lg:hidden">
+            <Hamburger toggled={openNavigation} toggle={toggleNavigation} />
+          </div>
         </div>
       </div>
     </>
