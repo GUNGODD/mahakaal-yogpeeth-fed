@@ -11,7 +11,7 @@ import Button from "../Design/SVG/Button";
 const Navbar = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
-
+  const [isExpand, setIsExpand] = useState(false);
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
@@ -62,8 +62,20 @@ ${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"}`}
                     } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
                 >
                   {item.title}
+
                   {item.Expand === true ? (
-                    <RxCaretDown className="absolute top-1/2 right-0 transform -translate-y-1/2" />
+                    <div>
+                      <RxCaretDown className="absolute top-1/2 sm:right-0 lg:right-4 m-auto transform -translate-y-1/2" />
+
+                      {isExpand ? isExpand(true) : null}
+                    </div>
+                  ) : null}
+
+                  {isExpand ? (
+                    <div onMouseEnter={<div>hello {item.title}</div>}>
+                      {" "}
+                      hello
+                    </div>
                   ) : null}
                 </a>
               ))}
@@ -84,6 +96,7 @@ ${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"}`}
           >
             Contact Us
           </Button>
+          {console.log(isExpand)}
 
           <Button
             className="ml-auto lg:hidden "

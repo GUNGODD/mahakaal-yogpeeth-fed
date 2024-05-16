@@ -10,6 +10,7 @@ export const navigation = [
     title: "Retreat",
     url: "/Retreat",
     Expand: true,
+    tagName: "Retreat",
   },
   {
     id: "3",
