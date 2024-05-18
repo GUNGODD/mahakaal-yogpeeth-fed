@@ -32,4 +32,4 @@ export const navigation = [
     url: "/AboutUs",
     Expand: false,
   },
-]
+];
