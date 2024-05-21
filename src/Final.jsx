@@ -10,6 +10,10 @@ import ImageGallery from "./Design/ImageGallery";
 import { YogaCards } from "./Pages/Parts/YogaTTC";
 import ImgContent, { Content, ImgContentMid } from "./Pages/Parts/ImgContent";
 import Cards from "./Pages/Parts/Cards";
+import Testimonials from "./Pages/Parts/Testimonials";
+import WithSpeechBubbles from "./Pages/Parts/Testimonials";
+import FAQ from "./Pages/Parts/FAQ";
+
 
 const Final = () => (
   <div>
@@ -21,11 +25,14 @@ const Final = () => (
     <Content/>
     <MovingCards />
     <Cards/>
+    {/* <Testimonials/> */}
     
     {/* <YogaCards /> */}
     {/* <ImageGallery /> */}
     {/* <ShiftingCountdown/> */}
     {/* <RevealBento /> */}
+    {/* <WithSpeechBubbles/> */}
+    <FAQ/>
     <HoverImageLinks />
     <Footer />
     {/*
