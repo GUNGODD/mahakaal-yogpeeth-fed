@@ -18,6 +18,8 @@ import TextArea from "./Pages/Parts/TextArea";
 import RunningCards from "./Pages/Parts/RunningCards";
 import Blogs from "./Pages/Parts/Blogs";
 import Features from "./Pages/Parts/Features";
+import ImgScroll from "./Pages/Parts/ImgScroll";
+// import ImgScroll from "./Pages/Parts/ImgScroll"
 
 
 
@@ -43,6 +45,8 @@ const Final = () => (
     <Content />
     <MovingCards />
     <RunningCards />
+    {/* <ImgScroll/> */}
+    {/* <ImgScroll/> */}
 
 
     <Features />
