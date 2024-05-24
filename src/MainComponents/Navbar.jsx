@@ -65,12 +65,12 @@ const Navbar = () => {
           <a
             href={item.url}
             onClick={(e) => handleClick(e, item)}
-            className={`block relative font-code text-2xl uppercase text-black font-bold transition-colors hover:text-green-500 ${
+            className={`block relative font-code text-2xl uppercase text-indigo-500 font-bold transition-colors hover:text-indigo-600 ${
               item.onlyMobile ? "lg:hidden" : ""
             } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
               item.url === pathname.hash ? "z-2 lg:text-n-1" : "sm:text-n-1/50"
             } sm:leading-5 sm:hover:text- xl:px-12 ${
-              activeItem === item.id ? "text-green-500" : ""
+              activeItem === item.id ? "text-indigo-600" : ""
             }`} // Apply active class
           >
             {item.title}
@@ -137,7 +137,7 @@ const Navbar = () => {
       >
         <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
           <a className="block w-[12rem] xl:mr-8" href="#hero">
-            <h2 className="cursor-pointer">Logo</h2>
+            <img width="150" src="https://i.ibb.co/CwW5Q5R/Mahakaal-Logo.png" alt="" />
           </a>
           <nav
             className={`${

@@ -13,18 +13,38 @@ import Cards from "./Pages/Parts/Cards";
 import Testimonials from "./Pages/Parts/Testimonials";
 import WithSpeechBubbles from "./Pages/Parts/Testimonials";
 import FAQ from "./Pages/Parts/FAQ";
+import ContentArea from "./Pages/Parts/ContentArea";
+import TextArea from "./Pages/Parts/TextArea";
+import RunningCards from "./Pages/Parts/RunningCards";
+import Blogs from "./Pages/Parts/Blogs";
 
 
 const Final = () => (
   <div>
+    <defs>
+            <pattern
+              id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+              width={700}
+              height={700}
+              x="50%"
+              y={-1}
+              patternUnits="userSpaceOnUse"
+            >
+              <path d="M100 200V.5M.5 .5H200" fill="none" />
+            </pattern>
+          </defs>
     <Navbar />
     <ShuffleHero />
     <TDmobile />
     {/*   // <TextParallaxContentExample /> */}
     {/* <TextParallaxContentExample /> */}
+    <TextArea/>
+    <ContentArea/>
     <Content/>
     <MovingCards />
-    <Cards/>
+    <RunningCards/>
+    <Blogs/>
+    {/* <Cards/> */}
     {/* <Testimonials/> */}
     
     {/* <YogaCards /> */}

@@ -59,25 +59,9 @@ const Screen = () => {
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
       
-      <img height={100} width={100} src="https://images.unsplash.com/photo-1713432924449-c01531ef3821?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mahakaal Yogpeeth" />
+      <img height={100} width={100} src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png" alt="Mahakaal Yogpeeth" />
 
-      <svg
-        width="50"
-        height="39"
-        viewBox="0 0 50 39"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="fill-violet-500"
-      >
-        <path
-          d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z"
-          stopColor="#000000"
-        ></path>
-        <path
-          d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
-          stopColor="#000000"
-        ></path>
-      </svg>
+      
 
       <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-2 text-sm font-medium text-violet-500 backdrop-blur">
         Enroll Now..!!
