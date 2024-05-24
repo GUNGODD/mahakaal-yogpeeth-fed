@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const AiCard = () => {
   const initialCards = [
@@ -12,6 +12,7 @@ const AiCard = () => {
   ];
 
   const [cards, setCards] = useState(initialCards);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const autoplayInterval = setInterval(() => {
@@ -21,18 +22,11 @@ const AiCard = () => {
   }, []); // Empty dependency array to run only once
 
   const moveCard = () => {
-    setCards(prevCards => {
-      const newCards = [...prevCards];
-      const lastCard = newCards.pop();
-      newCards.unshift(lastCard);
-      return newCards;
-    });
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
   };
 
-  const handleCardClick = (index) => {
-    if (index === cards.length - 1) {
-      moveCard();
-    }
+  const handleCardClick = () => {
+    moveCard();
   };
 
   return (
@@ -50,24 +44,37 @@ const AiCard = () => {
             Explore More
           </button>
         </div>
-        <div className="stack relative w-full h-96 lg:h-auto flex justify-center items-center">
+        <div className="stack relative w-full h-96 lg:h-auto flex justify-center items-center" style={{ top: '10%' }}>
           {cards.map((src, index) => (
             <motion.div
               key={index}
-              className={`card absolute ${index === cards.length - 1 ? 'z-10 scale-105 shadow-lg' : 'z-0'}`}
-              onClick={() => handleCardClick(index)}
+              className={`card absolute ${index === currentIndex ? 'z-10 scale-105 shadow-lg' : 'z-0'}`}
+              onClick={handleCardClick}
               style={{
                 top: '50%',
-                // Change the left position to adjust the gap between images
-                left: `calc(50% + ${(index - (cards.length - 1)) * 30}px)`,
+                left: `calc(50% + ${(index - currentIndex) * 30}px)`,
                 width: '300px',
                 height: '400px',
-                transform: `translate(-50%, -50%) ${index === cards.length - 1 ? 'scale(1.05)' : 'scale(1)'}`,
+                transform: `translate(-50%, -50%) ${index === currentIndex ? 'scale(1.05)' : 'scale(1)'}`,
               }}
-              whileHover={{ scale: 1.05 }} // Scale up on hover
               transition={{ duration: 0.5 }} // Transition duration
             >
-              <img src={src} alt={`Card ${index}`} className="w-full h-full object-cover rounded-2xl" />
+              {index === currentIndex ? (
+                <AnimatePresence>
+                  <motion.img
+                    key={src}
+                    src={src}
+                    alt={`Card ${index}`}
+                    className="w-full h-full object-cover rounded-2xl"
+                    initial={{ x: 300, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: -300, opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                  />
+                </AnimatePresence>
+              ) : (
+                <img src={src} alt={`Card ${index}`} className="w-full h-full object-cover rounded-2xl" />
+              )}
             </motion.div>
           ))}
         </div>
