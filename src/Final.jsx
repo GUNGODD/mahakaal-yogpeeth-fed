@@ -24,41 +24,39 @@ import Features from "./Pages/Parts/Features";
 const Final = () => (
   <div>
     <defs>
-            <pattern
-              id="e813992c-7d03-4cc4-a2bd-151760b470a0"
-              width={700}
-              height={700}
-              x="50%"
-              y={-1}
-              patternUnits="userSpaceOnUse"
-            >
-              <path d="M100 200V.5M.5 .5H200" fill="none" />
-            </pattern>
-          </defs>
+      <pattern
+        id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+        width={700}
+        height={700}
+        x="50%"
+        y={-1}
+        patternUnits="userSpaceOnUse"
+      >
+        <path d="M100 200V.5M.5 .5H200" fill="none" />
+      </pattern>
+    </defs>
     <Navbar />
     <ShuffleHero />
     <TDmobile />
-    {/*   // <TextParallaxContentExample /> */}
-    {/* <TextParallaxContentExample /> */}
-    <TextArea/>
-    <ContentArea/>
-    <Content/>
+    <TextArea />
+    <ContentArea />
+    <Content />
     <MovingCards />
-    <RunningCards/>
- 
-    
-    <Features/>
+    <RunningCards />
+
+
+    <Features />
     {/* <Cards/> */}
     {/* <Testimonials/> */}
-    
+
     {/* <YogaCards /> */}
     {/* <ImageGallery /> */}
     {/* <ShiftingCountdown/> */}
     {/* <RevealBento /> */}
     {/* <WithSpeechBubbles/> */}
-    <FAQ/>
+    <FAQ />
     <HoverImageLinks />
-    <Blogs/>
+    <Blogs />
     <Footer />
     {/*
         <Slider /> */}
