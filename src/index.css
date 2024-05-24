@@ -43,6 +43,10 @@
 #scroll img:nth-child(5){
    object-fit:fill;
 }
+#scroll img:nth-child(3){
+    object-fit:fill;
+ }
+ 
 
 #container{
     height: 120%;
