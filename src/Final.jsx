@@ -50,14 +50,7 @@ const Final = () => (
 
 
     <Features />
-    {/* <Cards/> */}
-    {/* <Testimonials/> */}
-
-    {/* <YogaCards /> */}
-    {/* <ImageGallery /> */}
-    {/* <ShiftingCountdown/> */}
-    {/* <RevealBento /> */}
-    {/* <WithSpeechBubbles/> */}
+   
     <FAQ />
     <HoverImageLinks />
     <Blogs />
