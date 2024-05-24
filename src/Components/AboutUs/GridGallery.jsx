@@ -1,27 +1,10 @@
 export default function GridGallery() {
   return (
     <>
-      <PundGallery />
       <CarouselComponent />
     </>
   );
 }
-
-const PundGallery = () => {
-  return (
-    <>
-      <div className="border border-blue-400  shadow shadow-sky-200/55 gap-4 mb-12 w-full h-96 rounded-lg m-4 p-4">
-        <div className="border border-pink-700 gap-4 h-80 m-4 flex flex-row  rounded-lg  ">
-          <div className="flex flex-row">
-            <div className="border border-green-700   m-4 w-24 h-24 rounded-lg  p-5">
-              <div className="rounded-lg  border border-purple-700 w-24 h-24"></div>{" "}
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
 
 import { useState, useEffect } from "react";
 
@@ -67,7 +50,7 @@ const CarouselComponent = () => {
   }, []);
 
   return (
-    <div id="carouselDarkVariant" className="relative">
+    <div id="carouselDarkVariant" className="relative mt-16 mb-8">
       {/* Carousel indicators */}
       <div className="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0">
         {slides.map((_, index) => (

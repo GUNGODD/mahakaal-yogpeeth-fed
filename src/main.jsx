@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import YogaCenter from "./Pages/YogaCenter.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
 import MainGallery from "./Components/Gallery/MainGallery.jsx";
+import { MainAbout } from "./Components/AboutUs/MainAbout.jsx";
 // import { createRoot } from 'react-dom/client';
 const router = createBrowserRouter([
   {
@@ -22,10 +23,16 @@ const router = createBrowserRouter([
     element: <App />,
   },
 
-  {path: "/PhotoGallery/Photos",
-    element: <MainGallery/>
+  {
+    path: "/PhotoGallery/Photos",
+    element: <MainGallery />
   },
 
+
+  {
+    path: "/AboutUs",
+    element: <MainAbout />
+  }
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
