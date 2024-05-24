@@ -107,7 +107,8 @@
     padding:1%;
 }
 #textArea button:hover{
-   background-color: green;
+ margin: 12px;
+  background-color: green;
    transition: 0.5s all ease;
 }
 #content{
