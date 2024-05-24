@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import YogaCenter from "./Pages/YogaCenter.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
 import MainGallery from "./Components/Gallery/MainGallery.jsx";
-
+// import { createRoot } from 'react-dom/client';
 const router = createBrowserRouter([
   {
     path: "/",
