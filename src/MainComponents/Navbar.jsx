@@ -137,18 +137,19 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-          <a className="block w-[12rem] xl:mr-8" href="#hero">
-            <img width="150" src="https://i.ibb.co/CwW5Q5R/Mahakaal-Logo.png" alt="" />
-          </a>
+          
           <nav
             className={`${
               openNavigation ? "flex bg-white" : "hidden bg-white"
             } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-white`}
           >
-            <div className="relative m-30 flex flex-col rounded-lg bg-gradient-to-tr max-w-full m-auto items-center justify-center lg:flex-row">
+            <div className="relative m-30 flex flex-col rounded-lg bg-gradient-to-tr max-w-full m-auto items-center justify-center lg:flex-row lg:mr-10">
               {renderNavigationItems()}
             </div>
           </nav>
+          <a className="block w-[12rem] xl:mr-80" href="#hero">
+            <img width="150" src="https://i.ibb.co/CwW5Q5R/Mahakaal-Logo.png" alt="" />
+          </a>
           <a
             href="#signup"
             className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block uppercase"
