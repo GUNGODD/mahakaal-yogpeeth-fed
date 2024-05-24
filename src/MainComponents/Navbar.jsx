@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Spin as Hamburger } from "hamburger-react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import React, { useState } from "react";
@@ -73,7 +73,8 @@ const Navbar = () => {
               activeItem === item.id ? "text-indigo-600" : ""
             }`} // Apply active class
           >
-            {item.title}
+        
+            {<Link to={item.url}>     {item.title} </Link>}
             {item.Expand && (
               <RxCaretDown className="absolute top-1/2 right-0 transform -translate-y-1/2 lg:right-4" />
             )}
