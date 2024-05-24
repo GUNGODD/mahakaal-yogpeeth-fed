@@ -5,9 +5,7 @@ import Navbar from "../../MainComponents/Navbar";
 import GallerySection from "../../Pages/Parts/GallerySection";
 import ImgScroll from "../../Pages/Parts/ImgScroll";
 import AiCard from "./AiCard";
-import GridGallery from "./GridGallery";
 
-import HeroSlider from "./HeroSlider";
 
 
 
