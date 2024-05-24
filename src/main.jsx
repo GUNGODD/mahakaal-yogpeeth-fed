@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import YogaCenter from "./Pages/YogaCenter.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
+import MainGallery from "./Components/Gallery/MainGallery.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
     path: "/Home",
     element: <App />,
   },
+
+  {path: "/PhotoGallery/Photos",
+    element: <MainGallery/>
+  },
+
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
