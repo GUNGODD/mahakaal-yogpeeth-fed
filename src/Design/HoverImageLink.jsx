@@ -5,7 +5,8 @@ import img1 from "../assets/glimpse/teachers/img1.jpg"
 
 export const HoverImageLinks = () => {
   return (
-    <section className="bg-neutral-950 p-4 md:p-8">
+    <div className="md:p-10">
+    <section className="bg-indigo-50 p-4 md:p-8 rounded-2xl">
       <div className="mx-auto max-w-5xl">
         <Link
           heading="About"
@@ -40,6 +41,7 @@ export const HoverImageLinks = () => {
         />
       </div>
     </section>
+    </div>
   );
 };
 
@@ -91,7 +93,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-4xl font-bold text-black transition-colors duration-500 group-hover:text-black md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -107,7 +109,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
+        <span className="relative z-10 mt-2 block text-base text-gray-500 transition-colors duration-500 group-hover:text-black">
           {subheading}
         </span>
       </div>
