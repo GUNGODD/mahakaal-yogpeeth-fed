@@ -17,6 +17,7 @@ import ContentArea from "./Pages/Parts/ContentArea";
 import TextArea from "./Pages/Parts/TextArea";
 import RunningCards from "./Pages/Parts/RunningCards";
 import Blogs from "./Pages/Parts/Blogs";
+import Features from "./Pages/Parts/Features";
 
 
 const Final = () => (
@@ -43,7 +44,8 @@ const Final = () => (
     <Content/>
     <MovingCards />
     <RunningCards/>
-    <Blogs/>
+    
+    <Features/>
     {/* <Cards/> */}
     {/* <Testimonials/> */}
     
@@ -54,6 +56,7 @@ const Final = () => (
     {/* <WithSpeechBubbles/> */}
     <FAQ/>
     <HoverImageLinks />
+    <Blogs/>
     <Footer />
     {/*
         <Slider /> */}
