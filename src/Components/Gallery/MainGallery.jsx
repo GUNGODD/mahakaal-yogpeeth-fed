@@ -1,5 +1,6 @@
 import Footer from "../../MainComponents/Footer";
 import Navbar from "../../MainComponents/Navbar";
+import ImgScroll from "../../Pages/Parts/ImgScroll";
 import AiCard from "./AiCard";
 import GridGallery from "./GridGallery";
 
@@ -13,6 +14,7 @@ export default function MainGallery() {
 
       {/* <HeroSlider /> */}
 <AiCard/>
+<ImgScroll/>
       {/* <GridGallery /> */}
       
 
