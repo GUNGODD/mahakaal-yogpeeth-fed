@@ -20,6 +20,7 @@ import Blogs from "./Pages/Parts/Blogs";
 import Features from "./Pages/Parts/Features";
 
 
+
 const Final = () => (
   <div>
     <defs>
@@ -44,6 +45,7 @@ const Final = () => (
     <Content/>
     <MovingCards />
     <RunningCards/>
+ 
     
     <Features/>
     {/* <Cards/> */}

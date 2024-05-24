@@ -5,6 +5,7 @@ const MovingCards = () => {
   return (
     <div id="scroll">
       <div id="container">
+        
         <img
           src="https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img1.jpg?raw=true"
           alt="error"
