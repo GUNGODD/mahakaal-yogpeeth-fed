@@ -1,5 +1,5 @@
 
-export const FAQ = () => {
+export default function FAQ() {
   return (
     <>
 
@@ -75,7 +75,6 @@ export const FAQ = () => {
       </div >
     </>
   );
-};
+}
 
-export default FAQ;
 
