@@ -47,7 +47,7 @@ const AiCard = () => {
   }, []);
 
   return (
-    <div className="bg- min-h-screen flex items-center justify-center text-black">
+    <div className=" mt-36 md:mt-0 mb-24 min-h-screen flex items-center justify-center text-black">
       <main className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center min-h-screen">
         <div className="content p-10 lg:p-20 text-center lg:text-left">
           <h1 className="font-dancing-script text-4xl lg:text-6xl font-bold bg-clip-text text-indigo-500 bg-gradient-to-r from-pink-400 to-yellow-400 mb-8">
