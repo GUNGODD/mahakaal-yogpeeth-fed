@@ -14,7 +14,7 @@ export const navigation = [
     submenu: [
       { id: "2-1", title: "10 Days Yoga Retreat", url: "/Retreat/Yoga10" },
       { id: "2-2", title: "7 Days Yoga Retreat", url: "/Retreat/Yoga7" },
-      { id: "2-2", title: "3 Days Yoga Retreat", url: "/Retreat/Meditation3" },
+      { id: "2-2", title: "3 Days Yoga Retreat", url: "/Retreat/Yoga3" },
       
     ],
   },
@@ -31,7 +31,13 @@ export const navigation = [
   {
     id: "4",
     title: "About Us",
-    url: "/AboutUs",
-    Expand: false,
+    url:"/about",
+    Expand:true,
+    submenu: [
+      { id: "3-1", title: "About Mahakaal Yogpeeth", url: "/About/Aboutus" },
+      { id: "3-2", title: "Our Teachers", url: "/About/teachers" },
+      { id: "3-3", title: "Food and Accomodation", url: "/About/f&a" },
+    ],
   },
+  
 ];
