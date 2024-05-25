@@ -1,20 +1,8 @@
-import React from 'react';
-import ReactPlayer from 'react-player/youtube';
-
-const VideoCard = () => (
-  <div className="relative w-full transition-shadow duration-300 hover:shadow-xl">
-    <div className="aspect-w-16 aspect-h-9 sm:aspect-w-16 sm:aspect-h-9 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-16 lg:aspect-h-9">
-      <ReactPlayer
-        url="https://www.youtube.com/watch?v=iV2UJPwueEk"
-        controls
-        width="100%"
-        height="100%"
-      />
-    </div>
-  </div>
-);
+import ReactPlayer from "react-player";
 
 export const Content = () => {
+  const videoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -51,26 +39,19 @@ export const Content = () => {
           </span>{' '}
           quick, brown fox jumps over a lazy dog
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
-        </p>
       </div>
       <div className="mx-auto lg:max-w-2xl">
-        <div className="relative w-full transition-shadow duration-300 hover:shadow-xl">
-          <div className="relative rounded-lg w-full aspect-w-16 aspect-h-16 sm:aspect-w-16 sm:aspect-video md:aspect-w-16 md:aspect-video lg:aspect-w-16 lg:aspect-video bg-gray-500 border border-gray-500 shadow-lg shadow-indigo-500">
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=iV2UJPwueEk"
-              controls
-              width="100%"
-              height="100%"
-            />
-          </div>
+        <div className="relative w-full border bg-gray-500 rounded-lg shadow-lg shadow-indigo-500 transition-shadow duration-300 hover:shadow-xl">
+          <ReactPlayer
+            url={videoUrl}
+            controls
+            width="100%"
+            className="md:max-h-lvh sm:max-h-96 rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </div>
   );
 };
 
-
-export default Content
+export default Content;
