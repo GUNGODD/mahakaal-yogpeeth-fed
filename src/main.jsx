@@ -8,6 +8,7 @@ import ErrorPage from "./Pages/ErrorPage.jsx";
 import MainGallery from "./Components/Gallery/MainGallery.jsx";
 import { MainAbout } from "./Components/AboutUs/MainAbout.jsx";
 import MainForm from "./Components/FormArea/MainForm.jsx";
+import MainRetreat from "./Components/YogaRetreat/MainRetreat.jsx";
 // import { createRoot } from 'react-dom/client';
 const router = createBrowserRouter([
   {
@@ -35,8 +36,12 @@ const router = createBrowserRouter([
     element: <MainAbout />
   },
   {
-    path: "/enroll",
-    element: <MainForm />
+    path:"/enroll",
+    element:<MainForm/>
+  },
+  {
+    path:"/Retreat/Yoga10",
+    element:<MainRetreat/>
   }
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

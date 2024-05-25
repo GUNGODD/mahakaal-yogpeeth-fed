@@ -20,6 +20,7 @@ import Blogs from "./Pages/Parts/Blogs";
 import Features from "./Pages/Parts/Features";
 import ImgScroll from "./Pages/Parts/ImgScroll";
 import Form from "./Design/Form";
+import InfScroll from "./Pages/Parts/InfScroll";
 // import ImgScroll from "./Pages/Parts/ImgScroll"
 
 
@@ -44,7 +45,7 @@ const Final = () => (
     <TextArea />
     <ContentArea />
     <Content />
-    <MovingCards />
+    {/* <MovingCards /> */}
     <RunningCards />
     {/* <ImgScroll/> */}
     {/* <ImgScroll/> */}
@@ -54,6 +55,7 @@ const Final = () => (
    
     <FAQ />
     <HoverImageLinks />
+    <InfScroll/>
     <Blogs />
       
     <Footer />

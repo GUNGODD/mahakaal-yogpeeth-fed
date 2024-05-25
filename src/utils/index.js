@@ -12,8 +12,10 @@ export const navigation = [
     Expand: true,
     tagName: "Retreat",
     submenu: [
-      { id: "2-1", title: "Yoga Retreat", url: "/Retreat/Yoga" },
-      { id: "2-2", title: "Meditation Retreat", url: "/Retreat/Meditation" },
+      { id: "2-1", title: "10 Days Yoga Retreat", url: "/Retreat/Yoga10" },
+      { id: "2-2", title: "7 Days Yoga Retreat", url: "/Retreat/Yoga7" },
+      { id: "2-2", title: "3 Days Yoga Retreat", url: "/Retreat/Meditation3" },
+      
     ],
   },
   {

@@ -9,48 +9,310 @@ const features = [
   
   export default function Features() {
     return (
-      <div className="bg-white">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-          <div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Technical Specifications</h2>
-            <p className="mt-4 text-gray-500">
-              The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-              steel divider separates active cards from new ones, or can be used to archive important task lists.
-            </p>
-  
-            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-              {features.map((feature) => (
-                <div key={feature.name} className="border-t border-gray-200 pt-4">
-                  <dt className="font-medium text-gray-900">{feature.name}</dt>
-                  <dd className="mt-2 text-sm text-gray-500">{feature.description}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
-              alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="rounded-lg bg-gray-100 shadow-lg"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
-              className="rounded-lg bg-gray-100 shadow-lg"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
-              alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100 shadow-lg"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100 shadow-lg"
-            />
-          </div>
-        </div>
-      </div>
+      <>
+     <section class="bg-gray-900 text-white">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <div class="mx-auto max-w-lg text-center">
+      <h2 class="text-3xl font-bold sm:text-4xl">Kickstart your marketing</h2>
+
+      <p class="mt-4 text-gray-300">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquam doloribus
+        nesciunt eos fugiat. Vitae aperiam fugit consequuntur saepe laborum.
+      </p>
+    </div>
+
+    <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
+          distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href="#"
+        class="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
+      >
+        Get Started Today
+      </a>
+    </div>
+  </div>
+</section>
+      </>
     );
   }
   
