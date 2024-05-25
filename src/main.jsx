@@ -10,6 +10,7 @@ import { MainAbout } from "./Components/AboutUs/MainAbout.jsx";
 import MainForm from "./Components/FormArea/MainForm.jsx";
 import YogaRetreat10 from "./Components/YogaRetreat10/YogaRetreat10.jsx";
 import YogaRetreat7 from "./Components/YogaRetreat7/YogaRetreat7.jsx";
+import YogaRetreat3 from "./Components/YogaRetreat3/YogaRetreat3.jsx";
 // import { createRoot } from 'react-dom/client';
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path:"/Retreat/Yoga7",
     element:<YogaRetreat7/>
+  },
+  {
+    path:"/Retreat/Yoga3",
+    element:<YogaRetreat3/>
   }
 ]); 
 ReactDOM.createRoot(document.getElementById("root")).render(
