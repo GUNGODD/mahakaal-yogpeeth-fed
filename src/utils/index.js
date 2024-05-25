@@ -31,7 +31,13 @@ export const navigation = [
   {
     id: "4",
     title: "About Us",
-    url: "/AboutUs",
-    Expand: false,
+    url:"/about",
+    Expand:true,
+    submenu: [
+      { id: "3-1", title: "About Mahakaal Yogpeeth", url: "/About/Aboutus" },
+      { id: "3-2", title: "Our Teachers", url: "/About/teachers" },
+      { id: "3-3", title: "Food and Accomodation", url: "/About/f&a" },
+    ],
   },
+  
 ];
