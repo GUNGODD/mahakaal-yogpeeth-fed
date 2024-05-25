@@ -40,7 +40,7 @@ const router = createBrowserRouter([
     element:<MainForm/>
   },
   {
-    path:"/Retreat/Yoga",
+    path:"/Retreat/Yoga10",
     element:<MainRetreat/>
   }
 ]);
