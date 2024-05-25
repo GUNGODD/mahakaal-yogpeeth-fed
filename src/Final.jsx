@@ -45,16 +45,17 @@ const Final = () => (
     <TextArea />
     <ContentArea />
     <Content />
-    <MovingCards />
+    {/* <MovingCards /> */}
     <RunningCards />
     {/* <ImgScroll/> */}
     {/* <ImgScroll/> */}
-  <InfScroll/>
+
 
     <Features />
    
     <FAQ />
     <HoverImageLinks />
+    <InfScroll/>
     <Blogs />
       
     <Footer />

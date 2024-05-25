@@ -16,7 +16,7 @@ const InfScroll = () => {
         author: 'Vikal Sajwan',
         date: '31st June, 2021',
         time: '3 minute',
-        img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        img: 'https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img1.jpg?raw=true',
         description: 'Expertise from last 10 years'
       },
       {
@@ -24,7 +24,7 @@ const InfScroll = () => {
         author: 'Yogi Subham Rana',
         date: '31st June, 2021',
         time: '3 minute',
-        img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        img: 'https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img4.jpg?raw=true',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque.'
       },
       {
@@ -40,7 +40,7 @@ const InfScroll = () => {
         author: 'Sanjay Rawat',
         date: '31st June, 2021',
         time: '3 minute',
-        img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        img: 'https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img2.jpg?raw=true',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque.'
       },
       {
@@ -48,7 +48,7 @@ const InfScroll = () => {
         author: 'Bipin Rawat',
         date: '31st June, 2021',
         time: '3 minute',
-        img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        img: 'https://github.com/anuragnegi000/mahakaal-yogpeeth-fed/blob/main/src/assets/glimpse/teachers/img3.jpg?raw=true',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit illum provident a, ipsa maiores deleniti consectetur nobis et eaque.'
       },
     // Add more items as needed
