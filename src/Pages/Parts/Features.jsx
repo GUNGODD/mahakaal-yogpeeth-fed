@@ -9,48 +9,128 @@ const features = [
   
   export default function Features() {
     return (
-      <div className="bg-white">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-          <div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Technical Specifications</h2>
-            <p className="mt-4 text-gray-500">
-              The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-              steel divider separates active cards from new ones, or can be used to archive important task lists.
-            </p>
-  
-            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-              {features.map((feature) => (
-                <div key={feature.name} className="border-t border-gray-200 pt-4">
-                  <dt className="font-medium text-gray-900">{feature.name}</dt>
-                  <dd className="mt-2 text-sm text-gray-500">{feature.description}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
-              alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="rounded-lg bg-gray-100 shadow-lg"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
-              className="rounded-lg bg-gray-100 shadow-lg"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
-              alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100 shadow-lg"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100 shadow-lg"
-            />
-          </div>
-        </div>
+      <>
+      {/*
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+*/}
+
+<section>
+  <div className="md:ml-20 max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
+      <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+        <h2 className="text-3xl font-bold sm:text-4xl">Yoga Teacher Training Classes</h2>
+
+        <p className="mt-4 text-gray-600">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero aliquid sint distinctio
+          iure ipsum cupiditate? Quis, odit assumenda? Deleniti quasi inventore, libero reiciendis
+          minima aliquid tempora. Obcaecati, autem.
+        </p>
+
+        <a
+          href="/enroll"
+          className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-400"
+        >
+          Get Started Today
+        </a>
       </div>
+
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+        <a
+          className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-indigo-500 hover:ring-1 hover:ring-indigo-200 focus:outline-none focus:ring"
+          href="#"
+        >
+          <span className="inline-block rounded-lg bg-gray-50 p-3">
+          <img height={40} width={50} src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png" alt="" />
+          </span>
+
+          <h2 className="mt-2 font-bold">Hatha Yoga</h2>
+
+          <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </a>
+
+        <a
+          className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-indigo-500 hover:ring-1 hover:ring-indigo-200 focus:outline-none focus:ring"
+          href="#"
+        >
+          <span className="inline-block rounded-lg bg-gray-50 p-3">
+          <img height={40} width={50} src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png" alt="" />
+          </span>
+
+          <h2 className="mt-2 font-bold">Ashtanga Yoga</h2>
+
+          <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </a>
+
+        <a
+          className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-indigo-500 hover:ring-1 hover:ring-indigo-200 focus:outline-none focus:ring"
+          href="#"
+        >
+          <span className="inline-block rounded-lg bg-gray-50 p-3">
+            <img height={40} width={50} src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png" alt="" />
+          </span>
+
+          <h2 className="mt-2 font-bold">Yoga Anatomy</h2>
+
+          <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </a>
+
+        <a
+          className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-indigo-500 hover:ring-1 hover:ring-indigo-200 focus:outline-none focus:ring"
+          href="#"
+        >
+          <span className="inline-block rounded-lg bg-gray-50 p-3">
+          <img height={40} width={50} src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png" alt="" />
+          </span>
+
+          <h2 className="mt-2 font-bold">Yoga Philosophy</h2>
+
+          <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </a>
+
+        <a
+          className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-indigo-500 hover:ring-1 hover:ring-indigo-200 focus:outline-none focus:ring"
+          href="#"
+        >
+          <span className="inline-block rounded-lg bg-gray-50 p-3">
+          <img height={40} width={50} src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png" alt="" />
+          </span>
+
+          <h2 className="mt-2 font-bold">Pranayama</h2>
+
+          <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </a>
+
+        <a
+          className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-indigo-500 hover:ring-1 hover:ring-indigo-200 focus:outline-none focus:ring"
+          href="#"
+        >
+          <span className="inline-block rounded-lg bg-gray-50 p-3">
+          <img height={40} width={50} src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png" alt="" />
+          </span>
+
+          <h2 className="mt-2 font-bold">Meditation</h2>
+
+          <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+      </>
     );
   }
   
