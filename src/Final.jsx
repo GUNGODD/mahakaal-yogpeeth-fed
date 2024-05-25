@@ -19,6 +19,7 @@ import RunningCards from "./Pages/Parts/RunningCards";
 import Blogs from "./Pages/Parts/Blogs";
 import Features from "./Pages/Parts/Features";
 import ImgScroll from "./Pages/Parts/ImgScroll";
+import Form from "./Design/Form";
 // import ImgScroll from "./Pages/Parts/ImgScroll"
 
 
@@ -54,6 +55,7 @@ const Final = () => (
     <FAQ />
     <HoverImageLinks />
     <Blogs />
+      
     <Footer />
     {/*
         <Slider /> */}

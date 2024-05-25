@@ -7,6 +7,7 @@ import YogaCenter from "./Pages/YogaCenter.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
 import MainGallery from "./Components/Gallery/MainGallery.jsx";
 import { MainAbout } from "./Components/AboutUs/MainAbout.jsx";
+import MainForm from "./Components/FormArea/MainForm.jsx";
 // import { createRoot } from 'react-dom/client';
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/AboutUs",
     element: <MainAbout />
+  },
+  {
+    path:"/enroll",
+    element:<MainForm/>
   }
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

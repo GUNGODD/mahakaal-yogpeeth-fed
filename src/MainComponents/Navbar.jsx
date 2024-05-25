@@ -151,7 +151,7 @@ const Navbar = () => {
             <img width="150" src="https://i.ibb.co/CwW5Q5R/Mahakaal-Logo.png" alt="" />
           </a>
           <a
-            href="#signup"
+            href="/enroll"
             className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block uppercase"
           >
             Enroll Now
