@@ -21,6 +21,7 @@ import Features from "./Pages/Parts/Features";
 import ImgScroll from "./Pages/Parts/ImgScroll";
 import Form from "./Design/Form";
 import InfScroll from "./Pages/Parts/InfScroll";
+import Pricing from "./MainComponents/Pricing";
 // import ImgScroll from "./Pages/Parts/ImgScroll"
 
 
@@ -52,6 +53,8 @@ const Final = () => (
 
 
     <Features />
+
+    <Pricing/>
    
     <FAQ />
     <HoverImageLinks />
