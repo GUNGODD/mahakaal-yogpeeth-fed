@@ -1,30 +1,26 @@
-import React from 'react';
 import TypewriterComponent from 'typewriter-effect';
 
 const Form = () => {
   return (
     <div className='mb-20'>
-      {/*
-        Heads up! 👋
 
-        Plugins:
-          - @tailwindcss/forms
-      */}
-
-      <section className="relative flex flex-wrap lg:h-screen lg:items-center">
+      <section className="relative flex flex-wrap  lg:h-screen lg:items-center">
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
-            <h1 className="text-2xl font-bold sm:text-3xl">
-            <TypewriterComponent
+            <div className=' sm:text-6xl text-3xl md:text-5xl font-bold mb-4'>
+
+
+
+              <TypewriterComponent
                 options={{
                   strings: ['Get Started Today !'],
                   autoStart: true,
                   loop: true,
                 }}
               />
-            </h1>
 
-            <p className="mt-4 text-gray-500">
+            </div>
+            <p className="mt-4 text-black m-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla eaque error neque
               ipsa culpa autem, at itaque nostrum!
             </p>
@@ -35,7 +31,7 @@ const Form = () => {
               <label htmlFor="firstname" className="sr-only">First Name</label>
               <input
                 type="text"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="First Name"
                 id="firstname"
               />
@@ -45,7 +41,7 @@ const Form = () => {
               <label htmlFor="lastname" className="sr-only">Last Name</label>
               <input
                 type="text"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="Last Name"
                 id="lastname"
               />
@@ -55,7 +51,7 @@ const Form = () => {
               <label htmlFor="email" className="sr-only">Email</label>
               <input
                 type="email"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="Email"
                 id="email"
               />
@@ -65,7 +61,7 @@ const Form = () => {
               <label htmlFor="whatsapp" className="sr-only">WhatsApp Number</label>
               <input
                 type="tel"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="WhatsApp Number"
                 id="whatsapp"
               />
@@ -74,7 +70,7 @@ const Form = () => {
             <div>
               <label htmlFor="gender" className="sr-only">Gender</label>
               <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 id="gender"
               >
                 <option value="">Select Gender</option>
@@ -87,7 +83,7 @@ const Form = () => {
             <div>
               <label htmlFor="month" className="sr-only">Month</label>
               <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 id="month"
               >
                 <option value="">Select Month</option>
@@ -109,7 +105,7 @@ const Form = () => {
             <div>
               <label htmlFor="course" className="sr-only">Course Name</label>
               <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 id="course"
               >
                 <option value="">Select Course</option>
@@ -123,7 +119,7 @@ const Form = () => {
               <label htmlFor="country" className="sr-only">Country</label>
               <input
                 type="text"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="Country"
                 id="country"
               />
@@ -132,7 +128,7 @@ const Form = () => {
             <div>
               <label htmlFor="message" className="sr-only">Message</label>
               <textarea
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="Message"
                 id="message"
               ></textarea>
