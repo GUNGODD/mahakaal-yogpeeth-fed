@@ -20,6 +20,7 @@ import Blogs from "./Pages/Parts/Blogs";
 import Features from "./Pages/Parts/Features";
 import ImgScroll from "./Pages/Parts/ImgScroll";
 import Form from "./Design/Form";
+import InfScroll from "./Pages/Parts/InfScroll";
 // import ImgScroll from "./Pages/Parts/ImgScroll"
 
 
@@ -48,7 +49,7 @@ const Final = () => (
     <RunningCards />
     {/* <ImgScroll/> */}
     {/* <ImgScroll/> */}
-
+  <InfScroll/>
 
     <Features />
    
