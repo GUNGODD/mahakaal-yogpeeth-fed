@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import Content from "./TextArea"
 import LogoHeading from "../../Pages/LogoHeading";
+import BenefitsSection from "../../Pages/BenefitsSection";
 export const MainAbout = () => {
   return (
 
@@ -21,7 +22,7 @@ export const MainAbout = () => {
         <LogoHeading heading={"THIS IS HEADING"} />
         <Content />
         <FeaturesSection />
-
+        <BenefitsSection />
         <AboutPage />
         <Footer />
 
