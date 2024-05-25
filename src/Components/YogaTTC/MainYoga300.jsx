@@ -5,7 +5,7 @@ import Footer from '../../MainComponents/Footer'
 import LogoHeading from '../../Pages/LogoHeading'
 import { Hero } from '../../Pages/Parts/Hero'
 
-const MainYoga = () => {
+const MainYoga300 = () => {
   return (
     <div>
         <Navbar/>
@@ -19,4 +19,4 @@ const MainYoga = () => {
   )
 }
 
-export default MainYoga
+export default MainYoga300;

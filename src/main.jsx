@@ -11,7 +11,9 @@ import MainForm from "./Components/FormArea/MainForm.jsx";
 import YogaRetreat10 from "./Components/YogaRetreat10/YogaRetreat10.jsx";
 import YogaRetreat7 from "./Components/YogaRetreat7/YogaRetreat7.jsx";
 import YogaRetreat3 from "./Components/YogaRetreat3/YogaRetreat3.jsx";
-import MainYoga from "./Components/YogaTTC/MainYoga.jsx";
+import MainYoga100 from "./Components/YogaTTC/MainYoga100.jsx";
+import MainYoga300 from "./Components/YogaTTC/MainYoga300.jsx";
+import MainYoga500 from "./Components/YogaTTC/MainYoga500.jsx";
 // import { createRoot } from 'react-dom/client';
 const router = createBrowserRouter([
   {
@@ -56,7 +58,15 @@ const router = createBrowserRouter([
   },
   {
     path:"/Yoga100",
-    element:<MainYoga/>
+    element:<MainYoga100/>
+  },
+  {
+    path:"/Yoga300",
+    element:<MainYoga300/>
+  },
+  {
+    path:"/Yoga500",
+    element:<MainYoga500/>
   }
 ]); 
 ReactDOM.createRoot(document.getElementById("root")).render(
