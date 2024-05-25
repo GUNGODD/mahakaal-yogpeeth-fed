@@ -26,7 +26,7 @@ const Form = () => {
               <label htmlFor="firstname" className="sr-only">First Name</label>
               <input
                 type="text"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 placeholder="First Name"
                 id="firstname"
               />
@@ -36,7 +36,7 @@ const Form = () => {
               <label htmlFor="lastname" className="sr-only">Last Name</label>
               <input
                 type="text"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 placeholder="Last Name"
                 id="lastname"
               />
@@ -46,7 +46,7 @@ const Form = () => {
               <label htmlFor="email" className="sr-only">Email</label>
               <input
                 type="email"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 placeholder="Email"
                 id="email"
               />
@@ -56,7 +56,7 @@ const Form = () => {
               <label htmlFor="whatsapp" className="sr-only">WhatsApp Number</label>
               <input
                 type="tel"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 placeholder="WhatsApp Number"
                 id="whatsapp"
               />
@@ -65,7 +65,7 @@ const Form = () => {
             <div>
               <label htmlFor="gender" className="sr-only">Gender</label>
               <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 id="gender"
               >
                 <option value="">Select Gender</option>
@@ -78,7 +78,7 @@ const Form = () => {
             <div>
               <label htmlFor="month" className="sr-only">Month</label>
               <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 id="month"
               >
                 <option value="">Select Month</option>
@@ -100,7 +100,7 @@ const Form = () => {
             <div>
               <label htmlFor="course" className="sr-only">Course Name</label>
               <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 id="course"
               >
                 <option value="">Select Course</option>
@@ -114,7 +114,7 @@ const Form = () => {
               <label htmlFor="country" className="sr-only">Country</label>
               <input
                 type="text"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 placeholder="Country"
                 id="country"
               />
@@ -123,7 +123,7 @@ const Form = () => {
             <div>
               <label htmlFor="message" className="sr-only">Message</label>
               <textarea
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 placeholder="Message"
                 id="message"
               ></textarea>
