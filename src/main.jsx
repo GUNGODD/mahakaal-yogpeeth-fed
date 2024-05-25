@@ -35,8 +35,8 @@ const router = createBrowserRouter([
     element: <MainAbout />
   },
   {
-    path:"/enroll",
-    element:<MainForm/>
+    path: "/enroll",
+    element: <MainForm />
   }
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
