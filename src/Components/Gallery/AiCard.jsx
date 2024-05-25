@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const AiCard = () => {
+const AiCard = ({title}) => {
   const initialCards = [
     "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/a36d2695-58f8-4644-9e19-71988334e345",
     "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/9f9148ad-74c2-4ebc-a769-bb90fec7b9a5",
@@ -51,7 +51,7 @@ const AiCard = () => {
       <main className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center min-h-screen">
         <div className="content p-10 lg:p-20 text-center lg:text-left">
           <h1 className="font-dancing-script text-4xl lg:text-6xl font-bold bg-clip-text text-indigo-500 bg-gradient-to-r from-pink-400 to-yellow-400 mb-8">
-            Welcome to Image Gallery!!
+            {title}
           </h1>
           <p className="text-lg lg:text-xl mb-8">
             Welcome content

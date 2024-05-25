@@ -18,7 +18,7 @@ export default function MainGallery() {
 
 =======
       {/* <HeroSlider /> */}
-<AiCard/>
+<AiCard title="Welcome to image gallery"/>
 <ImgScroll/>
 <GallerySection/>
 <GallerySection2/> 
