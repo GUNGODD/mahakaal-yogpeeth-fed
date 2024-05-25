@@ -3,14 +3,14 @@ import Navbar from '../../MainComponents/Navbar'
 import AiCard from '../Gallery/AiCard'
 import Footer from '../../MainComponents/Footer'
 
-const MainRetreat = () => {
+const YogaRetreat7 = () => {
   return (
     <div>
         <Navbar/>
-        <AiCard title="Welcome to Yoga Retreat"/>
+        <AiCard title="Welcome to 7 Days Yoga Retreat"/>
         <Footer/>
     </div>
   )
 }
 
-export default MainRetreat
+export default YogaRetreat7

@@ -8,7 +8,8 @@ import ErrorPage from "./Pages/ErrorPage.jsx";
 import MainGallery from "./Components/Gallery/MainGallery.jsx";
 import { MainAbout } from "./Components/AboutUs/MainAbout.jsx";
 import MainForm from "./Components/FormArea/MainForm.jsx";
-import MainRetreat from "./Components/YogaRetreat/MainRetreat.jsx";
+import YogaRetreat10 from "./Components/YogaRetreat10/YogaRetreat10.jsx";
+import YogaRetreat7 from "./Components/YogaRetreat7/YogaRetreat7.jsx";
 // import { createRoot } from 'react-dom/client';
 const router = createBrowserRouter([
   {
@@ -41,9 +42,13 @@ const router = createBrowserRouter([
   },
   {
     path:"/Retreat/Yoga10",
-    element:<MainRetreat/>
+    element:<YogaRetreat10/>
+  },
+  {
+    path:"/Retreat/Yoga7",
+    element:<YogaRetreat7/>
   }
-]);
+]); 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
