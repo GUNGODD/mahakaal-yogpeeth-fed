@@ -1,11 +1,9 @@
-import TypewriterComponent from "typewriter-effect"
 import Footer from "../../MainComponents/Footer"
 import Navbar from "../../MainComponents/Navbar"
-import { motion } from "framer-motion";
-import { FaChalkboardTeacher } from 'react-icons/fa';
 import Content from "./TextArea"
 import LogoHeading from "../../Pages/LogoHeading";
 import BenefitsSection from "../../Pages/BenefitsSection";
+import { useState } from "react";
 export const MainAbout = () => {
   return (
 
@@ -19,11 +17,11 @@ export const MainAbout = () => {
 
           <Navbar />
         </div>
+
+        <HeroImage wallpaper={"https://i.pinimg.com/564x/d6/87/ef/d687efe61afd29dde17faa08c6741c3e.jpg"} Heading={"This is Heading"} />
         <LogoHeading heading={"THIS IS HEADING"} />
         <Content />
-        <FeaturesSection />
         <BenefitsSection />
-        <AboutPage />
         <Footer />
 
       </div>
@@ -34,177 +32,272 @@ export const MainAbout = () => {
 }
 
 
-function FeaturesSection() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const TeachersTestimonials = ()=>{
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="container mx-auto p-4 bg-white"
-    >
-      <div className="mt-4 m-2 p-4 mb-4 bg-white rounded-lg shadow-lg">
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="w-full"
-        >
-          <img
-            className="w-full h-72 object-cover rounded-lg"
-            src="https://t4.ftcdn.net/jpg/06/91/06/33/360_F_691063382_SOlKzFI1anx1BGkDxOAAIPiFDQF32tzG.jpg"
-            alt="Yoga"
-            loading="lazy"
-          />
-        </motion.div>
 
-        <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-center text-xs md:text-6xl font-bold m-8 text-black"
-        >
-          <TypewriterComponent
-            options={{
-              strings: ['Rishikesh | Your Dream Destination for Yoga! '],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </motion.div>
+<>
 
-        <motion.p
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-center leading-8 overflow-wrap indent-8 text-gray-800"
-        >
-          Mira Yogashala is so much more than just a yoga school in Rishikesh. It is a place that gives you a real feel of Home away from home and where you will find your long-lost family. We are committed to share and spread the awareness of our Yoga lineage, proceeding to motivate and develop yoga practitioners everywhere in the world. Having a dream of the present and keep moving to the shapeless goal is the prime maxim of this Yoga teacher training school in Rishikesh.
-          <br /><br />
-          We at Mira Yogashala do not hoard our knowledge gained from our gurus, but believe in spreading it to everyone, which will surely benefit the lives of people. Our yoga certification Courses are designed and formed with this in mind as it will provide the students a deep knowledge of yoga and its philosophies. The YTT certification program is customized to provide Hatha Yoga and Ashtanga Vinyasa yoga that would help the students in learning yoga, improvement of their skills and become a certified yoga instructor. We are internationally certified Yogashala, registered with Yoga Alliance USA and holds global recognition. The optimum standards which means anyone can practice and impart the knowledge of yoga TTC courses across world-wide boundaries. Our Main Aim is to provide first-class yoga training to the practitioners and train well yoga teachers by improving their skills to next levels with the purpose of spreading the awareness and understanding of yoga to the world-wide. Our mission is to get rid of nervousness, depression, anxiety from the society as well. Furthermore, we try to focus on family problems and remedial personal by practicing a modest, accurate, and traditional form of multi-style yoga poses.
-          <br /><br />
-          Our yoga teacher and instructor certification training in Rishikesh, India will give you a chance to experience the serene location also known as the gateway of Himalayas. Located in Rishikesh, the yoga capital of the world, and nestled in the foothills of the Himalayas where the Ganga River flows, makes this a truly unique place to practice yoga.
-          <br /><br />
-          We at Mira Yogashala, are committed to educational yoga teaching standards around the world with our 200 Hour Yoga TTC, 300 Hour Yoga TTC and 500-hour yoga TTC programs in Rishikesh. Our Yoga TTC in Rishikesh isn’t just for aspiring yogis, but for anyone who wants to deepen their personal practice or skill and gain improvement in a better way of understanding of yoga philosophy and its origins. We deal with an ideal spiritual and healthy environment for Yoga teacher training.
-          <br /><br />
-          Whatever your reasons for embarking on this journey, we are here to guide you. You will explore the depth of yoga beyond the physical practice and learn about the origin of yoga, philosophy, anatomy, and so much more.
-          <br /><br />
-          Yoga Teacher Training is the beginning of a life-transforming journey Through yoga or a new chapter in your life. It is not the final objective or goal in your life, but a beautiful step towards life on the path of Yoga.
-          <br /><br />
-          When you leave Mira Yogashala, you will have expanded the range of your skills, deepened your knowledge, and gained more confidence in your teaching abilities.
-        </motion.p>
+              <section>
+                <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
+                  <div class="flex flex-col w-full" x-data="{
+                      skip: 1,
+                      atBeginning: false,
+                      atEnd: false,
+                      next() {
+                          this.to((current, offset) => current + (offset * this.skip))
+                      },
+                      prev() {
+                          this.to((current, offset) => current - (offset * this.skip))
+                      },
+                      to(strategy) {
+                          let slider = this.$refs.slider
+                          let current = slider.scrollLeft
+                          let offset = slider.firstElementChild.getBoundingClientRect().width
+                          slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' })
+                      },
+                      focusableWhenVisible: {
+                          'x-intersect:enter'() {
+                              this.$el.removeAttribute('tabindex')
+                          },
+                          'x-intersect:leave'() {
+                              this.$el.setAttribute('tabindex', '-1')
+                          },
+                      },
+                      disableNextAndPreviousButtons: {
+                          'x-intersect:enter.threshold.05'() {
+                              let slideEls = this.$el.parentElement.children
+                              // If this is the first slide.
+                              if (slideEls[0] === this.$el) {
+                                  this.atBeginning = true
+                              // If this is the last slide.
+                              } else if (slideEls[slideEls.length-1] === this.$el) {
+                                  this.atEnd = true
+                              }
+                          },
+                          'x-intersect:leave.threshold.05'() {
+                              let slideEls = this.$el.parentElement.children
+                              // If this is the first slide.
+                              if (slideEls[0] === this.$el) {
+                                  this.atBeginning = false
+                              // If this is the last slide.
+                              } else if (slideEls[slideEls.length-1] === this.$el) {
+                                  this.atEnd = false
+                              }
+                          },
+                      },
+                  }">
+                    <div class="flex flex-col w-full" aria-labelledby="carousel-label" role="region" tabindex="0" x-on:keydown.left="prev" x-on:keydown.right="next">
+                      <h2 class="sr-only" hidden="" id="carousel-label">
+                        Carousel
+                      </h2>
+                      <span class="sr-only" hidden="" id="carousel-content-label">Carousel</span>
+                      <div class="inline-flex items-center space-x-2 lg:px-2">
+                        <button class="flex items-center text-white bg-blue-500 rounded-full hover:bg-blue-600 size-8 focus:bg-blue-400" :class="{ 'opacity-50 ': atBeginning }" :aria-disabled="atBeginning" :tabindex="atEnd ? -1 : 0" x-on:click="prev" tabindex="0">
+                          <span aria-hidden="true" class="mx-auto">
+                            ← </span><span class="sr-only">Skip to previous slide page</span>
+                        </button>
+                        <button class="flex items-center text-white bg-blue-500 rounded-full hover:bg-blue-600 size-8 focus:bg-blue-400" :class="{ 'opacity-50 ': atEnd }" :aria-disabled="atEnd" :tabindex="atEnd ? -1 : 0" x-on:click="next" tabindex="0">
+                          <span aria-hidden="true" class="mx-auto">
+                            → </span><span class="sr-only">Skip to next slide page</span>
+                        </button>
+                      </div>
+                      <ul class="flex w-full gap-3 mt-4 overflow-x-scroll text-center scrollbar-hide snap-mandatory snap-x rounded-2xl" role="listbox" aria-labelledby="carousel-content-label" tabindex="0" x-ref="slider">
+                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar1.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Michael Andreuzza</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Creator of Windstatic.com
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                Being in the financial industry, we were always looking for
+                                ways to enhance our transactions' security and efficiency.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>
+                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar2.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Gege Piazza</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Creator of Pizza Piazza
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                Implementing Semplice's blockchain technology has been a
+                                game-changer for our supply chain management.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>
+                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar3.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Jenson Button</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Founder of Benji and Tom
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                We were initially hesitant about integrating blockchain
+                                technology into our existing systems.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>  <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar1.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Michael Andreuzza</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Creator of Windstatic.com
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                Being in the financial industry, we were always looking for
+                                ways to enhance our transactions' security and efficiency.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>
+                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar2.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Gege Piazza</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Creator of Pizza Piazza
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                Implementing Semplice's blockchain technology has been a
+                                game-changer for our supply chain management.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>
+                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar3.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Jenson Button</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Founder of Benji and Tom
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                We were initially hesitant about integrating blockchain
+                                technology into our existing systems.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>  <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar1.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Michael Andreuzza</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Creator of Windstatic.com
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                Being in the financial industry, we were always looking for
+                                ways to enhance our transactions' security and efficiency.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>
+                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar2.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Gege Piazza</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Creator of Pizza Piazza
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                Implementing Semplice's blockchain technology has been a
+                                game-changer for our supply chain management.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>
+                        <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                          <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                            <figcaption class="relative flex flex-col justify-between">
+                              <img alt="#_" src="/images/appify/avatar3.png" class="object-cover mx-auto rounded-full size-14 grayscale">
+                              <div class="mt-4">
+                                <div class="font-medium text-gray-900">Jenson Button</div>
+                                <div class="mt-1 text-sm text-gray-500">
+                                  Founder of Benji and Tom
+                                </div>
+                              </div>
+                            </figcaption>
+                            <blockquote class="mt-4">
+                              <p class="text-base font-medium text-gray-500">
+                                We were initially hesitant about integrating blockchain
+                                technology into our existing systems.
+                              </p>
+                            </blockquote>
+                          </figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            
 
-        <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-center text-xs md:text-6xl font-bold text-black"
-        >
-          <TypewriterComponent
-            options={{
-              strings: ['Yoga School in Rishikesh - Mira Yogashala '],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </motion.div>
+</>
 
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="w-full p-4 m-4 bg-gray-100 rounded-lg shadow-lg"
-        >
-          <div className="text-center mb-8 text-5xl text-black flex items-center justify-center gap-4">
-            <FaChalkboardTeacher />
-            <h1>Experienced Yoga Teachers Of Mira Yogshala</h1>
-          </div>
-          <p className="text-gray-800">
-            Teacher is the one who shows the path to its Students. We are Glad to tell you that we have a great and experienced team of More than 10 yoga gurus (masters). Who are very well experienced, knowledgeable And Master About their Specific Yoga Subjects. We offer a friendly environment between our Yoga teachers and students so that learning becomes so easy with a fun and happy Atmosphere. All of our Teachers are registered yoga teachers, Mastered in yoga science & PhD with many years of yoga teaching experience in various countries around the world. Some are also gold medalists in their Specific Yoga Subjects. and come from the descent of the Traditional Himalayan yogis.
-          </p>
-        </motion.div>
-      </div>
-    </motion.div>
-  );
+
+  )
 }
 
 
-const AboutPage = () => {
-  return (
-    <div className="container mx-auto p-4">
-      <div className="mt-4 mb-4 p-4">
-        <div className="w-full">
-          <img
-            className="w-full h-72 object-cover rounded-lg"
-            src="https://t4.ftcdn.net/jpg/06/91/06/33/360_F_691063382_SOlKzFI1anx1BGkDxOAAIPiFDQF32tzG.jpg"
-            alt="Yoga in Rishikesh"
-          />
-        </div>
-
-        {/* Typewriter effect with heading */}
-        <div className="text-center text-xs md:text-6xl font-bold m-8">
-          <TypewriterComponent
-            options={{
-              strings: ['Rishikesh | Your Dream Destination for Yoga! '],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </div>
-
-        <p className="text-center leading-8 overflow-wrap indent-8 mb-8">
-          Mira Yogashala is so much more than just a yoga school in Rishikesh. It is a place that gives you a real feel of Home away from home and where you will find your long-lost family. We are committed to share and spread the awareness of our Yoga lineage, proceeding to motivate and develop yoga practitioners everywhere in the world. Having a dream of the present and keep moving to the shapeless goal is the prime maxim of this Yoga teacher training school in Rishikesh.
-          <br /><br />
-          We at Mira Yogashala do not hoard our knowledge gained from our gurus, but believe in spreading it to everyone, which will surely benefit the lives of people. Our yoga certification Courses are designed and formed with this in mind as it will provide the students a deep knowledge of yoga and its philosophies. The YTT certification program is customized to provide Hatha Yoga and Ashtanga Vinyasa yoga that would help the students in learning yoga, improvement of their skills and become a certified yoga instructor. We are internationally certified Yogashala, registered with Yoga Alliance USA and holds global recognition. The optimum standards which means anyone can practice and impart the knowledge of yoga TTC courses across world-wide boundaries. Our Main Aim is to provide first-class yoga training to the practitioners and train well yoga teachers by improving their skills to next levels with the purpose of spreading the awareness and understanding of yoga to the world-wide. Our mission is to get rid of nervousness, depression, anxiety from the society as well. Furthermore, we try to focus on family problems and remedial personal by practicing a modest, accurate, and traditional form of multi-style yoga poses.
-          <br /><br />
-          Our yoga teacher and instructor certification training in Rishikesh, India will give you a chance to experience the serene location also known as the gateway of Himalayas. Located in Rishikesh, the yoga capital of the world, and nestled in the foothills of the Himalayas where the Ganga River flows, makes this a truly unique place to practice yoga.
-          <br /><br />
-          We at Mira Yogashala, are committed to educational yoga teaching standards around the world with our 200 Hour Yoga TTC, 300 Hour Yoga TTC and 500-hour yoga TTC programs in Rishikesh. Our Yoga TTC in Rishikesh isn’t just for aspiring yogis, but for anyone who wants to deepen their personal practice or skill and gain improvement in a better way of understanding of yoga philosophy and its origins. We deal with an ideal spiritual and healthy environment for Yoga teacher training.
-          <br /><br />
-          Whatever your reasons for embarking on this journey, we are here to guide you. You will explore the depth of yoga beyond the physical practice and learn about the origin of yoga, philosophy, anatomy, and so much more.
-          <br /><br />
-          Yoga Teacher Training is the beginning of a life-transforming journey Through yoga or a new chapter in your life. It is not the final objective or goal in your life, but a beautiful step towards life on the path of Yoga.
-          <br /><br />
-          When you leave Mira Yogashala, you will have expanded the range of your skills, deepened your knowledge, and gained more confidence in your teaching abilities.
-        </p>
-
-        <div className="text-center text-xs md:text-6xl font-bold mb-8">
-          <TypewriterComponent
-            options={{
-              strings: ['Yoga School in Rishikesh - Mira Yogashala '],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </div>
-
-        <p className="text-center p-4 m-4">
-          Mira Yogashala is so much more than just a yoga school in Rishikesh. It is a place that gives you a real feel of Home away from home and where you will find your long-lost family. We are committed to share and spread the awareness of our Yoga lineage, proceeding to motivate and develop yoga practitioners everywhere in the world. Having a dream of the present and keep moving to the shapeless goal is the prime maxim of this Yoga teacher training school in Rishikesh.
-          <br /><br />
-          We at Mira Yogashala do not hoard our knowledge gained from our gurus, but believe in spreading it to everyone, which will surely benefit the lives of people. Our yoga certification Courses are designed and formed with this in mind as it will provide the students a deep knowledge of yoga and its philosophies. The YTT certification program is customized to provide Hatha Yoga and Ashtanga Vinyasa yoga that would help the students in learning yoga, improvement of their skills and become a certified yoga instructor. We are internationally certified Yogashala, registered with Yoga Alliance USA and holds global recognition. The optimum standards which means anyone can practice and impart the knowledge of yoga TTC courses across world-wide boundaries. Our Main Aim is to provide first-class yoga training to the practitioners and train well yoga teachers by improving their skills to next levels with the purpose of spreading the awareness and understanding of yoga to the world-wide. Our mission is to get rid of nervousness, depression, anxiety from the society as well. Furthermore, we try to focus on family problems and remedial personal by practicing a modest, accurate, and traditional form of multi-style yoga poses.
-          <br /><br />
-          Our yoga teacher and instructor certification training in Rishikesh, India will give you a chance to experience the serene location also known as the gateway of Himalayas. Located in Rishikesh, the yoga capital of the world, and nestled in the foothills of the Himalayas where the Ganga River flows, makes this a truly unique place to practice yoga.
-          <br /><br />
-          We at Mira Yogashala, are committed to educational yoga teaching standards around the world with our 200 Hour Yoga TTC, 300 Hour Yoga TTC and 500-hour yoga TTC programs in Rishikesh. Our Yoga TTC in Rishikesh isn’t just for aspiring yogis, but for anyone who wants to deepen their personal practice or skill and gain improvement in a better way of understanding of yoga philosophy and its origins. We deal with an ideal spiritual and healthy environment for Yoga teacher training.
-          <br /><br />
-          Whatever your reasons for embarking on this journey, we are here to guide you. You will explore the depth of yoga beyond the physical practice and learn about the origin of yoga, philosophy, anatomy, and so much more.
-          <br /><br />
-          Yoga Teacher Training is the beginning of a life-transforming journey Through yoga or a new chapter in your life. It is not the final objective or goal in your life, but a beautiful step towards life on the path of Yoga.
-          <br /><br />
-          When you leave Mira Yogashala, you will have expanded the range of your skills, deepened your knowledge, and gained more confidence in your teaching abilities.
-        </p>
-      </div>
-
-      {/* About Rishikesh heading */}
-      <div className="w-full p-4 m-4 bg-green-300 rounded-lg">
-        <div className="text-center mb-8 text-5xl">
-          <h1>Experienced Yoga Teachers Of Mira Yogshala</h1>
-        </div>
-        <div>
-          <p>
-            Teacher is the one who shows the path to its Students. We are Glad to tell you that we have a great and experienced team of More than 10 yoga gurus (masters). Who are very well experienced, knowledgeable And Master About their Specific Yoga Subjects. We offer a friendly environment between our Yoga teachers and students so that learning becomes so easy with a fun and happy Atmosphere. All of our Teachers are registered yoga teachers, Mastered in yoga science & PhD with many years of yoga teaching experience in various countries around the world. Some are also gold medalists in their Specific Yoga Subjects. and come from the descent of the Traditional Himalayan yogis.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-};
