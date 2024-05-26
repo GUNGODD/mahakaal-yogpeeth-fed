@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <div className='mb-20'>
       <section className="relative flex flex-wrap lg:h-screen lg:items-center">
-        <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
+        <div className="w-50 px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
             <div className='sm:text-6xl text-3xl md:text-5xl font-bold mb-4'>
               <TypewriterComponent
