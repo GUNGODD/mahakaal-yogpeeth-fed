@@ -11,7 +11,7 @@ const YogaRetreat3 = () => {
         <HeroImage wallpaper={"https://upload.wikimedia.org/wikipedia/commons/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg"} Heading={"This is Heading"}/>
         <Footer/>
     </div>
-  )
+  ) 
 }
 
 export default YogaRetreat3
