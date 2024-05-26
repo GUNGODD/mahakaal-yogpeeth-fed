@@ -9,7 +9,7 @@ const features = [
   
   export default function Features() {
     return (
-      <>
+      <div className="mb-10">
      <section class="bg-gray-900 text-white">
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div class="mx-auto max-w-lg text-center">
@@ -311,7 +311,7 @@ const features = [
     </div>
   </div>
 </section>
-      </>
+      </div>
     );
   }
   
