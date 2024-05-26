@@ -8,14 +8,14 @@ const Pricing = () => {
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
         <h2 className="text-lg font-medium text-gray-900">
-          Starter
+          100 Hours Yoga TTC
           <span className="sr-only">Plan</span>
         </h2>
 
         <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 20$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 799$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -128,14 +128,14 @@ const Pricing = () => {
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
         <h2 className="text-lg font-medium text-gray-900">
-          Pro
+        300 Hours Yoga TTC
           <span className="sr-only">Plan</span>
         </h2>
 
         <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 30$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 1249$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -248,14 +248,14 @@ const Pricing = () => {
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
         <h2 className="text-lg font-medium text-gray-900">
-          Enterprise
+        500 Hours Yoga TTC
           <span className="sr-only">Plan</span>
         </h2>
 
         <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 100$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 2249$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./MainComponents/Navbar";
 import MovingCards from "./MainComponents/MovingCards";
 import ShuffleHero from "./Design/SuffleHero";
-import { TextParallaxContentExample } from "./Design/TextParallaxContent";
+
 import { HoverImageLinks } from "./Design/HoverImageLink";
 import Footer from "./MainComponents/Footer";
 import { TDmobile } from "./Design/TDmobile";
@@ -23,6 +23,8 @@ import Form from "./Design/Form";
 import InfScroll from "./Pages/Parts/InfScroll";
 import Pricing from "./MainComponents/Pricing";
 import LogoHeading from "./Pages/LogoHeading";
+
+
 // import ImgScroll from "./Pages/Parts/ImgScroll"
 
 
@@ -42,6 +44,7 @@ const Final = () => (
       </pattern>
     </defs>
     <Navbar />
+ 
     <ShuffleHero />
     <TDmobile />
     <TextArea />
@@ -51,7 +54,7 @@ const Final = () => (
     <RunningCards />
     {/* <ImgScroll/> */}
     {/* <ImgScroll/> */}
-
+    
 
     <Features />
     <LogoHeading heading={"PRICING FOR YOGA TTC"}/>
