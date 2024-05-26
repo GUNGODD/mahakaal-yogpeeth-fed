@@ -9,7 +9,7 @@ export default function MainGallery() {
   return (
     <>
       <Navbar />
-      <AiCard title="This is Gallery"/>
+      <AiCard title="This is Photo Gallery"/>
       <ImgScroll/>
       <GallerySection/>
       <GallerySection/>
