@@ -1,24 +1,20 @@
+import React from 'react';
 import TypewriterComponent from 'typewriter-effect';
 
-const Form = () => {
+const ContactForm = () => {
   return (
     <div className='mb-20'>
-
-      <section className="relative flex flex-wrap  lg:h-screen lg:items-center">
+      <section className="relative flex flex-wrap lg:h-screen lg:items-center">
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
-            <div className=' sm:text-6xl text-3xl md:text-5xl font-bold mb-4'>
-
-
-
+            <div className='sm:text-6xl text-3xl md:text-5xl font-bold mb-4'>
               <TypewriterComponent
                 options={{
-                  strings: ['Get Started Today !'],
+                  strings: ['Get in Touch!'],
                   autoStart: true,
                   loop: true,
                 }}
               />
-
             </div>
             <p className="mt-4 text-black m-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla eaque error neque
@@ -68,54 +64,6 @@ const Form = () => {
             </div>
 
             <div>
-              <label htmlFor="gender" className="sr-only">Gender</label>
-              <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
-                id="gender"
-              >
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div>
-              <label htmlFor="month" className="sr-only">Month</label>
-              <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
-                id="month"
-              >
-                <option value="">Select Month</option>
-                <option value="january">January</option>
-                <option value="february">February</option>
-                <option value="march">March</option>
-                <option value="april">April</option>
-                <option value="may">May</option>
-                <option value="june">June</option>
-                <option value="july">July</option>
-                <option value="august">August</option>
-                <option value="september">September</option>
-                <option value="october">October</option>
-                <option value="november">November</option>
-                <option value="december">December</option>
-              </select>
-            </div>
-
-            <div>
-              <label htmlFor="course" className="sr-only">Course Name</label>
-              <select
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
-                id="course"
-              >
-                <option value="">Select Course</option>
-                <option value="course1">Course 1</option>
-                <option value="course2">Course 2</option>
-                <option value="course3">Course 3</option>
-              </select>
-            </div>
-
-            <div>
               <label htmlFor="country" className="sr-only">Country</label>
               <input
                 type="text"
@@ -126,10 +74,21 @@ const Form = () => {
             </div>
 
             <div>
+              <label htmlFor="subject" className="sr-only">Subject</label>
+              <input
+                type="text"
+                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
+                placeholder="Subject"
+                id="subject"
+              />
+            </div>
+
+            <div>
               <label htmlFor="message" className="sr-only">Message</label>
               <textarea
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="Message"
+                rows="8"
                 id="message"
               ></textarea>
             </div>
@@ -162,4 +121,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default ContactForm;
