@@ -64,7 +64,7 @@ const Navbar = () => {
             onClick={(e) => handleClick(e, item)}
             className={`block relative font-code text-2xl uppercase text-indigo-500 font-bold transition-colors hover:text-indigo-600 ${
               item.onlyMobile ? "lg:hidden" : ""
-            } px-6 py-4 md:py-6 lg:py-2 lg:px-4 lg:-mr-9 mt-2 lg:text-xs lg:font-semibold ${
+            } px-6 py-6 md:py-8 lg:-mr-9 mt-2 lg:text-xs lg:font-semibold ${
               item.url === pathname.hash ? "z-2 lg:text-n-1" : "sm:text-n-1/50"
             } sm:leading-5 sm:hover:text- xl:px-12 ${
               activeItem === item.id ? "text-indigo-600" : ""
@@ -110,7 +110,7 @@ const Navbar = () => {
                 href={subItem.url}
                 className={`block relative font-code text-sm uppercase bg-gray-100 
                 rounded-lg
-                text-black font-bold transition-colors px-6 py-4 md:py-6 lg:py-2 lg:px-4 lg:-mr-0.25 lg:text-xs lg:font-semibold sm:leading-5 xl:px-12 ${
+                text-black font-bold transition-colors px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold sm:leading-5 xl:px-12 ${
                   activeItem === subItem.id ? "text-green-500" : ""
                 }`}
                 style={{ borderBottom: "1px solid #e5e7eb" }}
@@ -171,4 +171,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
