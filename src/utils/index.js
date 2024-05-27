@@ -30,13 +30,25 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "About Us",
+    title: "About",
     url:"/about",
     Expand:true,
     submenu: [
       { id: "3-1", title: "About Mahakaal Yogpeeth", url: "/About/Aboutus" },
       { id: "3-2", title: "Our Teachers", url: "/About/teachers" },
       { id: "3-3", title: "Food and Accomodation", url: "/About/f&a" },
+    ],
+  },
+  ,
+  {
+    id: "5",
+    title: "Yoga TTC",
+    url:"/about",
+    Expand:true,
+    submenu: [
+      { id: "3-1", title: "Yoga TTC 100", url: "/About/Aboutus" },
+      { id: "3-2", title: "Yoga TTC 300", url: "/About/teachers" },
+      { id: "3-3", title: "Yoga TTC 500", url: "/About/f&a" },
     ],
   },
   

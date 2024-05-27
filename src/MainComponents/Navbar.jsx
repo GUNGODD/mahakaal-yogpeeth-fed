@@ -67,7 +67,7 @@ const Navbar = () => {
             onClick={(e) => handleClick(e, item)}
             className={`block relative font-code text-2xl uppercase text-indigo-500 font-bold transition-colors hover:text-indigo-600 ${
               item.onlyMobile ? "lg:hidden" : ""
-            } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+            } px-6 py-6 md:py-8 lg:-mr-9 mt-2 lg:text-xs lg:font-semibold ${
               item.url === pathname.hash ? "z-2 lg:text-n-1" : "sm:text-n-1/50"
             } sm:leading-5 sm:hover:text- xl:px-12 ${
               activeItem === item.id ? "text-indigo-600" : ""
@@ -143,7 +143,7 @@ const Navbar = () => {
               openNavigation ? "flex bg-white" : "hidden bg-white"
             } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-white`}
           >
-            <div className="relative m-30 flex flex-col rounded-lg bg-gradient-to-tr max-w-full m-auto items-center justify-center lg:flex-row lg:mr-10">
+            <div className="relative m-30 flex flex-col flex space-x-4 rounded-lg bg-gradient-to-tr max-w-full m-auto items-center justify-center lg:flex-row lg:mr-10">
               {renderNavigationItems()}
             </div>
           </nav>
