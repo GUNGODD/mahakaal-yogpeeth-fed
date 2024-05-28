@@ -77,6 +77,11 @@ const router = createBrowserRouter([
   },{
     path:"/PhotoGallery/Videos",
     element:<MainVideoGallery/>
+  },
+  // Yoga TTC 
+
+  {path: "About/f&a",
+    element: <MainYoga500/>
   }
 ]); 
 ReactDOM.createRoot(document.getElementById("root")).render(

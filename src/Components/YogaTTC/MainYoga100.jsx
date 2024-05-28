@@ -15,7 +15,7 @@ const MainYoga100 = () => {
         </div>
         <PriceGrid/>
         <Footer/>
-    </div>
+    </div>  
   )
 }
 
