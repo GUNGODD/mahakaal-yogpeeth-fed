@@ -14,8 +14,7 @@ export const navigation = [
     submenu: [
       { id: "2-1", title: "10 Days Yoga Retreat", url: "/Retreat/Yoga10" },
       { id: "2-2", title: "7 Days Yoga Retreat", url: "/Retreat/Yoga7" },
-      { id: "2-2", title: "3 Days Yoga Retreat", url: "/Retreat/Yoga3" },
-      
+      { id: "2-3", title: "3 Days Yoga Retreat", url: "/Retreat/Yoga3" },
     ],
   },
   {
@@ -31,25 +30,24 @@ export const navigation = [
   {
     id: "4",
     title: "About",
-    url:"/about",
-    Expand:true,
+    url: "/about",
+    Expand: true,
     submenu: [
-      { id: "3-1", title: "About Mahakaal Yogpeeth", url: "/About/Aboutus" },
-      { id: "3-2", title: "Our Teachers", url: "/About/teachers" },
-      { id: "3-3", title: "Food and Accomodation", url: "/About/f&a" },
+      { id: "4-1", title: "About Mahakaal Yogpeeth", url: "/About/Aboutus" },
+      { id: "4-2", title: "Our Teachers", url: "/About/teachers" },
+      { id: "4-3", title: "Food and Accommodation", url: "/About/f&a" },
     ],
   },
-  ,
   {
     id: "5",
     title: "Yoga TTC",
-    url:"/about",
-    Expand:true,
+    url: "/about",
+    Expand: true,
     submenu: [
-      { id: "3-1", title: "Yoga TTC 100", url: "/About/Aboutus" },
-      { id: "3-2", title: "Yoga TTC 300", url: "/About/teachers" },
-      { id: "3-3", title: "Yoga TTC 500", url: "/About/f&a" },
+      { id: "5-1", title: "Yoga TTC 100", url: "/About/Aboutus" },
+      { id: "5-2", title: "Yoga TTC 300", url: "/About/teachers" },
+      { id: "5-3", title: "Yoga TTC 500", url: "/About/f&a" },
     ],
   },
-  
 ];
+
