@@ -32,7 +32,7 @@ export const MainAbout = () => {
   );
 };
 
-const TypewriterHeading = () => {
+export const TypewriterHeading = ({heading , TypingParagraph}) => {
   return (
     <section className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
       <div>
