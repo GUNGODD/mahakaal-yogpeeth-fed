@@ -239,7 +239,7 @@ const testimonials = [
   {
     name: "Michael Andreuzza",
     title: "Creator of Windstatic.com",
-    image: "/images/appify/avatar1.png",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     quote:
       "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
   },
@@ -247,21 +247,21 @@ const testimonials = [
   {
     name: "Michael Andreuzza",
     title: "Creator of Windstatic.com",
-    image: "/images/appify/avatar1.png",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     quote:
       "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
   },
   {
     name: "Gege Piazza",
     title: "Creator of Pizza Piazza",
-    image: "/images/appify/avatar2.png",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     quote:
       "Implementing Semplice's blockchain technology has been a game-changer for our supply chain management.",
   },
   {
     name: "Jenson Button",
     title: "Founder of Benji and Tom",
-    image: "/images/appify/avatar3.png",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     quote:
       "We were initially hesitant about integrating blockchain technology into our existing systems.",
   },
@@ -429,7 +429,7 @@ const FAQSection = () => {
   );
 };
 
-const OnePagerSection = () => {
+export const OnePagerSection = () => {
   return (
     <section>
       <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
@@ -447,7 +447,7 @@ const OnePagerSection = () => {
             <div>
               <div className="p-2 overflow-hidden border rounded-3xl">
                 <img
-                  src="../images/placeholders/rectangle1.svg"
+                  src="https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="#"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
@@ -465,7 +465,7 @@ const OnePagerSection = () => {
             <div>
               <div className="p-2 overflow-hidden border rounded-3xl">
                 <img
-                  src="../images/placeholders/rectangle1.svg"
+                  src="https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="#"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
@@ -483,7 +483,7 @@ const OnePagerSection = () => {
             <div>
               <div className="p-2 overflow-hidden border rounded-3xl">
                 <img
-                  src="../images/placeholders/rectangle1.svg"
+                  src="https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="#"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
@@ -501,7 +501,7 @@ const OnePagerSection = () => {
             <div>
               <div className="p-2 overflow-hidden border rounded-3xl">
                 <img
-                  src="../images/placeholders/rectangle1.svg"
+                  src="https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="#"
                   className="w-full h-full mx-auto rounded-2xl"
                 />
