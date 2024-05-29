@@ -1,62 +1,195 @@
+import React from "react";
+import Navbar from "../../MainComponents/Navbar";
+import PriceGrid from "../../Pages/Parts/PriceGrid";
+import Footer from "../../MainComponents/Footer";
+import LogoHeading from "../../Pages/LogoHeading";
+import { Hero } from "../../Pages/Parts/Hero";
+import MainForm from "../FormArea/MainForm";
+import AiCard from "../Gallery/AiCard";
+import MainGallery from "../Gallery/MainGallery";
+import ImageGallery from "../../Design/ImageGallery";
+import { Card } from "@chakra-ui/react";
+import MovingCards from "../../MainComponents/MovingCards";
+import { MainAbout } from "../AboutUs/MainAbout";
+import GallerySection from "../../Pages/Parts/GallerySection";
+import ImgScroll from "../../Pages/Parts/ImgScroll";
+import Content from "../AboutUs/TextArea";
+import { Typewriter } from "react-simple-typewriter";
+import  { useState, useEffect } from 'react';
 
-import React from 'react'
-import Navbar from '../../MainComponents/Navbar'
-import PriceGrid from '../../Pages/Parts/PriceGrid'
-import Footer from '../../MainComponents/Footer'
-import LogoHeading from '../../Pages/LogoHeading'
-import { Hero } from '../../Pages/Parts/Hero'
-import MainForm from '../FormArea/MainForm'
-import AiCard from '../Gallery/AiCard'
-import MainGallery from '../Gallery/MainGallery'
-import ImageGallery from '../../Design/ImageGallery'
-import { Card } from '@chakra-ui/react'
-import MovingCards from '../../MainComponents/MovingCards'
-import { MainAbout } from '../AboutUs/MainAbout'
-import GallerySection from '../../Pages/Parts/GallerySection'
-import ImgScroll from '../../Pages/Parts/ImgScroll'
-import Content from '../AboutUs/TextArea'
-import { Typewriter } from 'react-simple-typewriter'
+
 
 const MainYoga500 = () => {
   return (
     <div>
-        <Navbar/>
-        <Hero/>
-        <div className='mt-28'>
-        <LogoHeading heading="Upcoming classes"/>
-        </div>
-     
-        <Content />
-        
-       
-        <TypewriterHeading/>
-        
-        <YoutubeGrids/>
-        <OnePagerSection/>
-      
-        <FoldBlog/>
-        <FAQSection/>
-        <PriceGrid/>
-       
-     
-  
-  <FullGallery/>
-
-        
+      <Navbar />
+      <Hero />
+      <div className="mt-28">
+        <LogoHeading heading="Upcoming classes" />
+      </div>
    
-    
-     
-
-
-        <Footer/>
+      <Content />
+      <TypewriterHeading />
+      <YoutubeGrids />
+      <OnePagerSection />
+      <DailySchedule />
+      <FoldBlog />
+      <FAQSection />
+      <PriceGrid />
+      <FullGallery />
+      <Carousel />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default MainYoga500;
 
 
-import ReactPlayer from 'react-player';
+
+
+import { motion } from 'framer-motion';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+
+const testimonials = [
+  {
+    quote: "This yoga teacher training was life-changing. The instructors were knowledgeable and supportive.",
+    name: "John Doe",
+    title: "Yoga Enthusiast",
+    image: "https://i.pinimg.com/564x/1a/2b/3c/1a2b3c4d5e6f7g8h9i0j.jpg" // Replace with actual Pinterest image URL
+  },
+  {
+    quote: "I learned so much about yoga and myself. The environment was perfect for growth.",
+    name: "Jane Smith",
+    title: "Aspiring Yoga Teacher",
+    image: "https://i.pinimg.com/564x/2b/3c/4d/2b3c4d5e6f7g8h9i0j1k.jpg" // Replace with actual Pinterest image URL
+  },
+  {
+    quote: "An amazing experience! The curriculum was well-rounded and the community was wonderful.",
+    name: "Emily Johnson",
+    title: "Yoga Practitioner",
+    image: "https://i.pinimg.com/564x/3c/4d/5e/3c4d5e6f7g8h9i0j1k2l.jpg" // Replace with actual Pinterest image URL
+  },
+  {
+    quote: "This yoga teacher training was life-changing. The instructors were knowledgeable and supportive.",
+    name: "John Doe",
+    title: "Yoga Enthusiast",
+    image: "https://i.pinimg.com/564x/1a/2b/3c/1a2b3c4d5e6f7g8h9i0j.jpg" // Replace with actual Pinterest image URL
+  },
+  {
+    quote: "I learned so much about yoga and myself. The environment was perfect for growth.",
+    name: "Jane Smith",
+    title: "Aspiring Yoga Teacher",
+    image: "https://i.pinimg.com/564x/2b/3c/4d/2b3c4d5e6f7g8h9i0j1k.jpg" // Replace with actual Pinterest image URL
+  },
+  {
+    quote: "An amazing experience! The curriculum was well-rounded and the community was wonderful.",
+    name: "Emily Johnson",
+    title: "Yoga Practitioner",
+    image: "https://i.pinimg.com/564x/3c/4d/5e/3c4d5e6f7g8h9i0j1k2l.jpg" // Replace with actual Pinterest image URL
+  },
+  // Add more testimonials as needed
+];
+
+const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000); // Change slide every 5 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Testimonials</h2>
+      <div className="relative overflow-hidden">
+        <motion.div
+          className="flex"
+          initial={{ x: '0%' }}
+          animate={{ x: `-${currentIndex * 100}%` }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+        >
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="min-w-full flex-shrink-0 p-4">
+              <motion.div
+                className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center h-72 w-full transition-transform transform hover:scale-105"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full mb-4"
+                />
+                <div className="flex items-center mb-4">
+                  <FaQuoteLeft className="text-gray-400 mr-2" />
+                  <p className="text-gray-600 italic text-sm md:text-base">{testimonial.quote}</p>
+                  <FaQuoteRight className="text-gray-400 ml-2" />
+                </div>
+                <p className="text-gray-800 font-semibold text-sm md:text-base">{testimonial.name}</p>
+                <p className="text-gray-500 text-xs md:text-sm">{testimonial.title}</p>
+              </motion.div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+import { FaClock } from 'react-icons/fa';
+import { GrYoga } from 'react-icons/gr';
+
+const DailySchedule = () => {
+  const schedule = [
+    { time: '6:30 - 7:00am', activity: 'Pranayama' },
+    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
+    { time: '8:30 - 9:30am', activity: 'Breakfast' },
+    { time: '9:30 - 10:00am', activity: 'Break Time' },
+    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
+    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
+    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
+    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
+    { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
+    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
+      <p className="text-justify mb-8 text-gray-500">
+        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
+      </p>
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+import ReactPlayer from "react-player";
 
 const YoutubeGrids = () => {
   const videoUrl1 = "https://www.youtube.com/watch?v=aC_EFwr6GJs";
@@ -64,9 +197,12 @@ const YoutubeGrids = () => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-between">
-        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
-          <div className="relative" style={{ paddingTop: '56.25%' /* 16:9 Aspect Ratio */ }}>
+      <div className="flex flex-wrap justify-between bg-gray-100 p-4">
+        <div className="p-2 w-full sm:w-1/2 lg:w-1/2 xl:w-1/2">
+          <div
+            className="relative bg-gray-200 rounded-lg overflow-hidden"
+            style={{ paddingTop: "56.25%" }} // 16:9 Aspect Ratio for widescreen
+          >
             <ReactPlayer
               className="absolute top-0 left-0"
               url={videoUrl1}
@@ -76,8 +212,11 @@ const YoutubeGrids = () => {
             />
           </div>
         </div>
-        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 p-4">
-          <div className="relative" style={{ paddingTop: '56.25%' /* 16:9 Aspect Ratio */ }}>
+        <div className="p-2 w-full sm:w-1/2 lg:w-1/2 xl:w-1/2">
+          <div
+            className="relative bg-gray-200 rounded-lg overflow-hidden"
+            style={{ paddingTop: "56.25%" }} // 16:9 Aspect Ratio for widescreen
+          >
             <ReactPlayer
               className="absolute top-0 left-0"
               url={videoUrl2}
@@ -97,90 +236,78 @@ const YoutubeGrids = () => {
 
 export const OnePagerSection = () => {
   return (
-    <section>
-      <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
-        <div>
-          <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-5xl text-balance">
+    <section className="bg-white py-24">
+      <div className="px-8 mx-auto max-w-7xl md:px-12 lg:px-32">
+        <div className="text-center">
+          <h1 className="text-4xl font-semibold tracking-tighter text-green-800 lg:text-5xl text-balance">
             Building one pagers together
-            <span className="text-gray-600">wherever and anywhere</span>
+            <span className="block text-gray-600">wherever and anywhere</span>
           </h1>
-          <p className="mt-4 text-base font-medium text-gray-500 text-balance">
+          <p className="mt-4 text-base font-medium text-gray-600 text-balance">
             Control and added security. With decentralization, users have more
             control over their data and transactions, and the platform is less
             susceptible to malicious attacks.
           </p>
-          <div className="grid mt-12 gap-y-12 gap-x-2 md:grid-cols-2">
-            <div>
-              <div className="p-2 overflow-hidden border rounded-3xl">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="#"
-                  className="w-full h-full mx-auto rounded-2xl"
-                />
-              </div>
-              <div className="mt-4">
-                <p className="font-medium text-gray-900">
-                  No warranty disclaimer
-                </p>
-                <p className="mt-2 text-sm text-gray-500">
-                  The license comes with no warranties. The licensor provides
-                  the work "as is," and users must use it at their own risk.
-                </p>
-              </div>
+        </div>
+        <div className="grid gap-x-8 gap-y-12 mt-12 md:grid-cols-2">
+          <div className="bg-gray-50 p-6 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="mx-auto w-full h-48 object-cover rounded-2xl"
+              />
             </div>
-            <div>
-              <div className="p-2 overflow-hidden border rounded-3xl">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="#"
-                  className="w-full h-full mx-auto rounded-2xl"
-                />
-              </div>
-              <div className="px-8 mt-4">
-                <p className="font-medium text-gray-900">
-                  Modification Freedom
-                </p>
-                <p className="mt-2 text-sm text-gray-500">
-                  You can adapt, remix, transform, and build upon the licensed
-                  work.
-                </p>
-              </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">No warranty disclaimer</p>
+              <p className="mt-2 text-sm text-gray-600">
+                The license comes with no warranties. The licensor provides the work "as is," and users must use it at their own risk.
+              </p>
             </div>
-            <div>
-              <div className="p-2 overflow-hidden border rounded-3xl">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="#"
-                  className="w-full h-full mx-auto rounded-2xl"
-                />
-              </div>
-              <div className="px-8 mt-4">
-                <p className="font-medium text-gray-900">
-                  Commercial use allowed
-                </p>
-                <p className="mt-2 text-sm text-gray-500">
-                  You are allowed to use the licensed work for both
-                  non-commercial and commercial purposes.
-                </p>
-              </div>
+          </div>
+          <div className="bg-gray-50 p-6 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="mx-auto w-full h-48 object-cover rounded-2xl"
+              />
             </div>
-            <div>
-              <div className="p-2 overflow-hidden border rounded-3xl">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="#"
-                  className="w-full h-full mx-auto rounded-2xl"
-                />
-              </div>
-              <div className="px-8 mt-4">
-                <p className="font-medium text-gray-900">
-                  Share alike (SA) absence
-                </p>
-                <p className="mt-2 text-sm text-gray-500">
-                  The CC BY 3.0 License does not include a "Share Alike" (SA)
-                  provision.
-                </p>
-              </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">Modification Freedom</p>
+              <p className="mt-2 text-sm text-gray-600">
+                You can adapt, remix, transform, and build upon the licensed work.
+              </p>
+            </div>
+          </div>
+          <div className="bg-gray-50 p-6 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="mx-auto w-full h-48 object-cover rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">Commercial use allowed</p>
+              <p className="mt-2 text-sm text-gray-600">
+                You are allowed to use the licensed work for both non-commercial and commercial purposes.
+              </p>
+            </div>
+          </div>
+          <div className="bg-gray-50 p-6 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="mx-auto w-full h-48 object-cover rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">Share alike (SA) absence</p>
+              <p className="mt-2 text-sm text-gray-600">
+                The CC BY 3.0 License does not include a "Share Alike" (SA) provision.
+              </p>
             </div>
           </div>
         </div>
@@ -190,82 +317,66 @@ export const OnePagerSection = () => {
 };
 
 
-
-
-
 const FAQSection = () => {
   return (
-    <section>
-      <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
-        <div>
-          <p className="text-4xl font-semibold tracking-tighter text-gray-900">
+    <section className="bg-gray-50 py-24">
+      <div className="px-8 mx-auto max-w-7xl md:px-12 lg:px-32">
+        <div className="text-center">
+          <p className="text-4xl font-semibold tracking-tighter text-green-700">
             Frequently Asked Questions
           </p>
-          <p className="mt-4 text-base font-medium text-gray-500">
-            Answers to commonly asked questions about our platform.
+          <p className="mt-4 text-base font-medium text-gray-600">
+            Answers to commonly asked questions about our yoga classes and services.
           </p>
         </div>
 
         <dl className="grid gap-12 mt-12 lg:grid-cols-2">
-          <div>
-            <dt className="text-lg font-medium text-black">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
               What kind of support can I expect?
             </dt>
-            <dd className="mt-2 text-base font-medium text-gray-500">
-              We offer comprehensive support including live chat, email, and
-              phone. Our support team is available 24/7 to assist with any
-              issues or questions you might have.
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              We offer comprehensive support including live chat, email, and phone. Our support team is available 24/7 to assist with any issues or questions you might have.
             </dd>
           </div>
-          <div>
-            <dt className="text-lg font-medium text-black">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
               How secure is my payment information?
             </dt>
-            <dd className="mt-2 text-base font-medium text-gray-500">
-              Your payment information is extremely secure. We use
-              industry-standard encryption and comply with PCI standards to
-              ensure your details are protected.
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Your payment information is extremely secure. We use industry-standard encryption and comply with PCI standards to ensure your details are protected.
             </dd>
           </div>
-          <div>
-            <dt className="text-lg font-medium text-black">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
               Can I cancel my subscription at any time?
             </dt>
-            <dd className="mt-2 text-base font-medium text-gray-500">
-              Yes, you can cancel your subscription at any time. There are no
-              cancellation fees, though no refunds are provided for partial
-              months.
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Yes, you can cancel your subscription at any time. There are no cancellation fees, though no refunds are provided for partial months.
             </dd>
           </div>
-          <div>
-            <dt className="text-lg font-medium text-black">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
               How often are platform updates released?
             </dt>
-            <dd className="mt-2 text-base font-medium text-gray-500">
-              We regularly update the platform to introduce new features and
-              improvements. Major updates are released quarterly, while minor
-              updates and bug fixes are rolled out as needed.
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              We regularly update the platform to introduce new features and improvements. Major updates are released quarterly, while minor updates and bug fixes are rolled out as needed.
             </dd>
           </div>
-          <div>
-            <dt className="text-lg font-medium text-black">
-              Is there a community or forum where I can discuss with other
-              users?
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Is there a community or forum where I can discuss with other users?
             </dt>
-            <dd className="mt-2 text-base font-medium text-gray-500">
-              Yes, we have a community forum where users can share tips, ask
-              questions, and connect with others. It's a great place to learn
-              from fellow users and contribute your own insights.
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Yes, we have a community forum where users can share tips, ask questions, and connect with others. It's a great place to learn from fellow users and contribute your own insights.
             </dd>
           </div>
-          <div>
-            <dt className="text-lg font-medium text-black">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
               Do you offer training or resources for new users?
             </dt>
-            <dd className="mt-2 text-base font-medium text-gray-500">
-              Absolutely! We provide a comprehensive knowledge base, video
-              tutorials, and live webinars to help you get started and make the
-              most out of our platform.
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Absolutely! We provide a comprehensive knowledge base, video tutorials, and live webinars to help you get started and make the most out of our platform.
             </dd>
           </div>
         </dl>
@@ -273,6 +384,10 @@ const FAQSection = () => {
     </section>
   );
 };
+
+
+
+
 
 import {
   Box,
@@ -283,8 +398,9 @@ import {
   Container,
   Avatar,
   useColorModeValue,
-} from '@chakra-ui/react';
-import FullGallery from '../Video Gallery/GridGallery'
+} from "@chakra-ui/react";
+import FullGallery from "../Video Gallery/GridGallery";
+import Form from "../../Design/Form";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
@@ -293,28 +409,29 @@ const Testimonial = ({ children }) => {
 const TestimonialContent = ({ children }) => {
   return (
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
-      boxShadow={'lg'}
+      bg={useColorModeValue("white", "gray.800")}
+      boxShadow={"lg"}
       p={8}
-      rounded={'xl'}
-      align={'center'}
-      pos={'relative'}
+      rounded={"xl"}
+      align={"center"}
+      pos={"relative"}
       _after={{
         content: `""`,
         w: 0,
         h: 0,
-        borderLeft: 'solid transparent',
+        borderLeft: "solid transparent",
         borderLeftWidth: 16,
-        borderRight: 'solid transparent',
+        borderRight: "solid transparent",
         borderRightWidth: 16,
-        borderTop: 'solid',
+        borderTop: "solid",
         borderTopWidth: 16,
-        borderTopColor: useColorModeValue('white', 'gray.800'),
-        pos: 'absolute',
-        bottom: '-16px',
-        left: '50%',
-        transform: 'translateX(-50%)',
-      }}>
+        borderTopColor: useColorModeValue("white", "gray.800"),
+        pos: "absolute",
+        bottom: "-16px",
+        left: "50%",
+        transform: "translateX(-50%)",
+      }}
+    >
       {children}
     </Stack>
   );
@@ -322,7 +439,7 @@ const TestimonialContent = ({ children }) => {
 
 const TestimonialHeading = ({ children }) => {
   return (
-    <Heading as={'h3'} fontSize={'xl'}>
+    <Heading as={"h3"} fontSize={"xl"}>
       {children}
     </Heading>
   );
@@ -331,9 +448,10 @@ const TestimonialHeading = ({ children }) => {
 const TestimonialText = ({ children }) => {
   return (
     <Text
-      textAlign={'center'}
-      color={useColorModeValue('gray.600', 'gray.400')}
-      fontSize={'sm'}>
+      textAlign={"center"}
+      color={useColorModeValue("gray.600", "gray.400")}
+      fontSize={"sm"}
+    >
       {children}
     </Text>
   );
@@ -341,11 +459,11 @@ const TestimonialText = ({ children }) => {
 
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
-    <Flex align={'center'} mt={8} direction={'column'}>
+    <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} alt={name} mb={2} />
-      <Stack spacing={-1} align={'center'}>
+      <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
+        <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
           {title}
         </Text>
       </Stack>
@@ -353,17 +471,18 @@ const TestimonialAvatar = ({ src, name, title }) => {
   );
 };
 
-export  function WithSpeechBubbles() {
+export function WithSpeechBubbles() {
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.700')}>
-      <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={'center'}>
+    <Box bg={useColorModeValue("gray.100", "gray.700")}>
+      <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+        <Stack spacing={0} align={"center"}>
           <Heading>Our Clients Speak</Heading>
           <Text>We have been working with clients around the world</Text>
         </Stack>
         <Stack
-          direction={{ base: 'column', md: 'row' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}>
+          direction={{ base: "column", md: "row" }}
+          spacing={{ base: 10, md: 4, lg: 10 }}
+        >
           <Testimonial>
             <TestimonialContent>
               <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
@@ -374,10 +493,10 @@ export  function WithSpeechBubbles() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={"Jane Cooper"}
+              title={"CEO at ABC Corporation"}
             />
           </Testimonial>
           <Testimonial>
@@ -390,10 +509,10 @@ export  function WithSpeechBubbles() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={"Jane Cooper"}
+              title={"CEO at ABC Corporation"}
             />
           </Testimonial>
           <Testimonial>
@@ -406,10 +525,10 @@ export  function WithSpeechBubbles() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={"Jane Cooper"}
+              title={"CEO at ABC Corporation"}
             />
           </Testimonial>
         </Stack>
@@ -422,131 +541,74 @@ export  function WithSpeechBubbles() {
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
+    title: "Boost your conversion rate",
+    href: "#",
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Marketing", href: "#" },
     author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
+      name: "Michael Foster",
+      role: "Co-Founder / CTO",
+      href: "#",
       imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   // More posts...
-]
+];
 
-export  function FoldBlog() {
+export function FoldBlog() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="py-24 bg-gray-50 sm:py-32">
+      <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Yoga Testimonials
+          </h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
+            Hear from our satisfied clients about their yoga journey.
           </p>
         </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16 pt-10 mx-auto mt-10 max-w-2xl border-t border-gray-200 sm:pt-16 sm:mt-16 lg:grid-cols-3 lg:mx-0 lg:max-w-none">
           {posts.map((post) => (
-            <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
-              <div className="flex items-center gap-x-4 text-xs">
+            <article
+              key={post.id}
+              className="flex flex-col justify-between items-start max-w-xl p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1"
+            >
+              <div className="flex gap-x-4 items-center text-xs">
                 <time dateTime={post.datetime} className="text-gray-500">
                   {post.date}
                 </time>
                 <a
                   href={post.category.href}
-                  className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                  className="relative z-10 py-1.5 px-3 font-medium text-green-600 bg-green-50 rounded-full hover:bg-green-100"
                 >
                   {post.category.title}
                 </a>
               </div>
-              <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <div className="relative group mt-4">
+                <h3 className="text-lg font-semibold leading-6 text-gray-900 group-hover:text-green-600">
                   <a href={post.href}>
                     <span className="absolute inset-0" />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
+                <p className="mt-3 text-sm leading-6 text-gray-600 line-clamp-3">
+                  {post.description}
+                </p>
               </div>
-              <div className="relative mt-8 flex items-center gap-x-4">
-                <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" />
+              <div className="flex relative gap-x-4 items-center mt-8">
+                <img
+                  src={post.author.imageUrl}
+                  alt={post.author.name}
+                  className="w-10 h-10 bg-gray-50 rounded-full"
+                />
                 <div className="text-sm leading-6">
                   <p className="font-semibold text-gray-900">
                     <a href={post.author.href}>
-                      <span     className="absolute inset-0" />
+                      <span className="absolute inset-0" />
                       {post.author.name}
                     </a>
                   </p>
@@ -558,21 +620,17 @@ export  function FoldBlog() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
-
-
-
-
- const TypewriterHeading = () => {
+const TypewriterHeading = () => {
   return (
-    <section className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+    <section className="py-24 px-4 mx-auto max-w-7xl md:px-12 lg:px-32">
       <div>
-        <h1 className="text-4xl text-center font-semibold tracking-tighter text-gray-900 lg:text-5xl text-balance">
+        <h1 className="text-3xl font-semibold tracking-tighter text-center text-gray-900 sm:text-4xl lg:text-5xl text-balance">
           Yoga School in Rishikesh - Mahakaal{" "}
-          <span className=" bg-indigo-300 shadow shadow-gray-100 border rounded-lg text-black">
+          <span className="text-black bg-indigo-300 rounded-lg border shadow shadow-gray-100 px-2">
             <Typewriter
               words={["Yogpeeth"]}
               loop={0}
@@ -584,8 +642,8 @@ export  function FoldBlog() {
             />
           </span>
         </h1>
-        <p className="mt-4 text-base font-medium text-gray-500 text-balance">
-        Mira Yogashala is so much more than just a yoga school in Rishikesh.
+        <p className="mt-4 text-sm font-medium text-gray-500 sm:text-base lg:text-lg text-balance">
+          Mira Yogashala is so much more than just a yoga school in Rishikesh.
           It is a place that gives you a real feel of Home away from home and
           where you will find your long-lost family. We are committed to share
           and spread the awareness of our Yoga lineage, proceeding to motivate
@@ -633,9 +691,9 @@ export  function FoldBlog() {
           expanded the range of your skills, deepened your knowledge, and gained
           more confidence in your teaching abilities.
         </p>
-        <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-5xl text-center text-balance mt-12">
+        <h1 className="mt-12 text-3xl font-semibold tracking-tighter text-center text-gray-900 sm:text-4xl lg:text-5xl text-balance">
           Rishikesh | Your Dream Destination for{" "}
-          <span className="bg-indigo-300 shadow shadow-gray-100 border rounded-lg text-black">
+          <span className="text-black bg-indigo-300 rounded-lg border shadow shadow-gray-100 px-2">
             <Typewriter
               words={["Yoga!", "Ambience!", "Peace!"]}
               loop={0}
@@ -647,7 +705,7 @@ export  function FoldBlog() {
             />
           </span>
         </h1>
-        <p className="mt-4 text-base font-medium text-gray-500 text-balance">
+        <p className="mt-4 text-sm font-medium text-gray-500 sm:text-base lg:text-lg text-balance">
           Rishikesh is the gateway of Himalaya which is the most popular
           spiritual place for seekers in Uttrakhand. Rishikesh is also known for
           “Yoga capital of world.” An International yoga festival is held by
@@ -695,3 +753,4 @@ export  function FoldBlog() {
     </section>
   );
 };
+

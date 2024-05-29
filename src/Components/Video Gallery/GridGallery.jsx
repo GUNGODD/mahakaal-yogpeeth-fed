@@ -1,51 +1,53 @@
 import React from "react";
 import ReactPlayer from "react-player";
 
-const GridGallery = ({ url }) => {
-  return (
-    <div className="flex justify-center mt-10 flex-col items-center">
-      <div
-        className="flex flex-col md:flex-row gap-4 m-4 w-full max-w-7xl"
-        style={{ height: "auto" }}
-      >
-        <div
-          className="relative w-full md:w-1/3"
-          style={{ paddingBottom: "56.25%" }}
-        >
-          <ReactPlayer
-            className="absolute top-0 left-0"
-            url={url}
-            controls={true}
-            playing={false}
-            width="100%"
-            height="100%"
-          />
-        </div>
+const YoutubeGrids = () => {
+  const videos = [
+    {
+      url: "https://www.youtube.com/watch?v=aC_EFwr6GJs",
+      description: "Yoga for Beginners - Start Your Journey"
+    },
+    {
+      url: "https://www.youtube.com/watch?v=aC_EFwr6GJs",
+      description: "Advanced Yoga Techniques"
+    },
+    {
+      url: "https://www.youtube.com/watch?v=aC_EFwr6GJs",
+      description: "Yoga for Flexibility and Strength"
+    },
+    {
+      url: "https://www.youtube.com/watch?v=aC_EFwr6GJs",
+      description: "Morning Yoga Routine"
+    }
+  ];
 
-        <div className="inline-block gap-4 justify-center rounded-lg border text-center p-4 w-full md:w-2/3">
-          <h1 className="text-2xl font-bold">Watch our Videos</h1>
-          <p className="mt-2 text-base">
-            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-            cillum sint consectetur cupidatat.
-          </p>
-          <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
-            Learn More
-          </button>
-        </div>
+  return (
+    <div className="bg-gray-100 p-4">
+      <div className="flex flex-wrap -mx-2">
+        {videos.map((video, index) => (
+          <div key={index} className="p-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div
+                className="relative bg-gray-200"
+                style={{ paddingTop: "56.25%" }} // 16:9 Aspect Ratio for widescreen
+              >
+                <ReactPlayer
+                  className="absolute top-0 left-0"
+                  url={video.url}
+                  width="100%"
+                  height="100%"
+                  controls
+                />
+              </div>
+              <div className="p-4">
+                <p className="text-gray-800 text-sm">{video.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export const FullGallery = ({ url }) => {
-  return (
-    <>
-      <GridGallery url={"https://www.youtube.com/watch?v=-tI4Ix8jvFA"} />
-      <GridGallery url={"https://www.youtube.com/watch?v=-tI4Ix8jvFA"} />
-      <GridGallery url={"https://www.youtube.com/watch?v=-tI4Ix8jvFA"} />
-      <GridGallery url={"https://www.youtube.com/watch?v=-tI4Ix8jvFA"} />
-    </>
-  );
-};
-
-export default FullGallery;
+export default YoutubeGrids;
