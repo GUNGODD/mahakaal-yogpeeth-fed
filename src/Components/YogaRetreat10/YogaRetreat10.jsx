@@ -19,6 +19,7 @@ const YogaRetreat10 = () => {
         <RetreatForm/>
         <TypewriterHeading/>
         <OnePagerSection/>
+        <WhyChoose/>
         <Content title={"Daily Yoga Classes"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
         <Content title={"Sound Healing Session"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://hips.hearstapps.com/hmg-prod/images/woman-playing-tibetan-singing-bowl-in-sound-healing-royalty-free-image-1673608575.jpg"}/>
         <Content title={"Body Movement Session"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://live.staticflickr.com/3018/2804103595_1cf4f96e6d_b.jpg"}/>
@@ -39,6 +40,76 @@ const YogaRetreat10 = () => {
     </div>
   )
 }
+
+
+
+const FAQSection = () => {
+  return (
+    <section className="bg-gray-50 py-24">
+      <div className="px-8 mx-auto max-w-7xl md:px-12 lg:px-32">
+        <div className="text-center">
+          <p className="text-4xl font-semibold tracking-tighter text-green-700">
+            Frequently Asked Questions
+          </p>
+          <p className="mt-4 text-base font-medium text-gray-600">
+            Answers to commonly asked questions about our yoga classes and services.
+          </p>
+        </div>
+
+        <dl className="grid gap-12 mt-12 lg:grid-cols-2">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              What kind of support can I expect?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              We offer comprehensive support including live chat, email, and phone. Our support team is available 24/7 to assist with any issues or questions you might have.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              How secure is my payment information?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Your payment information is extremely secure. We use industry-standard encryption and comply with PCI standards to ensure your details are protected.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Can I cancel my subscription at any time?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Yes, you can cancel your subscription at any time. There are no cancellation fees, though no refunds are provided for partial months.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              How often are platform updates released?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              We regularly update the platform to introduce new features and improvements. Major updates are released quarterly, while minor updates and bug fixes are rolled out as needed.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Is there a community or forum where I can discuss with other users?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Yes, we have a community forum where users can share tips, ask questions, and connect with others. It's a great place to learn from fellow users and contribute your own insights.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Do you offer training or resources for new users?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Absolutely! We provide a comprehensive knowledge base, video tutorials, and live webinars to help you get started and make the most out of our platform.
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  );
+};
 
 
 export const Content = ({title,img,content}) => {
@@ -87,6 +158,109 @@ export const Content = ({title,img,content}) => {
         </div>
       </div>
     </div>
+  );
+};
+
+
+const WhyChoose = () => {
+  return (
+    <section>
+      <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+        <div>
+          <p className="text-4xl font-semibold tracking-tighter text-indigo-600">
+          Why Choose Mahakaal Yogpeeth for Your Yoga Retreat
+          </p>
+          <p className="mt-4 text-base font-medium text-gray-500">
+          Choosing Mira Yogashala for your Yoga Retreat is an investment in a transformative and enriching experience. Here are compelling reasons why Mira Yogashala stands out as a premier destination for those seeking a holistic and authentic yoga retreat:
+          </p>
+        </div>
+
+        <dl className="grid gap-12 mt-12 lg:grid-cols-2">
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Holistic Approach to Well-Being:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Mira Yogashala is committed to providing more than just traditional yoga classes. Our retreats incorporate a diverse range of activities, including meditation, sound healing, Ayurvedic therapies, and cultural excursions. This holistic approach ensures a comprehensive journey toward physical, mental, and spiritual well-being.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Experienced and Passionate Instructors:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Our team of instructors is not only highly qualified but also deeply passionate about sharing the transformative power of yoga. They bring a wealth of experience and a genuine commitment to guiding participants through their yoga journey, ensuring that every individual receives personalized attention and support.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Serene and Spiritual Setting:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Nestled in the spiritual haven of Rishikesh, Mira Yogashala provides a tranquil and serene environment conducive to self-discovery and healing. The picturesque landscapes and proximity to the sacred Ganges River create an ideal backdrop for a transformative retreat experience.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Comprehensive Yoga Curriculum:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Our yoga retreats include a diverse curriculum covering Hatha Yoga, Meditation, Pranayama, mindful body movement, and Ayurvedic yoga therapies. This comprehensive approach allows participants to explore various facets of yoga, catering to all experience levels.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Emphasis on Mindfulness and Meditation:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Mira Yogashala recognizes the importance of mindfulness and meditation in promoting stress reduction and concentration. Our retreats include dedicated sessions to cultivate these practices, providing participants with valuable tools for navigating the challenges of daily life.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Cultural and Spiritual Immersion:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Beyond yoga, our retreats offer cultural excursions to iconic places like the Beatles Ashram, Ram Jhula, and Devprayag Sangam. These experiences enrich the overall journey, allowing participants to connect with the cultural and spiritual essence of Rishikesh.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Small Group Setting for Personalized Attention:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Our retreats maintain small group sizes to ensure an intimate and personalized experience. This approach enables our instructors to cater to the individual needs of each participant, fostering a sense of community and support.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Focus on Ayurvedic Wellness:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Mira Yogashala integrates Ayurvedic principles into the retreat experience. Ayurvedic yoga therapies and wellness practices complement the yoga sessions, providing a holistic approach to health and healing.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Nature-Infused Excursions
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Immersive excursions to witness the sunrise and sunset over the Himalayas, trek to waterfalls, and explore the region's natural beauty enhance the connection with nature, contributing to stress relief and overall well-being.
+            </dd>
+          </div>
+          <div>
+            <dt className="text-lg font-medium text-black">
+            Positive Community and Support System:
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-500">
+            Choosing Mira Yogashala means becoming part of a positive and supportive community. The connections formed during the retreat create a network of like-minded individuals who share the same journey of self-discovery and well-being.
+
+
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
   );
 };
 

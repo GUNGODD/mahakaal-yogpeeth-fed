@@ -8,6 +8,8 @@ import TypewriterComponent from 'typewriter-effect'
 import { Typewriter } from "react-simple-typewriter";
 import PriceGrid from '../../Pages/Parts/PriceGrid'
 import { PaperClipIcon } from '@heroicons/react/20/solid'
+import { FaClock } from 'react-icons/fa'
+import { GrYoga } from 'react-icons/gr'
 
 const YogaRetreat3 = () => {
   return (
@@ -19,7 +21,7 @@ const YogaRetreat3 = () => {
         </div>
         <RetreatForm/>
         <TypewriterHeading/>
-        <FAQSection/>
+        <WhyChoose/>
         <OnePagerSection/>
         <Content title={"Daily Yoga Classes"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
       
@@ -38,16 +40,23 @@ const YogaRetreat3 = () => {
         
         <PriceGrid/>
         <LogoHeading heading={"Itinerary of 03 Days Yoga Retreat"}/>
-        <div className='p-16'>
+        <DailySchedule1/>
+        <DailySchedule2/>
+        <DailySchedule3/>
+        <DailySchedule4/>
+        {/* <div className='p-16'>
         <ScheduleDay1/>
         <ScheduleDay2/>
-        </div>
+        </div> */}
         <InfiniteIMGAcc/>
         <InfiniteIMGFood/>
+        <FAQSection/>
         <Footer/>
     </div>
   ) 
 }
+
+
 
 const InfiniteIMGAcc = () => {
   return (
@@ -124,6 +133,76 @@ const InfiniteIMGAcc = () => {
     </>
   )
 }
+
+
+const FAQSection = () => {
+  return (
+    <section className="bg-gray-50 py-24">
+      <div className="px-8 mx-auto max-w-7xl md:px-12 lg:px-32">
+        <div className="text-center">
+          <p className="text-4xl font-semibold tracking-tighter text-green-700">
+            Frequently Asked Questions
+          </p>
+          <p className="mt-4 text-base font-medium text-gray-600">
+            Answers to commonly asked questions about our yoga classes and services.
+          </p>
+        </div>
+
+        <dl className="grid gap-12 mt-12 lg:grid-cols-2">
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              What kind of support can I expect?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              We offer comprehensive support including live chat, email, and phone. Our support team is available 24/7 to assist with any issues or questions you might have.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              How secure is my payment information?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Your payment information is extremely secure. We use industry-standard encryption and comply with PCI standards to ensure your details are protected.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Can I cancel my subscription at any time?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Yes, you can cancel your subscription at any time. There are no cancellation fees, though no refunds are provided for partial months.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              How often are platform updates released?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              We regularly update the platform to introduce new features and improvements. Major updates are released quarterly, while minor updates and bug fixes are rolled out as needed.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Is there a community or forum where I can discuss with other users?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Yes, we have a community forum where users can share tips, ask questions, and connect with others. It's a great place to learn from fellow users and contribute your own insights.
+            </dd>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Do you offer training or resources for new users?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Absolutely! We provide a comprehensive knowledge base, video tutorials, and live webinars to help you get started and make the most out of our platform.
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  );
+};
+
 
 
 const InfiniteIMGFood = () => {
@@ -380,107 +459,14 @@ const RetreatForm = ()=>{
 }
 
 
-const ScheduleDay1 = ()=> {
-  return (
-    <div>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-base text-lg font-semibold leading-7 text-indigo-600">Day 01</h3>
-        <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">The Below Daily Schedule can be changed due to weather, or any other particular reason of that day.</p>
-      </div>
-      <div className="mt-2 border-t border-gray-100">
-        <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900"> 12:00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Check in Time</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900"> 1.00 PM - 2.00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Lunch</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">3.00 PM - 4:00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Rest</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">4.00 PM - 5.00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Orientation</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">7:00 PM - 8:00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Dinner Time</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">9:00 PM </dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0"> Go to Sleep</dd>
-          </div>
-          
-          
-        </dl>
-      </div>
-    </div>
-  )
-}
-
-const ScheduleDay2 = ()=> {
-  return (
-    <div className='mt-10'>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-base text-lg font-semibold leading-7 text-indigo-600">Day 02</h3>
-        <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">The Below Daily Schedule can be changed due to weather, or any other particular reason of that day.</p>
-      </div>
-      <div className="mt-2 border-t border-gray-100">
-        <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">  5:30 AM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Sun rise Excursion At Balkumari Temple</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900"> 7.00 AM - 8.30 AM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Meditation class in Sunrise</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">9.30 AM - 10.30 AM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Breakfast</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900"> 10:00 AM - 12.30 AM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Patna waterfall Trekking</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">1:00 PM - 2:00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Lunch</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">2:00 PM - 4:00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Rest / Self Study / Audios</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900"> 4.00 PM - 5.00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Sound healing Session</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900"> 7:00 PM - 8:00 PM </dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Dinner</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900"> 9:00 PM</dt>
-            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Go to Sleep</dd>
-          </div>
-          
-        </dl>
-      </div>
-    </div>
-  )
-}
 
 
-
-const FAQSection = () => {
+const WhyChoose = () => {
   return (
     <section>
       <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
         <div>
-          <p className="text-4xl font-semibold tracking-tighter text-gray-900">
+          <p className="text-4xl font-semibold tracking-tighter text-indigo-600">
           Why Choose Mahakaal Yogpeeth for Your Yoga Retreat
           </p>
           <p className="mt-4 text-base font-medium text-gray-500">
@@ -578,6 +564,194 @@ const FAQSection = () => {
 };
 
 
+const DailySchedule1 = () => {
+  const schedule = [
+    { time: '6:30 - 7:00am', activity: 'Pranayama' },
+    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
+    { time: '8:30 - 9:30am', activity: 'Breakfast' },
+    { time: '9:30 - 10:00am', activity: 'Break Time' },
+    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
+    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
+    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
+    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
+    { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
+    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
+      <p className="text-justify mb-8 text-gray-500">
+        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
+      </p>
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+const DailySchedule2 = () => {
+  const schedule = [
+    { time: '6:30 - 7:00am', activity: 'Pranayama' },
+    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
+    { time: '8:30 - 9:30am', activity: 'Breakfast' },
+    { time: '9:30 - 10:00am', activity: 'Break Time' },
+    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
+    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
+    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
+    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
+    { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
+    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
+      <p className="text-justify mb-8 text-gray-500">
+        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
+      </p>
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+const DailySchedule3 = () => {
+  const schedule = [
+    { time: '6:30 - 7:00am', activity: 'Pranayama' },
+    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
+    { time: '8:30 - 9:30am', activity: 'Breakfast' },
+    { time: '9:30 - 10:00am', activity: 'Break Time' },
+    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
+    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
+    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
+    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
+    { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
+    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
+      <p className="text-justify mb-8 text-gray-500">
+        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
+      </p>
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+const DailySchedule4 = () => {
+  const schedule = [
+    { time: '6:30 - 7:00am', activity: 'Pranayama' },
+    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
+    { time: '8:30 - 9:30am', activity: 'Breakfast' },
+    { time: '9:30 - 10:00am', activity: 'Break Time' },
+    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
+    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
+    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
+    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
+    { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
+    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
+      <p className="text-justify mb-8 text-gray-500">
+        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
+      </p>
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 const TypewriterHeading = () => {
   return (
     <section className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
@@ -627,23 +801,7 @@ const TypewriterHeading = () => {
           serene location also known as the gateway of Himalayas. Located in
           Rishikesh, the yoga capital of the world, and nestled in the foothills
           of the Himalayas where the Ganga River flows, makes this a truly
-          unique place to practice yoga. We at Mira Yogashala, are committed to
-          educational yoga teaching standards around the world with our 200 Hour
-          Yoga TTC, 300 Hour Yoga TTC and 500-hour yoga TTC programs in
-          Rishikesh. Our Yoga TTC in Rishikesh isn’t just for aspiring yogis,
-          but for anyone who wants to deepen their personal practice or skill
-          and gain improvement in a better way of understanding of yoga
-          philosophy and its origins. We deal with an ideal spiritual and
-          healthy environment for Yoga teacher training. Whatever your reasons
-          for embarking on this journey, we are here to guide you. You will
-          explore the depth of yoga beyond the physical practice and learn about
-          the origin of yoga, philosophy, anatomy, and so much more. Yoga
-          Teacher Training is the beginning of a life-transforming journey
-          Through yoga or a new chapter in your life. It is not the final
-          objective or goal in your life, but a beautiful step towards life on
-          the path of Yoga. When you leave Mira Yogashala, you will have
-          expanded the range of your skills, deepened your knowledge, and gained
-          more confidence in your teaching abilities.
+          unique place to practice yoga.
         </p>
         <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-5xl text-center text-balance mt-12">
           Rishikesh | Your Dream Destination for{" "}
@@ -690,18 +848,6 @@ const TypewriterHeading = () => {
           highest standing, because of its numerous yoga and meditation schools,
           ashrams and places of worship. You will know how many yogis, sages and
           students who are coming far from their homes to look for harmony.
-          Rishikesh is known as the land of yoga and meditation in the world and
-          people come far away to learn yoga and meditation. It is a good
-          destination to have an experience with India’s ancient and traditional
-          form of yoga. The eco-friendly and peaceful environment that
-          fascinates the spiritual and religious seekers over the world. Come
-          and Get experience the spirituality of the Holy Ganga River, Temples,
-          Yogshalas, Ashrams, Chaurasi Kutiyas, famous Ram and Laxman Jhulas,
-          etc. The voyage does not complete here by way of you can enjoy the
-          experienced sports in which includes trekking, river rafting, bungee
-          jumping, jungle safari, and camping. Visit this heavenly place to get
-          a pause in your hectic life and savor the holy attraction of
-          Rishikesh.
         </p>
       </div>
     </section>
@@ -714,7 +860,7 @@ export const OnePagerSection = () => {
     <section>
       <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
         <div>
-          <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-5xl text-balance">
+          <h1 className="text-4xl font-semibold tracking-tighter text-indigo-600 lg:text-5xl text-balance">
           Subjects/Topics covered in Yoga Retreat
             <span className="text-gray-600"></span>
           </h1>
