@@ -1,17 +1,18 @@
+import React from "react";
 import ReactPlayer from "react-player";
 
-export const Content = () => {
+const Content = () => {
   const videoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+    <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="mb-4">
+          <p className="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
             Brand new
           </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -20,7 +21,7 @@ export const Content = () => {
             >
               <defs>
                 <pattern
-                  id="679d5905-e08c-4b91-a66c-84aefbb9d2f5"
+                  id="pattern"
                   x="0"
                   y="0"
                   width=".135"
@@ -30,7 +31,7 @@ export const Content = () => {
                 </pattern>
               </defs>
               <rect
-                fill="url(#679d5905-e08c-4b91-a66c-84aefbb9d2f5)"
+                fill="url(#pattern)"
                 width="52"
                 height="24"
               />
@@ -40,15 +41,13 @@ export const Content = () => {
           quick, brown fox jumps over a lazy dog
         </h2>
       </div>
-      <div className="mx-auto lg:max-w-2xl">
-        <div className="relative w-full border bg-gray-500 rounded-lg shadow-lg shadow-indigo-500 transition-shadow duration-300 hover:shadow-xl">
-          <ReactPlayer
-            url={videoUrl}
-            controls
-            width="100%"
-            className="md:max-h-lvh sm:max-h-96 rounded-lg shadow-lg"
-          />
-        </div>
+      <div className="relative w-full max-w-2xl mx-auto border bg-gray-500 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <ReactPlayer
+          url={videoUrl}
+          controls
+          width="100%"
+          className="rounded-lg"
+        />
       </div>
     </div>
   );
