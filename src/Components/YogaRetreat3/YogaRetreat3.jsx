@@ -566,28 +566,20 @@ const WhyChoose = () => {
 
 const DailySchedule1 = () => {
   const schedule = [
-    { time: '6:30 - 7:00am', activity: 'Pranayama' },
-    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
-    { time: '8:30 - 9:30am', activity: 'Breakfast' },
-    { time: '9:30 - 10:00am', activity: 'Break Time' },
-    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
-    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
-    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
-    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
-    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
-    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
-    { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
-    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
-      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
-      <p className="text-justify mb-8 text-gray-500">
-        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
-      </p>
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 01</h3>
+      
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -613,28 +605,21 @@ const DailySchedule1 = () => {
 
 const DailySchedule2 = () => {
   const schedule = [
-    { time: '6:30 - 7:00am', activity: 'Pranayama' },
-    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
-    { time: '8:30 - 9:30am', activity: 'Breakfast' },
-    { time: '9:30 - 10:00am', activity: 'Break Time' },
-    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
-    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
-    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
+    { time: '5:30', activity: 'Sun rise Excursion At Balkumari Temple' },
+    { time: '7:00 - 8:30am', activity: 'Meditation class in Sunrise' },
+    { time: '9:30 - 10:00am', activity: 'Breakfast' },
+    { time: '10:00 - 12:30am', activity: ' Patna waterfall Trekking' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
-    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
-    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
-    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
+    { time: '2:00 - 4:00pm', activity: 'Rest / Self Study / Audios' },
+    { time: '4:00 - 5:00pm', activity: 'Sound healing Session' },
     { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
-    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
-      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
-      <p className="text-justify mb-8 text-gray-500">
-        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
-      </p>
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 02</h3>
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -660,28 +645,20 @@ const DailySchedule2 = () => {
 
 const DailySchedule3 = () => {
   const schedule = [
-    { time: '6:30 - 7:00am', activity: 'Pranayama' },
-    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
-    { time: '8:30 - 9:30am', activity: 'Breakfast' },
-    { time: '9:30 - 10:00am', activity: 'Break Time' },
-    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
-    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
-    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
+    { time: '6:00', activity: ' Wake Up & Start a new fresh day' },
+    { time: '7:00 - 8:15am', activity: ' Body Movement Session' },
+    { time: '9:00 - 10:00am', activity: 'Breakfast' },
+    { time: '10:00 - 12:30am', activity: 'Excursion – Ram Jhula Tour' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
-    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
-    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
-    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
-    { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
-    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+    { time: '2:00 - 4:00pm', activity: 'Rest / Self Study / Audios' },
+    { time: '4:00 - 5:00pm', activity: 'Mediation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
-      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
-      <p className="text-justify mb-8 text-gray-500">
-        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
-      </p>
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 03</h3>
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -707,28 +684,22 @@ const DailySchedule3 = () => {
 
 const DailySchedule4 = () => {
   const schedule = [
-    { time: '6:30 - 7:00am', activity: 'Pranayama' },
-    { time: '7:00 - 8:30am', activity: 'Ashtanga Yoga (Mysore & Led class)' },
-    { time: '8:30 - 9:30am', activity: 'Breakfast' },
-    { time: '9:30 - 10:00am', activity: 'Break Time' },
-    { time: '10:00 - 11:30am', activity: 'Yoga Anatomy' },
-    { time: '11:30 - 12:00pm', activity: 'Break Between Sessions' },
-    { time: '12:00 - 1:00pm', activity: 'Alignment & Adjustment' },
-    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
-    { time: '2:00 - 3:00pm', activity: 'Self Study / Rest' },
-    { time: '3:00 - 4:00pm', activity: 'Break Between Sessions' },
-    { time: '4:15 - 5:45pm', activity: 'Hatha Yoga' },
-    { time: '6:00 - 6:45pm', activity: 'Mantra / Meditation' },
-    { time: '7:15 - 8:00pm', activity: 'Dinner Time' },
+    { time: '6:00am', activity: 'Wake Up & Start a new fresh day' },
+    { time: '7:00am - 8:30am', activity: 'Traditional Hatha' },
+    { time: '9:00am - 10:00am', activity: 'Breakfast' },
+    { time: '10:00am - 12:30pm', activity: ' Free Time' },
+    { time: '1:00pm - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00pm - 3:00pm', activity: 'Self Study / Rest' },
+    { time: '4:00pm - 5:00pm ', activity: 'Mediation' },
+    { time: '5:00pm - 6:30pm', activity: 'Ganga Aarti' },
+    { time: '7:00pm - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm ', activity: 'Go to Sleep' },
+
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Daily Schedule Of 200 Hour Yoga TTC In Bali</h2>
-      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">200 Hour Yoga Teacher Training In Bali Course Schedule</h3>
-      <p className="text-justify mb-8 text-gray-500">
-        Our Curriculum is articulately formulated in order to incorporate both the theoretical and practical sessions. Along with providing free time to the students to reflect, analyze, and retrospect on what they have learned so far, they will also get time to explore them. Mirayogashala retains academic excellence and professionalism in the school and expects the students to be receptive to the change.
-      </p>
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 04</h3>
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
