@@ -39,6 +39,7 @@ const YogaRetreat3 = () => {
         <PriceGrid/>
         <div className='p-16'>
         <ScheduleDay1/>
+        <ScheduleDay2/>
         </div>
         <Footer/>
     </div>
@@ -230,7 +231,7 @@ const ScheduleDay1 = ()=> {
         <h3 className="text-base text-lg font-semibold leading-7 text-indigo-600">Day 01</h3>
         <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">The Below Daily Schedule can be changed due to weather, or any other particular reason of that day.</p>
       </div>
-      <div className="mt-6 border-t border-gray-100">
+      <div className="mt-2 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm font-medium leading-6 text-gray-900"> 12:00 PM</dt>
@@ -257,6 +258,58 @@ const ScheduleDay1 = ()=> {
             <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0"> Go to Sleep</dd>
           </div>
           
+          
+        </dl>
+      </div>
+    </div>
+  )
+}
+
+const ScheduleDay2 = ()=> {
+  return (
+    <div className='mt-10'>
+      <div className="px-4 sm:px-0">
+        <h3 className="text-base text-lg font-semibold leading-7 text-indigo-600">Day 02</h3>
+        <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">The Below Daily Schedule can be changed due to weather, or any other particular reason of that day.</p>
+      </div>
+      <div className="mt-2 border-t border-gray-100">
+        <dl className="divide-y divide-gray-100">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900">  5:30 AM</dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Sun rise Excursion At Balkumari Temple</dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900"> 7.00 AM - 8.30 AM</dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Meditation class in Sunrise</dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900">9.30 AM - 10.30 AM</dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Breakfast</dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900"> 10:00 AM - 12.30 AM</dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Patna waterfall Trekking</dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900">1:00 PM - 2:00 PM</dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Lunch</dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900">2:00 PM - 4:00 PM</dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Rest / Self Study / Audios</dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900"> 4.00 PM - 5.00 PM</dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Sound healing Session</dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900"> 7:00 PM - 8:00 PM </dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Dinner</dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900"> 9:00 PM</dt>
+            <dd className="mt-1 text-sm leading-6 font-bold text-gray-700 sm:col-span-2 sm:mt-0">Go to Sleep</dd>
+          </div>
           
         </dl>
       </div>
