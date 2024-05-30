@@ -40,6 +40,8 @@ const MainYoga500 = () => {
       <FullGallery />
 
 <TestimonialScroller/>
+
+<TeachersCardsSlider/>
       <Footer />
     </div>
   );
@@ -455,6 +457,7 @@ import {
 } from "@chakra-ui/react";
 import FullGallery from "../Video Gallery/GridGallery";
 import Form from "../../Design/Form";
+import TeachersCardsSlider from "../../Pages/TeacherCard";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;

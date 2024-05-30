@@ -43,49 +43,44 @@ const router = createBrowserRouter([
     element: <MainAbout />
   },
   {
-    path:"/enroll",
-    element:<MainForm/>
+    path: "/enroll",
+    element: <MainForm />
   },
   {
-    path:"/Retreat/Yoga10",
-    element:<YogaRetreat10/>
+    path: "/Retreat/Yoga10",
+    element: <YogaRetreat10 />
   },
   {
-    path:"/Retreat/Yoga7",
-    element:<YogaRetreat7/>
+    path: "/Retreat/Yoga7",
+    element: <YogaRetreat7 />
   },
   {
-    path:"/Retreat/Yoga3",
-    element:<YogaRetreat3/>
+    path: "/Retreat/Yoga3",
+    element: <YogaRetreat3 />
   },
+
+
   {
-    path:"/Yoga100",
-    element:<MainYoga100/>
-  },
-  {
-    path:"/Yoga300",
-    element:<MainYoga300/>
-  },
-  {
-    path:"/Yoga500",
-    element:<MainYoga500/>
-  },
-  ,
-  {
-    path:"/Contact",
-    element:<MainContact/>
-  },{
-    path:"/PhotoGallery/Videos",
-    element:<MainVideoGallery/>
+    path: "/Contact",
+    element: <MainContact />
+  }, {
+    path: "/PhotoGallery/Videos",
+    element: <MainVideoGallery />
   },
   // Yoga TTC 
-
-  {path: "About/f&a",
-    element: <MainYoga500/>
+  {
+    path: "/ttcyoga/TTC200",
+    element: <MainYoga300 />
+  },
+  {
+    path: "ttcyoga/TTC300",
+    element: <MainYoga500 />
   }
-]); 
+]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
 );
+
+
