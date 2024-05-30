@@ -34,7 +34,7 @@ export default function TextArea() {
           <div className="mb-8 sm:mb-20">
             <img
               className="w-full max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
-              src="https://i.ibb.co/jrV9cgD/carou1.jpg"
+              src="https://i.ibb.co/bgZL2q3/beach.jpg"
               alt="Workflow illustration"
             />
           </div>

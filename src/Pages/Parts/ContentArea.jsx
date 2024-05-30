@@ -46,7 +46,7 @@ export default function ContentArea() {
             </div>
           </div>
           <img
-            src="https://i.ibb.co/k9pDbXM/carousel3.jpg"
+            src="https://i.ibb.co/7pY1RGb/beach2.jpg"
             alt="Product screenshot"
             className="w-[20rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem] md:-ml-4 lg:-ml-0"
             width={2032}

@@ -45,7 +45,7 @@ const shuffle = (array) => {
 const squareData = [
   {
     id: 1,
-    src: img1,
+    src: "https://i.ibb.co/VTdgctp/bodymove1.jpg",
   },
   {
     id: 2,
