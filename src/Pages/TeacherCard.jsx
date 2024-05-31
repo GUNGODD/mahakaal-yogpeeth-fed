@@ -1,48 +1,48 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
-    {
-        name: "Michael Andreuzza",
-        title: "Creator of Windstatic.com",
-        image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
-      },{
-        name: "Michael Andreuzza",
-        title: "Creator of Windstatic.com",
-        image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
-      },{
-        name: "Michael Andreuzza",
-        title: "Creator of Windstatic.com",
-        image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
-      },{
-        name: "Michael Andreuzza",
-        title: "Creator of Windstatic.com",
-        image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
-      },{
-        name: "Michael Andreuzza",
-        title: "Creator of Windstatic.com",
-        image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
-      },{
-        name: "Michael Andreuzza",
-        title: "Creator of Windstatic.com",
-        image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
-      },{
-        name: "Michael Andreuzza",
-        title: "Creator of Windstatic.com",
-        image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
-      },{
-        name: "Michael Andreuzza",
-        title: "Creator of Windstatic.com",
-        image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
-      },
+  {
+    name: "Michael Andreuzza",
+    title: "Creator of Windstatic.com",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
+  }, {
+    name: "Michael Andreuzza",
+    title: "Creator of Windstatic.com",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
+  }, {
+    name: "Michael Andreuzza",
+    title: "Creator of Windstatic.com",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
+  }, {
+    name: "Michael Andreuzza",
+    title: "Creator of Windstatic.com",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
+  }, {
+    name: "Michael Andreuzza",
+    title: "Creator of Windstatic.com",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
+  }, {
+    name: "Michael Andreuzza",
+    title: "Creator of Windstatic.com",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
+  }, {
+    name: "Michael Andreuzza",
+    title: "Creator of Windstatic.com",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
+  }, {
+    name: "Michael Andreuzza",
+    title: "Creator of Windstatic.com",
+    image: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    quote: "Being in the financial industry, we were always looking for ways to enhance our transactions' security and efficiency.",
+  },
   {
     name: "Gege Piazza",
     title: "Creator of Pizza Piazza",
@@ -66,7 +66,7 @@ export const TeacherCard = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => (prev + 0.5) % testimonials.length);
-    }, 600000); 
+    }, 600000);
 
     return () => clearInterval(interval);
   }, []);
@@ -92,7 +92,7 @@ export const TeacherCard = () => {
               Carousel
             </span>
             <div className="overflow-hidden">
-              <AnimatePresence exitBeforeEnter>
+              <AnimatePresence mode="wait">
                 <motion.div
                   className="flex w-full"
                   ref={sliderRef}

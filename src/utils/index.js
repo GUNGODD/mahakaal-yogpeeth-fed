@@ -1,3 +1,4 @@
+
 export const navigation = [
   {
     id: "0",
@@ -33,7 +34,7 @@ export const navigation = [
     url: "/about",
     Expand: true,
     submenu: [
-      { id: "4-1", title: "About Mahakaal Yogpeeth", url: "/About/Aboutus" },
+      { id: "4-1", title: "About Mahakaal Yogpeeth", url: "/About/AboutUs" },
       { id: "4-2", title: "Our Teachers", url: "/About/teachers" },
       { id: "4-3", title: "Food and Accommodation", url: "/About/f&a" },
     ],
@@ -41,13 +42,11 @@ export const navigation = [
   {
     id: "5",
     title: "Yoga TTC",
-    url: "/about",
+    url: "/ttcyoga",
     Expand: true,
     submenu: [
-      { id: "5-1", title: "Yoga TTC 100", url: "/About/Aboutus" },
-      { id: "5-2", title: "Yoga TTC 300", url: "/About/teachers" },
-      { id: "5-3", title: "Yoga TTC 500", url: "/About/f&a" },
+      { id: "5-1", title: "Yoga TTC 100", url: "/ttcyoga/TTC100" },
+      { id: "5-2", title: "Yoga TTC 200", url: "/ttcyoga/TTC200" },
     ],
   },
 ];
-

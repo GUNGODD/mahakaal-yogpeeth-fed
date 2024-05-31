@@ -76,7 +76,7 @@ const Navbar = () => {
             )}
           </a>
           {item.Expand && isExpand === item.id && window.innerWidth >= 640 && (
-            <AnimatePresence>
+            <AnimatePresence mode="wait">
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
