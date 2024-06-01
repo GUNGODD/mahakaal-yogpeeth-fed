@@ -1,3 +1,15 @@
+import { TbYoga } from "react-icons/tb";
+import { FaRunning } from "react-icons/fa";
+import { GiMeditation } from "react-icons/gi";
+import { GiPrayer } from "react-icons/gi";
+import { GrYoga } from "react-icons/gr";
+import { GiChestnutLeaf } from "react-icons/gi";
+import { GiAnatomy } from "react-icons/gi";
+import { FaPersonWalking } from "react-icons/fa6";
+import { GiBrain } from "react-icons/gi";
+
+// import { GiMeditation } from "react-icons/gi";
+
 const features = [
     { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
     { name: 'Material', description: 'Solid walnut base with rare earth magnets and powder coated steel card cover' },
@@ -25,30 +37,12 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+       <TbYoga size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Hatha Yoga</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Hatha Yoga is a preparatory process of Yoga.
         </p>
       </a>
 
@@ -56,30 +50,12 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+        <GrYoga size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Ashtanga Yoga</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Ashtanga is a very dynamic and athletic form of Hatha yoga.
         </p>
       </a>
 
@@ -87,30 +63,12 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+        <GiMeditation size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Meditation</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Heel Your Body, Mind and soul through Meditation.
         </p>
       </a>
 
@@ -118,30 +76,12 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+        <GiPrayer size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Pranayama</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Pranayama is an ancient breath techniques and method.
         </p>
       </a>
 
@@ -149,30 +89,13 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+        <GiChestnutLeaf size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Yoga Philosophy</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Yoga Philosophy is a Theoretical Study of Yoga.
         </p>
       </a>
 
@@ -180,30 +103,13 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+        <GiAnatomy size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Yoga Anatomy</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Human body Study to understand safe and stable physical alignment in yoga poses.
         </p>
       </a>
 
@@ -211,30 +117,13 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+        <FaPersonWalking size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Kundalini Yoga</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Type of yoga that involves chanting, singing, breathing exercises and Kriyas
         </p>
       </a>
 
@@ -242,30 +131,13 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+        <GiMeditation size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Mantra Chanting</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Be in Peace of Mind with anicient and sacred Mantra chanting.
         </p>
       </a>
 
@@ -273,37 +145,19 @@ const features = [
         class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
         href="#"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="size-10 text-pink-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
+        <GiBrain size={40}/>
 
-        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+        <h2 class="mt-4 text-xl font-bold text-white">Mindfullness</h2>
 
         <p class="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Learn how you can be in Fully present in the current moment.
         </p>
       </a>
     </div>
 
     <div class="mt-12 text-center">
       <a
-        href="#"
+        href="/enroll"
         class="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
       >
         Get Started Today
