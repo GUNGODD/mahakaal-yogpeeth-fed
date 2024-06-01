@@ -32,7 +32,7 @@ export const MainAbout = () => {
   );
 };
 
-export const TypewriterHeading = ({heading , TypingParagraph}) => {
+export const TypewriterHeading = ({ heading, TypingParagraph }) => {
   return (
     <section className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
       <div>
@@ -176,11 +176,10 @@ export const HeroImage = ({ wallpaper, Heading }) => {
             </div>
             {/* Mobile Menu open: "block", Menu closed: "hidden" */}
             <div
-              className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto ${
-                isOpen
-                  ? "translate-x-0 opacity-100"
-                  : "opacity-0 -translate-x-full"
-              }`}
+              className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto ${isOpen
+                ? "translate-x-0 opacity-100"
+                : "opacity-0 -translate-x-full"
+                }`}
             >
               <div className="-mx-4 lg:flex lg:items-center">
                 <a
@@ -235,7 +234,7 @@ export const HeroImage = ({ wallpaper, Heading }) => {
   );
 };
 
-const testimonials = [
+export const testimonials = [
   {
     name: "Michael Andreuzza",
     title: "Creator of Windstatic.com",
@@ -348,7 +347,7 @@ export const TeachersTestimonials = () => {
   );
 };
 
-const FAQSection = () => {
+export const FAQSection = () => {
   return (
     <section>
       <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">

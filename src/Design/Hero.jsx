@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import {
   useMotionTemplate,
@@ -7,6 +7,8 @@ import {
   motion,
   animate,
 } from "framer-motion";
+import { SiCanva } from "react-icons/si";
+import { Stars } from "lucide-react";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -63,10 +65,12 @@ export const AuroraHero = () => {
       </div>
 
       <div className="absolute inset-0 z-0">
-        <Canvas>
+        <SiCanva>
           <Stars radius={50} count={2500} factor={4} fade speed={2} />
-        </Canvas>
+        </SiCanva>
       </div>
     </motion.section>
   );
 };
+
+export default AuroraHero;
