@@ -19,7 +19,7 @@ const ShuffleHero = () => {
         </p>
         <a 
           href="/enroll" 
-          
+           
           className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-65"
         >
           Enroll now!!
