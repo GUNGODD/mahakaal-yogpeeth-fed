@@ -1,172 +1,82 @@
 
-export default function FAQ() {
+export default function FAQ  (){
   return (
-    <>
+    <section className="py-24 bg-gray-50">
+      <div className="px-8 mx-auto max-w-7xl md:px-12 lg:px-32">
+        <div className="text-center">
+          <p className="text-4xl font-semibold tracking-tighter text-green-700">
+            Frequently Asked Questions
+          </p>
+          <p className="mt-4 text-base font-medium text-gray-600">
+            Answers to commonly asked questions about our yoga classes and
+            services.
+          </p>
+        </div>
 
-      <div>
-
-        <h2 className="text-5xl text-center font-bold"> FAQ</h2>
-
-
+        <dl className="grid gap-12 mt-12 lg:grid-cols-2">
+          <div className="p-6 bg-white rounded-lg shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              What kind of support can I expect?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              We offer comprehensive support including live chat, email, and
+              phone. Our support team is available 24/7 to assist with any
+              issues or questions you might have.
+            </dd>
+          </div>
+          <div className="p-6 bg-white rounded-lg shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              How secure is my payment information?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Your payment information is extremely secure. We use
+              industry-standard encryption and comply with PCI standards to
+              ensure your details are protected.
+            </dd>
+          </div>
+          <div className="p-6 bg-white rounded-lg shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Can I cancel my subscription at any time?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Yes, you can cancel your subscription at any time. There are no
+              cancellation fees, though no refunds are provided for partial
+              months.
+            </dd>
+          </div>
+          <div className="p-6 bg-white rounded-lg shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              How often are platform updates released?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              We regularly update the platform to introduce new features and
+              improvements. Major updates are released quarterly, while minor
+              updates and bug fixes are rolled out as needed.
+            </dd>
+          </div>
+          <div className="p-6 bg-white rounded-lg shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Is there a community or forum where I can discuss with other
+              users?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Yes, we have a community forum where users can share tips, ask
+              questions, and connect with others. It's a great place to learn
+              from fellow users and contribute your own insights.
+            </dd>
+          </div>
+          <div className="p-6 bg-white rounded-lg shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <dt className="text-lg font-medium text-green-700">
+              Do you offer training or resources for new users?
+            </dt>
+            <dd className="mt-2 text-base font-medium text-gray-600">
+              Absolutely! We provide a comprehensive knowledge base, video
+              tutorials, and live webinars to help you get started and make the
+              most out of our platform.
+            </dd>
+          </div>
+        </dl>
       </div>
-      <div className=" gap-4 m-8  p-4 space-y-4 mb-10">
-        <details className="group [&_summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg  p-4  bg-indigo-300    text-black " >
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <svg
-              className="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </summary>
-
-          <p className="mt-4 px-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-
-        <details className="group [&_summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg  p-4  bg-indigo-300    text-black " >
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <svg
-              className="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </summary>
-
-          <p className="mt-4 px-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-
-
-        <details className="group [&_summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg  p-4  bg-indigo-300    text-black " >
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <svg
-              className="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </summary>
-
-          <p className="mt-4 px-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-
-
-        <details className="group [&_summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg  p-4  bg-indigo-300    text-black " >
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <svg
-              className="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </summary>
-
-          <p className="mt-4 px-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-
-
-
-
-        <details className="group [&_summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg  p-4  bg-indigo-300    text-black " >
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <svg
-              className="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </summary>
-
-          <p className="mt-4 px-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-      </div >
-    </>
+    </section>
   );
-}
-
-
+};

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import img1 from "../assets/glimpse/teachers/img1.jpg"
 
 const ShuffleHero = () => {
+
   return (
     <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
       <div>
@@ -16,9 +17,13 @@ const ShuffleHero = () => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
           error repellat voluptatibus Sad.
         </p>
-        <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-65">
+        <a 
+          href="/enroll" 
+          
+          className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-65"
+        >
           Enroll now!!
-        </button>
+        </a>
       </div>
       <ShuffleGrid />
     </section>
