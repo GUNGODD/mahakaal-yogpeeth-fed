@@ -6,6 +6,9 @@ import { HeroImage } from '../AboutUs/MainAbout'
 import LogoHeading from '../../Pages/LogoHeading'
 import { Typewriter } from "react-simple-typewriter";
 import PriceGrid from '../../Pages/Parts/PriceGrid'
+import FAQ from '../../Pages/Parts/FAQ'
+import { FaClock } from 'react-icons/fa'
+import { GrYoga } from 'react-icons/gr'
 
 
 const YogaRetreat10 = () => {
@@ -36,12 +39,405 @@ const YogaRetreat10 = () => {
         <Content title={"Temple Visiting"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
         <Content title={"Devprayag Sanagam Visit ( Optional )"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
         <PriceGrid/>
+        <LogoHeading heading={"Itinerary of 10 Days Yoga Retreat"}/>
+        <DailySchedule1/>
+        <DailySchedule2/>
+        <DailySchedule3/>
+        <DailySchedule4/>
+        <DailySchedule5/>
+        <DailySchedule6/>
+        <DailySchedule7/>
+        <DailySchedule8/>
+        <DailySchedule9/>
+        <DailySchedule10/>
+        <FAQ/>
         <Footer/>
     </div>
   )
 }
 
 
+const DailySchedule1 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 01</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+const DailySchedule2 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 02</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+const DailySchedule3 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 03</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DailySchedule4 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 04</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DailySchedule5 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 05</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DailySchedule6 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 06</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DailySchedule7 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 07</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DailySchedule8 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 08</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DailySchedule9 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 09</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DailySchedule10 = () => {
+  const schedule = [
+    
+    { time: '12:00 - 1:00pm', activity: 'Check in Time' },
+    { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
+    { time: '2:00 - 3:00pm', activity: 'Rest' },
+    { time: '3:00 - 4:00pm', activity: 'Orientation' },
+    { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
+    { time: '9:00pm',        activity:'Go to Sleep'},
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+     
+      <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 10</h3>
+      
+      <div className="overflow-x-auto shadow-lg rounded-lg">
+        <div className="min-w-full bg-white border border-gray-200">
+          <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
+            <div className="w-1/2">Time</div>
+            <div className="w-1/2">Activity</div>
+          </div>
+          {schedule.map((item, index) => (
+            <div key={index} className="flex py-3 px-4 border-b border-gray-200 hover:bg-gray-50 transition duration-300 ease-in-out">
+              <div className="w-1/2 text-sm text-gray-600 flex items-center">
+                <FaClock className="mr-2 text-gray-500" /> {item.time}
+              </div>
+              <div className="w-1/2 text-sm text-gray-800 flex items-center">
+                <GrYoga className="mr-2 text-gray-500" /> {item.activity}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const FAQSection = () => {
   return (
