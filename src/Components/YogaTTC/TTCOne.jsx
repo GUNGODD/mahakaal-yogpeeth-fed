@@ -113,6 +113,7 @@ const TestimonialScroller = () => {
         </h2>
         <div style={containerStyle} className="mt-8">
           <motion.div
+
             style={scrollerStyle}
             animate={{ x: ['0%', '-100%'] }}
             transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
@@ -434,6 +435,11 @@ const FAQSection = () => {
   );
 };
 
+
+
+
+
+import React, { useState } from 'react';
 import {
   Box,
   Flex,
@@ -443,10 +449,8 @@ import {
   Container,
   Avatar,
   useColorModeValue,
-} from "@chakra-ui/react";
-import FullGallery from "../Video Gallery/GridGallery";
-import Form from "../../Design/Form";
-import TeachersCardsSlider from "../../Pages/TeacherCard";
+  Button,
+} from '@chakra-ui/react';
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
@@ -455,27 +459,27 @@ const Testimonial = ({ children }) => {
 const TestimonialContent = ({ children }) => {
   return (
     <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      boxShadow={"lg"}
+      bg={useColorModeValue('white', 'gray.800')}
+      boxShadow={'lg'}
       p={8}
-      rounded={"xl"}
-      align={"center"}
-      pos={"relative"}
+      rounded={'xl'}
+      align={'center'}
+      pos={'relative'}
       _after={{
         content: `""`,
         w: 0,
         h: 0,
-        borderLeft: "solid transparent",
+        borderLeft: 'solid transparent',
         borderLeftWidth: 16,
-        borderRight: "solid transparent",
+        borderRight: 'solid transparent',
         borderRightWidth: 16,
-        borderTop: "solid",
+        borderTop: 'solid',
         borderTopWidth: 16,
-        borderTopColor: useColorModeValue("white", "gray.800"),
-        pos: "absolute",
-        bottom: "-16px",
-        left: "50%",
-        transform: "translateX(-50%)",
+        borderTopColor: useColorModeValue('white', 'gray.800'),
+        pos: 'absolute',
+        bottom: '-16px',
+        left: '50%',
+        transform: 'translateX(-50%)',
       }}
     >
       {children}
@@ -485,7 +489,7 @@ const TestimonialContent = ({ children }) => {
 
 const TestimonialHeading = ({ children }) => {
   return (
-    <Heading as={"h3"} fontSize={"xl"}>
+    <Heading as={'h3'} fontSize={'xl'}>
       {children}
     </Heading>
   );
@@ -494,9 +498,9 @@ const TestimonialHeading = ({ children }) => {
 const TestimonialText = ({ children }) => {
   return (
     <Text
-      textAlign={"center"}
-      color={useColorModeValue("gray.600", "gray.400")}
-      fontSize={"sm"}
+      textAlign={'center'}
+      color={useColorModeValue('gray.600', 'gray.400')}
+      fontSize={'sm'}
     >
       {children}
     </Text>
@@ -505,11 +509,11 @@ const TestimonialText = ({ children }) => {
 
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
-    <Flex align={"center"} mt={8} direction={"column"}>
+    <Flex align={'center'} mt={8} direction={'column'}>
       <Avatar src={src} alt={name} mb={2} />
-      <Stack spacing={-1} align={"center"}>
+      <Stack spacing={-1} align={'center'}>
         <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
+        <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
           {title}
         </Text>
       </Stack>
@@ -518,70 +522,51 @@ const TestimonialAvatar = ({ src, name, title }) => {
 };
 
 export function WithSpeechBubbles() {
+  const [current, setCurrent] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrent((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
   return (
-    <Box bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={"center"}>
+    <Box bg={useColorModeValue('gray.100', 'gray.700')}>
+      <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
+        <Stack spacing={0} align={'center'}>
           <Heading>Our Clients Speak</Heading>
           <Text>We have been working with clients around the world</Text>
         </Stack>
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          spacing={{ base: 10, md: 4, lg: 10 }}
-        >
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
-              name={"Jane Cooper"}
-              title={"CEO at ABC Corporation"}
-            />
-          </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Intuitive Design</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
-              name={"Jane Cooper"}
-              title={"CEO at ABC Corporation"}
-            />
-          </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialHeading>Mindblowing Service</TestimonialHeading>
-              <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar
-              src={
-                "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-              }
-              name={"Jane Cooper"}
-              title={"CEO at ABC Corporation"}
-            />
-          </Testimonial>
+        <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: 10, md: 4, lg: 10 }}>
+          <Button onClick={prevTestimonial}>Previous</Button>
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Testimonial>
+              <TestimonialContent>
+                <TestimonialHeading>{testimonials[current].heading}</TestimonialHeading>
+                <TestimonialText>{testimonials[current].text}</TestimonialText>
+              </TestimonialContent>
+              <TestimonialAvatar
+                src={testimonials[current].avatar}
+                name={testimonials[current].name}
+                title={testimonials[current].title}
+              />
+            </Testimonial>
+          </motion.div>
+          <Button onClick={nextTestimonial}>Next</Button>
         </Stack>
       </Container>
     </Box>
   );
 }
+
 
 const posts = [
   {
