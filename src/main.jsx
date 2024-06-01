@@ -15,6 +15,8 @@ import MainContact from "./Components/Contact/MainContact.jsx";
 import MainVideoGallery from "./Components/Video Gallery/MainVideoGallery.jsx";
 import TTCTwo from "./Components/YogaTTC/TTCTwo.jsx";
 import TTCOne from "./Components/YogaTTC/TTCOne.jsx";
+import OurTeacher from "./Components/AboutUs/OurTeacher.jsx";
+import Food from "./Components/AboutUs/Food.jsx";
 
 // import { createRoot } from 'react-dom/client';
 
@@ -36,6 +38,19 @@ const router = createBrowserRouter([
   {
     path: "/PhotoGallery/Photos",
     element: <MainGallery />
+  },
+
+  // About us 
+
+
+  {
+    path: "About/teachers",
+    element: <OurTeacher />
+
+  },
+  {
+    path: "/About/f&a",
+    element: <Food />
   },
 
   {
@@ -82,6 +97,8 @@ const router = createBrowserRouter([
     path: "/ttcyoga/TTC200",
     element: <TTCTwo />
   }
+
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
