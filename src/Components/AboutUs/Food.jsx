@@ -7,6 +7,7 @@ import Content from "./TextArea";
 import FAQSection from "../../Pages/Parts/FAQ";
 import Footer from "../../MainComponents/Footer";
 
+import "./ScrollImage.css";
 const Food = () => {
   return (
 
@@ -75,8 +76,6 @@ export default Food;
 
 
 
-import TypewriterComponent from 'typewriter-effect';
-import ImgScroll from "../../Pages/Parts/ImgScroll";
 
 const FuzzyHeadings = ({ heading, typography }) => {
   return (
@@ -96,22 +95,9 @@ const HeadCon = ({ heading, TypingParagraph }) => {
       <div>
         <h1 className="text-4xl text-center font-semibold tracking-tighter text-gray-900 lg:text-5xl text-balance">
           {heading}{" "}
-          <span className="bg-indigo-300 shadow shadow-gray-100 border rounded-lg text-black">
-            <TypewriterComponent
-              options={{
-                strings: [TypingParagraph],
-                autoStart: true,
-                loop: true,
-                cursor: '|',
-                delay: 150,
-                deleteSpeed: 100,
-                delaySpeed: 10,
-              }}
-            />
-          </span>
         </h1>
         <span className="flex ">
-          <ImgRoll />
+          <ImageCarousel />
         </span>
         <p className="mt-4 text-base font-medium text-gray-500 text-balance">
           Improving their skills to next levels with the purpose of spreading
@@ -150,6 +136,37 @@ const HeadCon = ({ heading, TypingParagraph }) => {
 export { HeadCon };
 
 
+const ImageCarousel = () => {
+  return (
+    <div className="wrapper">
+      <div className="item item1">
+        <img src="https://i.ibb.co/sjBSR96/gallery1.jpg" alt="" />
+      </div>
+      <div className="item item2">
+        <img src="https://i.ibb.co/wMjVbjz/gallery2.jpg" alt="" />
+      </div>
+      <div className="item item3">
+        <img src="https://i.ibb.co/D7dRr8T/gallery3.jpg" alt="" />
+      </div>
+      <div className="item item4">
+        <img src="https://i.ibb.co/0XPFFZG/gallery4.jpg" alt="" />
+      </div>
+      <div className="item item5">
+        <img src="https://i.ibb.co/25dfSK7/gallery5.jpg" alt="" />
+      </div>
+      <div className="item item6">
+        <img src="https://i.ibb.co/7Rkf9T3/gallery6.jpg" alt="" />
+      </div>
+      <div className="item item7">
+        <img src="https://i.ibb.co/xXP0rKM/gallery7.jpg" alt="" />
+      </div>
+      <div className="item item8">
+        <img src="https://i.ibb.co/VvGSnQW/gallery8.jpg" alt="" />
+      </div>
+    </div>
+  );
+};
+
 
 
 
@@ -158,67 +175,81 @@ export { HeadCon };
 
 
 
-const ImgRoll = () => {
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+
+
+// Fix for default marker icon issue
+
+
+const locations = [
+  {
+    lat: 51.505,
+    lng: -0.09,
+    image: 'https://source.unsplash.com/random/200x200?sig=1',
+    description: 'Image 1 Description',
+  },
+  {
+    lat: 51.515,
+    lng: -0.1,
+    image: 'https://source.unsplash.com/random/200x200?sig=2',
+    description: 'Image 2 Description',
+  },
+  {
+    lat: 51.525,
+    lng: -0.11,
+    image: 'https://source.unsplash.com/random/200x200?sig=3',
+    description: 'Image 3 Description',
+  },
+  {
+    lat: 51.535,
+    lng: -0.12,
+    image: 'https://source.unsplash.com/random/200x200?sig=4',
+    description: 'Image 4 Description',
+  },
+  {
+    lat: 51.545,
+    lng: -0.13,
+    image: 'https://source.unsplash.com/random/200x200?sig=5',
+    description: 'Image 5 Description',
+  },
+  {
+    lat: 51.555,
+    lng: -0.14,
+    image: 'https://source.unsplash.com/random/200x200?sig=6',
+    description: 'Image 6 Description',
+  },
+  {
+    lat: 51.565,
+    lng: -0.15,
+    image: 'https://source.unsplash.com/random/200x200?sig=7',
+    description: 'Image 7 Description',
+  },
+  {
+    lat: 51.575,
+    lng: -0.16,
+    image: 'https://source.unsplash.com/random/200x200?sig=8',
+    description: 'Image 8 Description',
+  },
+];
+
+const MapLocation = () => {
   return (
-    <>
-
-      <div>
-
-      </div>
-      <div className="wrapper">
-        <div className="itemLeft item1">
-          <img src="https://i.ibb.co/sjBSR96/gallery1.jpg" alt="" />
-        </div>
-        <div className="itemLeft item2">
-          <img src="https://i.ibb.co/wMjVbjz/gallery2.jpg" alt="" />
-        </div>
-        <div className="itemLeft item3">
-          <img src="https://i.ibb.co/D7dRr8T/gallery3.jpg" alt="" />
-        </div>
-        <div className="itemLeft item4">
-          <img src="https://i.ibb.co/0XPFFZG/gallery4.jpg" alt="" />
-        </div>
-        <div className="itemLeft item5">
-          <img src="https://i.ibb.co/25dfSK7/gallery5.jpg" alt="" />
-        </div>
-        <div className="itemLeft item6">
-          <img src="https://i.ibb.co/7Rkf9T3/gallery6.jpg" alt="" />
-        </div>
-        <div className="itemLeft item7">
-          <img src="https://i.ibb.co/xXP0rKM/gallery7.jpg" alt="" />
-        </div>
-        <div className="itemLeft item8">
-          <img src="https://i.ibb.co/VvGSnQW/gallery8.jpg" alt="" />
-        </div>
-      </div>
-      <div className="wrapper">
-        <div className="itemRight item1">
-          <img src="https://i.ibb.co/sjBSR96/gallery1.jpg" alt="" />
-        </div>
-        <div className="itemRight item2">
-          <img src="https://i.ibb.co/wMjVbjz/gallery2.jpg" alt="" />
-        </div>
-        <div className="itemRight item3">
-          <img src="https://i.ibb.co/D7dRr8T/gallery3.jpg" alt="" />
-        </div>
-        <div className="itemRight item4">
-          <img src="https://i.ibb.co/0XPFFZG/gallery4.jpg" alt="" />
-        </div>
-        <div className="itemRight item5">
-          <img src="https://i.ibb.co/25dfSK7/gallery5.jpg" alt="" />
-        </div>
-        <div className="itemRight item6">
-          <img src="https://i.ibb.co/7Rkf9T3/gallery6.jpg" alt="" />
-        </div>
-        <div className="itemRight item7">
-          <img src="https://i.ibb.co/xXP0rKM/gallery7.jpg" alt="" />
-        </div>
-        <div className="itemRight item8">
-          <img src="https://i.ibb.co/VvGSnQW/gallery8.jpg" alt="" />
-        </div>
-      </div>
-    </>
-  )
-}
-
-
+    <div className="h-screen w-full">
+      <MapContainer center={[51.505, -0.09]} zoom={13} className="h-full w-full">
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        {locations.map((location, index) => (
+          <Marker key={index} position={[location.lat, location.lng]}>
+            <Popup>
+              <img src={location.image} alt={location.description} className="w-32 h-32 object-cover" />
+              <p>{location.description}</p>
+            </Popup>
+          </Marker>
+        ))}
+      </MapContainer>
+    </div>
+  );
+};
