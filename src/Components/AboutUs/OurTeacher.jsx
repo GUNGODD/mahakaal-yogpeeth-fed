@@ -4,7 +4,6 @@ import LogoHeading from "../../Pages/LogoHeading";
 import Content from "./TextArea";
 import FAQSection from "../../Pages/Parts/FAQ";
 import Footer from "../../MainComponents/Footer";
-import { Typewriter } from "react-simple-typewriter";
 const OurTeacher = () => {
   return (
     <>
