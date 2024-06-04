@@ -60,7 +60,7 @@
     return (
       <>
         <div>
-          <h1 className='text-4xl m-2 font-bold text-center capitalize p-auto'>
+          <h1 className='hidden md:text-4xl m-2 font-bold text-center capitalize p-auto'>
             <TypewriterComponent
               options={{
                 strings: ['Our Talents!!'],
@@ -73,7 +73,7 @@
           </h1>
         </div>
 
-        <div className="scroll-container mb-10">
+        <div className="hidden md:scroll-container mb-10">
           <div className="scroll-content">
             {repeatedItems.map((item, index) => (
               <a
