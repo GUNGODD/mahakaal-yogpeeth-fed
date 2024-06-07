@@ -9,6 +9,12 @@ import Footer from "../../MainComponents/Footer";
 
 import "./ScrollImage.css";
 const Food = () => {
+
+
+
+
+
+
   return (
 
 
@@ -45,21 +51,7 @@ const Food = () => {
       </div>
 
 
-      <div className=" bg-pink-300 text-3xl m-4 p-4">
 
-        <h1 className="text-3xl font-bold tracking-tighter text-center text-gray-900 sm:text-4xl lg:text-5xl text-balance">
-          Food and Accommodation
-        </h1>
-        <p className="mt-4 text-sm font-medium text-gray-500 sm:text-base lg:text-lg text-balance">
-          Mira Yogashala is so much more than just a yoga school in Rishikesh.
-          It is a place that gives you a real feel of Home away from home and
-          where you will find your long-lost family. We are committed to share
-          and spread the awareness of our Yoga lineage, proceeding to motivate
-          and develop yoga practitioners everywhere in the world. Having a dream
-          of the present and keep moving to the shapeless goal is the prime
-          maxim of this Yoga teacher  training school in Rishikesh.
-        </p>
-      </div>
 
 
 
@@ -77,7 +69,7 @@ export default Food;
 
 
 
-const FuzzyHeadings = ({ heading, typography }) => {
+export const FuzzyHeadings = ({ heading, typography }) => {
   return (
     <>
       <HeadCon
@@ -100,33 +92,7 @@ const HeadCon = ({ heading, TypingParagraph }) => {
           <ImageCarousel />
         </span>
         <p className="mt-4 text-base font-medium text-gray-500 text-balance">
-          Improving their skills to next levels with the purpose of spreading
-          the awareness and understanding of yoga to the world-wide. Our mission
-          is to get rid of nervousness, depression, anxiety from the society as
-          well. Furthermore, we try to focus on family problems and remedial
-          personal by practicing a modest, accurate, and traditional form of
-          multi-style yoga poses. Our yoga teacher and instructor certification
-          training in Rishikesh, India will give you a chance to experience the
-          serene location also known as the gateway of Himalayas. Located in
-          Rishikesh, the yoga capital of the world, and nestled in the foothills
-          of the Himalayas where the Ganga River flows, makes this a truly
-          unique place to practice yoga. We at Mira Yogashala, are committed to
-          educational yoga teaching standards around the world with our 200 Hour
-          Yoga TTC, 300 Hour Yoga TTC and 500-hour yoga TTC programs in
-          Rishikesh. Our Yoga TTC in Rishikesh isn’t just for aspiring yogis,
-          but for anyone who wants to deepen their personal practice or skill
-          and gain improvement in a better way of understanding of yoga
-          philosophy and its origins. We deal with an ideal spiritual and
-          healthy environment for Yoga teacher training. Whatever your reasons
-          for embarking on this journey, we are here to guide you. You will
-          explore the depth of yoga beyond the physical practice and learn about
-          the origin of yoga, philosophy, anatomy, and so much more. Yoga
-          Teacher Training is the beginning of a life-transforming journey
-          Through yoga or a new chapter in your life. It is not the final
-          objective or goal in your life, but a beautiful step towards life on
-          the path of Yoga. When you leave Mira Yogashala, you will have
-          expanded the range of your skills, deepened your knowledge, and gained
-          more confidence in your teaching abilities.
+
         </p>
       </div>
     </section>
@@ -136,7 +102,7 @@ const HeadCon = ({ heading, TypingParagraph }) => {
 export { HeadCon };
 
 
-const ImageCarousel = () => {
+export const ImageCarousel = () => {
   return (
     <div className="wrapper">
       <div className="item item1">
@@ -171,7 +137,6 @@ const ImageCarousel = () => {
 
 
 
-// infin scroll
 
 
 
@@ -233,7 +198,7 @@ const locations = [
   },
 ];
 
-const MapLocation = () => {
+export const MapLocation = () => {
   return (
     <div className="h-screen w-full">
       <MapContainer center={[51.505, -0.09]} zoom={13} className="h-full w-full">

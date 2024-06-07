@@ -15,44 +15,44 @@ import RetreatForm from '../../Design/RetreatForm'
 const YogaRetreat10 = () => {
   return (
     <div>
-        <Navbar/>
-        <HeroImage wallpaper={"https://upload.wikimedia.org/wikipedia/commons/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg"} Heading={"This is Heading"}/>
-        <div className='mt-10 mb-10'>
-        <LogoHeading heading={"10 Days Yoga Retreat in Rishikesh Overview"}/>
-        </div>
-        <RetreatForm/>
-        <TypewriterHeading/>
-        <OnePagerSection/>
-        <WhyChoose/>
-        <Content title={"Daily Yoga Classes"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
-        <Content title={"Sound Healing Session"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://hips.hearstapps.com/hmg-prod/images/woman-playing-tibetan-singing-bowl-in-sound-healing-royalty-free-image-1673608575.jpg"}/>
-        <Content title={"Body Movement Session"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://live.staticflickr.com/3018/2804103595_1cf4f96e6d_b.jpg"}/>
-        <Content title={"Kirtan Session"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
-        <Content title={"Ayurvedic Therapy / Massage"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://professionalskincareguide.com/wp-content/uploads/2021/04/Ayurvedic-Massage-Featured.jpg"}/>
-        <Content title={"Sunrise Excursion"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://images.myguide-cdn.com/bali/companies/bali-full-package-jeep-sunrise-expedition-with-hot-spring/large/bali-full-package-jeep-sunrise-expedition-with-hot-spring-3465276.jpg"}/>
-        <Content title={"Sunset Excursion"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://www.etnaexperience.com/wp-content/uploads/2019/01/trekking-sulletna-scaled.jpg"}/>
-        <Content title={"World famous Ganga Arti"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://static.toiimg.com/photo/106179549.cms"}/>
-        <Content title={"Beatles Ashram Tour ( Optional )"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://rishikesh.app/_vercel/image?url=%2Fte%2Fattractions%2Fbeatles-ashram%2Fbeatles-ashram-banner.jpeg&w=1280&q=100"}/>
-        <Content title={"Cave Exploring"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
-        <Content title={"Waterfall Trekking"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
-        <Content title={"⁠Himalayas Sightseeing"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
-        <Content title={"Ram Jhula / Laxman jhula Tour"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
-        <Content title={"Temple Visiting"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
-        <Content title={"Devprayag Sanagam Visit ( Optional )"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"}/>
-        <PriceGrid/>
-        <LogoHeading heading={"Itinerary of 10 Days Yoga Retreat"}/>
-        <DailySchedule1/>
-        <DailySchedule2/>
-        <DailySchedule3/>
-        <DailySchedule4/>
-        <DailySchedule5/>
-        <DailySchedule6/>
-        <DailySchedule7/>
-        <DailySchedule8/>
-        <DailySchedule9/>
-        <DailySchedule10/>
-        <FAQ/>
-        <Footer/>
+      <Navbar />
+      <HeroImage wallpaper={"https://upload.wikimedia.org/wikipedia/commons/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg"} Heading={"This is Heading"} />
+      <div className='mt-10 mb-10'>
+        <LogoHeading heading={"10 Days Yoga Retreat in Rishikesh Overview"} />
+      </div>
+      <RetreatForm />
+      <TypewriterHeading />
+      <OnePagerSection />
+      <WhyChoose />
+      <Content title={"Daily Yoga Classes"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"} />
+      <Content title={"Sound Healing Session"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://hips.hearstapps.com/hmg-prod/images/woman-playing-tibetan-singing-bowl-in-sound-healing-royalty-free-image-1673608575.jpg"} />
+      <Content title={"Body Movement Session"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://live.staticflickr.com/3018/2804103595_1cf4f96e6d_b.jpg"} />
+      <Content title={"Kirtan Session"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"} />
+      <Content title={"Ayurvedic Therapy / Massage"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://professionalskincareguide.com/wp-content/uploads/2021/04/Ayurvedic-Massage-Featured.jpg"} />
+      <Content title={"Sunrise Excursion"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://images.myguide-cdn.com/bali/companies/bali-full-package-jeep-sunrise-expedition-with-hot-spring/large/bali-full-package-jeep-sunrise-expedition-with-hot-spring-3465276.jpg"} />
+      <Content title={"Sunset Excursion"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://www.etnaexperience.com/wp-content/uploads/2019/01/trekking-sulletna-scaled.jpg"} />
+      <Content title={"World famous Ganga Arti"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://static.toiimg.com/photo/106179549.cms"} />
+      <Content title={"Beatles Ashram Tour ( Optional )"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://rishikesh.app/_vercel/image?url=%2Fte%2Fattractions%2Fbeatles-ashram%2Fbeatles-ashram-banner.jpeg&w=1280&q=100"} />
+      <Content title={"Cave Exploring"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"} />
+      <Content title={"Waterfall Trekking"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"} />
+      <Content title={"⁠Himalayas Sightseeing"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"} />
+      <Content title={"Ram Jhula / Laxman jhula Tour"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"} />
+      <Content title={"Temple Visiting"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"} />
+      <Content title={"Devprayag Sanagam Visit ( Optional )"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://kanatalheights.com/wp-content/uploads/2022/06/yoga-capital-rishikesh.jpg"} />
+      <PriceGrid />
+      <LogoHeading heading={"Itinerary of 10 Days Yoga Retreat"} />
+      <DailySchedule1 />
+      <DailySchedule2 />
+      <DailySchedule3 />
+      <DailySchedule4 />
+      <DailySchedule5 />
+      <DailySchedule6 />
+      <DailySchedule7 />
+      <DailySchedule8 />
+      <DailySchedule9 />
+      <DailySchedule10 />
+      <FAQ />
+      <Footer />
     </div>
   )
 }
@@ -60,20 +60,20 @@ const YogaRetreat10 = () => {
 
 const DailySchedule1 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 01</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -99,20 +99,20 @@ const DailySchedule1 = () => {
 
 const DailySchedule2 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 02</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -138,20 +138,20 @@ const DailySchedule2 = () => {
 
 const DailySchedule3 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 03</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -176,20 +176,20 @@ const DailySchedule3 = () => {
 
 const DailySchedule4 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 04</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -214,20 +214,20 @@ const DailySchedule4 = () => {
 
 const DailySchedule5 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 05</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -252,20 +252,20 @@ const DailySchedule5 = () => {
 
 const DailySchedule6 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 06</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -290,20 +290,20 @@ const DailySchedule6 = () => {
 
 const DailySchedule7 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 07</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -328,20 +328,20 @@ const DailySchedule7 = () => {
 
 const DailySchedule8 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 08</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -366,20 +366,20 @@ const DailySchedule8 = () => {
 
 const DailySchedule9 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 09</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -404,20 +404,20 @@ const DailySchedule9 = () => {
 
 const DailySchedule10 = () => {
   const schedule = [
-    
+
     { time: '12:00 - 1:00pm', activity: 'Check in Time' },
     { time: '1:00 - 2:00pm', activity: 'Lunch Time' },
     { time: '2:00 - 3:00pm', activity: 'Rest' },
     { time: '3:00 - 4:00pm', activity: 'Orientation' },
     { time: '7:00 - 8:00pm', activity: 'Dinner Time' },
-    { time: '9:00pm',        activity:'Go to Sleep'},
+    { time: '9:00pm', activity: 'Go to Sleep' },
   ];
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-     
+
       <h3 className="text-xl font-semibold text-center mb-6 text-gray-600">Day 10</h3>
-      
+
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <div className="min-w-full bg-white border border-gray-200">
           <div className="flex bg-gray-100 py-3 px-4 border-b border-gray-200 text-left text-sm font-semibold text-gray-700">
@@ -509,7 +509,7 @@ const FAQSection = () => {
 };
 
 
-export const Content = ({title,img,content}) => {
+export const Content = ({ title, img, content }) => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2">
@@ -537,14 +537,14 @@ export const Content = ({title,img,content}) => {
             </div>
           </a>
           <h5 className="mb-4 text-4xl font-extrabold leading-none">
-          {title}
-           
+            {title}
+
           </h5>
           <p className="mb-6 text-gray-900">
-          {content}
+            {content}
           </p>
           <hr className="mb-5 border-gray-300" />
-         
+
         </div>
         <div>
           <img
@@ -565,92 +565,92 @@ const WhyChoose = () => {
       <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
         <div>
           <p className="text-4xl font-semibold tracking-tighter text-indigo-600">
-          Why Choose Mahakaal Yogpeeth for Your Yoga Retreat
+            Why Choose Mahakaal Yogpeeth for Your Yoga Retreat
           </p>
           <p className="mt-4 text-base font-medium text-gray-500">
-          Choosing Mira Yogashala for your Yoga Retreat is an investment in a transformative and enriching experience. Here are compelling reasons why Mira Yogashala stands out as a premier destination for those seeking a holistic and authentic yoga retreat:
+            Choosing Mira Yogashala for your Yoga Retreat is an investment in a transformative and enriching experience. Here are compelling reasons why Mira Yogashala stands out as a premier destination for those seeking a holistic and authentic yoga retreat:
           </p>
         </div>
 
         <dl className="grid gap-12 mt-12 lg:grid-cols-2">
           <div>
             <dt className="text-lg font-medium text-black">
-            Holistic Approach to Well-Being:
+              Holistic Approach to Well-Being:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Mira Yogashala is committed to providing more than just traditional yoga classes. Our retreats incorporate a diverse range of activities, including meditation, sound healing, Ayurvedic therapies, and cultural excursions. This holistic approach ensures a comprehensive journey toward physical, mental, and spiritual well-being.
+              Mira Yogashala is committed to providing more than just traditional yoga classes. Our retreats incorporate a diverse range of activities, including meditation, sound healing, Ayurvedic therapies, and cultural excursions. This holistic approach ensures a comprehensive journey toward physical, mental, and spiritual well-being.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Experienced and Passionate Instructors:
+              Experienced and Passionate Instructors:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Our team of instructors is not only highly qualified but also deeply passionate about sharing the transformative power of yoga. They bring a wealth of experience and a genuine commitment to guiding participants through their yoga journey, ensuring that every individual receives personalized attention and support.
+              Our team of instructors is not only highly qualified but also deeply passionate about sharing the transformative power of yoga. They bring a wealth of experience and a genuine commitment to guiding participants through their yoga journey, ensuring that every individual receives personalized attention and support.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Serene and Spiritual Setting:
+              Serene and Spiritual Setting:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Nestled in the spiritual haven of Rishikesh, Mira Yogashala provides a tranquil and serene environment conducive to self-discovery and healing. The picturesque landscapes and proximity to the sacred Ganges River create an ideal backdrop for a transformative retreat experience.
+              Nestled in the spiritual haven of Rishikesh, Mira Yogashala provides a tranquil and serene environment conducive to self-discovery and healing. The picturesque landscapes and proximity to the sacred Ganges River create an ideal backdrop for a transformative retreat experience.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Comprehensive Yoga Curriculum:
+              Comprehensive Yoga Curriculum:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Our yoga retreats include a diverse curriculum covering Hatha Yoga, Meditation, Pranayama, mindful body movement, and Ayurvedic yoga therapies. This comprehensive approach allows participants to explore various facets of yoga, catering to all experience levels.
+              Our yoga retreats include a diverse curriculum covering Hatha Yoga, Meditation, Pranayama, mindful body movement, and Ayurvedic yoga therapies. This comprehensive approach allows participants to explore various facets of yoga, catering to all experience levels.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Emphasis on Mindfulness and Meditation:
+              Emphasis on Mindfulness and Meditation:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Mira Yogashala recognizes the importance of mindfulness and meditation in promoting stress reduction and concentration. Our retreats include dedicated sessions to cultivate these practices, providing participants with valuable tools for navigating the challenges of daily life.
+              Mira Yogashala recognizes the importance of mindfulness and meditation in promoting stress reduction and concentration. Our retreats include dedicated sessions to cultivate these practices, providing participants with valuable tools for navigating the challenges of daily life.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Cultural and Spiritual Immersion:
+              Cultural and Spiritual Immersion:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Beyond yoga, our retreats offer cultural excursions to iconic places like the Beatles Ashram, Ram Jhula, and Devprayag Sangam. These experiences enrich the overall journey, allowing participants to connect with the cultural and spiritual essence of Rishikesh.
+              Beyond yoga, our retreats offer cultural excursions to iconic places like the Beatles Ashram, Ram Jhula, and Devprayag Sangam. These experiences enrich the overall journey, allowing participants to connect with the cultural and spiritual essence of Rishikesh.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Small Group Setting for Personalized Attention:
+              Small Group Setting for Personalized Attention:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Our retreats maintain small group sizes to ensure an intimate and personalized experience. This approach enables our instructors to cater to the individual needs of each participant, fostering a sense of community and support.
+              Our retreats maintain small group sizes to ensure an intimate and personalized experience. This approach enables our instructors to cater to the individual needs of each participant, fostering a sense of community and support.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Focus on Ayurvedic Wellness:
+              Focus on Ayurvedic Wellness:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Mira Yogashala integrates Ayurvedic principles into the retreat experience. Ayurvedic yoga therapies and wellness practices complement the yoga sessions, providing a holistic approach to health and healing.
+              Mira Yogashala integrates Ayurvedic principles into the retreat experience. Ayurvedic yoga therapies and wellness practices complement the yoga sessions, providing a holistic approach to health and healing.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Nature-Infused Excursions
+              Nature-Infused Excursions
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Immersive excursions to witness the sunrise and sunset over the Himalayas, trek to waterfalls, and explore the region's natural beauty enhance the connection with nature, contributing to stress relief and overall well-being.
+              Immersive excursions to witness the sunrise and sunset over the Himalayas, trek to waterfalls, and explore the region's natural beauty enhance the connection with nature, contributing to stress relief and overall well-being.
             </dd>
           </div>
           <div>
             <dt className="text-lg font-medium text-black">
-            Positive Community and Support System:
+              Positive Community and Support System:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Choosing Mira Yogashala means becoming part of a positive and supportive community. The connections formed during the retreat create a network of like-minded individuals who share the same journey of self-discovery and well-being.
+              Choosing Mira Yogashala means becoming part of a positive and supportive community. The connections formed during the retreat create a network of like-minded individuals who share the same journey of self-discovery and well-being.
 
 
             </dd>

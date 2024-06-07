@@ -10,17 +10,21 @@ const LogoHeading = ({ heading }) => {
           <div className="inline-block text-center ">
             <h2 className="text-3xl font-bold text-indigo-500 capitalize"> {heading}</h2>
 
+
+            <br />
+
           </div>
 
           <center>
 
             <motion.img
-              src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png"
-              width={40}
-              height={20}
+              src=" https://i.ibb.co/N1sqCFY/Break.png"
+
+              width={600}
+              height={600}
               className="justify-center"
               animate={{
-                y: ["20%", "0%", "20%"],
+                y: ["0%", "0%", "0%"],
                 transition: {
                   duration: 3,
                   ease: "easeInOut",

@@ -62,13 +62,10 @@ const Navbar = () => {
           <a
             href={item.url}
             onClick={(e) => handleClick(e, item)}
-            className={`block relative font-code text-2xl uppercase text-indigo-500 font-bold transition-colors hover:text-indigo-600 ${
-              item.onlyMobile ? "lg:hidden" : ""
-            } px-6 py-6 md:py-8 lg:-mr-9 mt-2 lg:text-xs lg:font-semibold ${
-              item.url === pathname.hash ? "z-2 lg:text-n-1" : "sm:text-n-1/50"
-            } sm:leading-5 sm:hover:text- xl:px-12 ${
-              activeItem === item.id ? "text-indigo-600" : ""
-            }`}
+            className={`block relative font-code text-2xl uppercase text-indigo-500 font-bold transition-colors hover:text-indigo-600 ${item.onlyMobile ? "lg:hidden" : ""
+              } px-6 py-6 md:py-8 lg:-mr-9 mt-2 lg:text-xs lg:font-semibold ${item.url === pathname.hash ? "z-2 lg:text-n-1" : "sm:text-n-1/50"
+              } sm:leading-5 sm:hover:text- xl:px-12 ${activeItem === item.id ? "text-indigo-600" : ""
+              }`}
           >
             <Link to={item.url}>{item.title}</Link>
             {item.Expand && (
@@ -76,7 +73,7 @@ const Navbar = () => {
             )}
           </a>
           {item.Expand && isExpand === item.id && window.innerWidth >= 640 && (
-            <AnimatePresence mode="wait">
+            <AnimatePresence>
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
@@ -108,11 +105,8 @@ const Navbar = () => {
             <div key={subItem.id} className="relative">
               <a
                 href={subItem.url}
-                className={`block relative font-code text-sm uppercase bg-gray-100 
-                rounded-lg
-                text-black font-bold transition-colors px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold sm:leading-5 xl:px-12 ${
-                  activeItem === subItem.id ? "text-green-500" : ""
-                }`}
+                className={`block relative font-code text-sm uppercase bg-gray-100 rounded-lg text-black font-bold transition-colors px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold sm:leading-5 xl:px-12 ${activeItem === subItem.id ? "text-green-500" : ""
+                  }`}
                 style={{ borderBottom: "1px solid #e5e7eb" }}
               >
                 {subItem.title}
@@ -128,18 +122,31 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none ${
-          openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"
-        }`}
+        className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none ${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"
+          }`}
       >
         <div className="flex items-center px-5 xl:px-10 max-lg:py-4 lg:px-7.5">
           <nav
-            className={`${
-              openNavigation ? "flex bg-white" : "hidden bg-white"
-            } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-white`}
+            className={`${openNavigation ? "flex bg-white" : "hidden bg-white"
+              } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-white`}
           >
             <div className="flex relative flex-col justify-center items-center m-auto space-x-4 max-w-full bg-gradient-to-tr rounded-lg lg:flex-row lg:mr-10 m-30">
               {renderNavigationItems()}
+              {/* Add Enroll Now and Contact Us buttons for mobile at the bottom */}
+              <div className="flex flex-col items-center w-full mt-4 lg:hidden">
+                <a
+                  href="/enroll"
+                  className="block uppercase transition-colors button text-n-1/50 hover:text-n-1 px-6 py-3 mt-2 w-full text-center"
+                >
+                  Enroll Now
+                </a>
+                <Button
+                  className="block py-3 px-6 font-semibold text-black uppercase bg-white rounded-2xl border-2 border-black border-dashed transition-all duration-300 mt-2 w-full text-center"
+                  href="/Contact"
+                >
+                  Contact Us
+                </Button>
+              </div>
             </div>
           </nav>
           <a className="block xl:mr-80 w-[12rem]" href="#hero">
