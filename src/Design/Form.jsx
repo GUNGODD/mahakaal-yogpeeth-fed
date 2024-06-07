@@ -1,24 +1,66 @@
+import emailjs  from '@emailjs/browser';
+import { useState } from 'react';
 import TypewriterComponent from 'typewriter-effect';
 
 const Form = () => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [gender, setGender] = useState("");
+  const [month, setMonth] = useState("");
+  const [course, setCourse] = useState("");
+  const [country, setCountry] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = 'service_w3uhl3d';
+    const templateId = 'template_ujh0s9i';
+    const publicKey = 'VkJWkfkjPxDvdLiRA';
+
+    const templateParams = {
+      from_name: fullName,
+      to_name:'Mahakaal Yogpeeth',
+      email:email,
+      whatsapp:whatsapp,
+      gender:gender,
+      month:month,
+      course:course,
+      country:country,
+      message:message
+    };
+
+      alert("Form Submitted Successfully");
+    emailjs.send(serviceId,templateId,templateParams,publicKey).then((response)=>{
+      console.log("Email has been sent successfully!",response);
+      setFullName('');
+      setEmail('');
+      setWhatsapp('');
+      setGender('');
+      setMonth('');
+      setCourse('');
+      setCountry('');
+      setMessage('');
+      
+    }).catch((error)=>{
+      console.error('Error sending email: ',error);
+    })
+  };
+
   return (
     <div className='mb-20'>
-
-      <section className="relative flex flex-wrap  lg:h-screen lg:items-center">
+      <section className="relative flex flex-wrap lg:h-screen lg:items-center">
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
-            <div className=' sm:text-6xl text-3xl md:text-5xl font-bold mb-4'>
-
-
-
+            <div className='sm:text-6xl text-3xl md:text-5xl font-bold mb-4'>
               <TypewriterComponent
                 options={{
-                  strings: ['Get Started Today !'],
+                  strings: ['Get Started Today!'],
                   autoStart: true,
                   loop: true,
                 }}
               />
-
             </div>
             <p className="mt-4 text-black m-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla eaque error neque
@@ -26,24 +68,16 @@ const Form = () => {
             </p>
           </div>
 
-          <form action="#" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+          <form onSubmit={handleSubmit} className="mx-auto mb-0 mt-8 max-w-md space-y-4">
             <div>
-              <label htmlFor="firstname" className="sr-only">First Name</label>
+              <label htmlFor="fullName" className="sr-only">Full Name</label>
               <input
                 type="text"
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
-                placeholder="First Name"
-                id="firstname"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="lastname" className="sr-only">Last Name</label>
-              <input
-                type="text"
-                className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
-                placeholder="Last Name"
-                id="lastname"
+                placeholder="Full Name"
+                id="fullName"
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
               />
             </div>
 
@@ -54,6 +88,8 @@ const Form = () => {
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="Email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
@@ -64,6 +100,8 @@ const Form = () => {
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="WhatsApp Number"
                 id="whatsapp"
+                value={whatsapp}
+                onChange={(e) => setWhatsapp(e.target.value)}
               />
             </div>
 
@@ -72,6 +110,8 @@ const Form = () => {
               <select
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 id="gender"
+                value={gender}
+                onChange={(e) => setGender(e.target.value)}
               >
                 <option value="">Select Gender</option>
                 <option value="male">Male</option>
@@ -85,6 +125,8 @@ const Form = () => {
               <select
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 id="month"
+                value={month}
+                onChange={(e) => setMonth(e.target.value)}
               >
                 <option value="">Select Month</option>
                 <option value="january">January</option>
@@ -107,6 +149,8 @@ const Form = () => {
               <select
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 id="course"
+                value={course}
+                onChange={(e) => setCourse(e.target.value)}
               >
                 <option value="">Select Course</option>
                 <option value="course1">Course 1</option>
@@ -122,6 +166,8 @@ const Form = () => {
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="Country"
                 id="country"
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
               />
             </div>
 
@@ -131,6 +177,8 @@ const Form = () => {
                 className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                 placeholder="Message"
                 id="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
 
@@ -141,6 +189,7 @@ const Form = () => {
               </p>
 
               <button
+                
                 type="submit"
                 className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
               >
