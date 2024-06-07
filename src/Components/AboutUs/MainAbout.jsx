@@ -19,7 +19,7 @@ export const MainAbout = () => {
           }
           Heading={"This is Heading"}
         />
-        <LogoHeading heading={"THIS IS HEADING"} />
+        <LogoHeading heading={"About Us"} />
         <TypewriterHeading />
         <Content />
         <OnePagerSection />

@@ -1,5 +1,43 @@
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function RetreatForm (){
+    const [fullName,setFullName]=useState("");
+    const [email,setEmail]=useState("");
+    const [country,setCountry]=useState("");
+    const [whatsapp,setWhatsapp]=useState("");
+    const [message,setMessage]=useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    
+        const serviceId = 'service_w3uhl3d';
+        const templateId = 'template_490kqw5';
+        const publicKey = 'VkJWkfkjPxDvdLiRA';
+    
+        const templateParams = {
+          from_name: fullName,
+          to_name:'Mahakaal Yogpeeth',
+          email:email,
+          whatsapp:whatsapp,
+          country:country,
+          message:message
+        };
+    
+          alert("Form Submitted Successfully");
+        emailjs.send(serviceId,templateId,templateParams,publicKey).then((response)=>{
+          console.log("Email has been sent successfully!",response);
+          setFullName('');
+          setEmail('');
+          setWhatsapp('');
+          setCountry('');
+          setMessage('');
+          
+        }).catch((error)=>{
+          console.error('Error sending email: ',error);
+        })
+      };
+
     return (
       
   <section className="bg-white">
@@ -31,10 +69,7 @@ export default function RetreatForm (){
             Contact Now
           </h2>
   
-          <p className="mt-4 leading-relaxed text-white/90">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam dolorum aliquam,
-            quibusdam aperiam voluptatum.
-          </p>
+          
         </div>
       </section>
   
@@ -61,40 +96,20 @@ export default function RetreatForm (){
               </svg>
             </a>
   
-            <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-              Welcome to Squid 🦑
-            </h1>
-  
-            <p className="mt-4 leading-relaxed text-gray-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam dolorum aliquam,
-              quibusdam aperiam voluptatum.
-            </p>
+           
           </div>
   
-          <form action="#" className="mt-8 grid grid-cols-6 gap-6">
-            <div className="col-span-6 sm:col-span-3">
-              <label htmlFor="FirstName" className="block text-sm font-medium text-gray-700">
-                First Name
-              </label>
+          <form onSubmit={handleSubmit} className="mt-8 grid grid-cols-6 gap-6">
+          <div className="col-span-6">
+              <label htmlFor="fullName" className="block text-sm font-medium text-gray-700"> Full Name</label>
   
               <input
                 type="text"
-                id="FirstName"
-                name="first_name"
+                id="fullName"
+                name="Full Name"
                 className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div className="col-span-6 sm:col-span-3">
-              <label htmlFor="LastName" className="block text-sm font-medium text-gray-700">
-                Last Name
-              </label>
-  
-              <input
-                type="text"
-                id="LastName"
-                name="last_name"
-                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                value={fullName}
+                onChange={(e)=>setFullName(e.target.value)}
               />
             </div>
   
@@ -108,12 +123,14 @@ export default function RetreatForm (){
                 id="Email"
                 name="mail"
                 className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
               />
             </div>
   
             <div className="col-span-6 sm:col-span-3">
               <label htmlFor="Address" className="block text-sm font-medium text-gray-700">
-                Address
+                Country
               </label>
   
               <input
@@ -121,7 +138,9 @@ export default function RetreatForm (){
                 id="Address"
                 name="address"
                 className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
+                value={country}
+                onChange={(e)=>setCountry(e.target.value)}
+            />
             </div>
             
             
@@ -133,6 +152,8 @@ export default function RetreatForm (){
                 id="WPnum"
                 name="whatsappNumber"
                 className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                value={whatsapp}
+                onChange={(e)=>setWhatsapp(e.target.value)}
               />
             </div>
   
@@ -144,6 +165,8 @@ export default function RetreatForm (){
                 id="Message"
                 name="text"
                 className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                value={message}
+                onChange={(e)=>setMessage(e.target.value)}
               />
             </div>
   
