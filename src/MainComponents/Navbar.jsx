@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Spin as Hamburger } from "hamburger-react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { RxCaretDown } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../Design/SVG/Button";
@@ -13,14 +13,16 @@ const Navbar = () => {
   const [isExpand, setIsExpand] = useState(null);
   const [activeItem, setActiveItem] = useState(null);
 
-  const toggleNavigation = () => {
-    if (openNavigation) {
-      setOpenNavigation(false);
-      enablePageScroll();
-    } else {
-      setOpenNavigation(true);
+  useEffect(() => {
+    if (openNavigation && window.innerWidth < 640) {
       disablePageScroll();
+    } else {
+      enablePageScroll();
     }
+  }, [openNavigation]);
+
+  const toggleNavigation = () => {
+    setOpenNavigation(!openNavigation);
   };
 
   const handleClick = (e, item) => {
@@ -62,10 +64,13 @@ const Navbar = () => {
           <a
             href={item.url}
             onClick={(e) => handleClick(e, item)}
-            className={`block relative font-code text-2xl uppercase text-indigo-500 font-bold transition-colors hover:text-indigo-600 ${item.onlyMobile ? "lg:hidden" : ""
-              } px-6 py-6 md:py-8 lg:-mr-9 mt-2 lg:text-xs lg:font-semibold ${item.url === pathname.hash ? "z-2 lg:text-n-1" : "sm:text-n-1/50"
-              } sm:leading-5 sm:hover:text- xl:px-12 ${activeItem === item.id ? "text-indigo-600" : ""
-              }`}
+            className={`block relative font-code text-2xl uppercase text-indigo-500 font-bold transition-colors hover:text-indigo-600 ${
+              item.onlyMobile ? "lg:hidden" : ""
+            } px-6 py-6 md:py-8 lg:-mr-9 mt-2 lg:text-xs lg:font-semibold ${
+              item.url === pathname.hash ? "z-2 lg:text-n-1" : "sm:text-n-1/50"
+            } sm:leading-5 sm:hover:text- xl:px-12 ${
+              activeItem === item.id ? "text-indigo-600" : ""
+            }`}
           >
             <Link to={item.url}>{item.title}</Link>
             {item.Expand && (
@@ -105,8 +110,9 @@ const Navbar = () => {
             <div key={subItem.id} className="relative">
               <a
                 href={subItem.url}
-                className={`block relative font-code text-sm uppercase bg-gray-100 rounded-lg text-black font-bold transition-colors px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold sm:leading-5 xl:px-12 ${activeItem === subItem.id ? "text-green-500" : ""
-                  }`}
+                className={`block relative font-code text-sm uppercase bg-gray-100 rounded-lg text-black font-bold transition-colors px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold sm:leading-5 xl:px-12 ${
+                  activeItem === subItem.id ? "text-green-500" : ""
+                }`}
                 style={{ borderBottom: "1px solid #e5e7eb" }}
               >
                 {subItem.title}
@@ -122,13 +128,15 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none ${openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"
-          }`}
+        className={`fixed top-0 z-50 left-0 w-full border-b border-n-6 lg:backdrop-blur-sm sm:bg-white lg:border-none ${
+          openNavigation ? " bg-white " : " bg-white backdrop-blur-sm"
+        }`}
       >
         <div className="flex items-center px-5 xl:px-10 max-lg:py-4 lg:px-7.5">
           <nav
-            className={`${openNavigation ? "flex bg-white" : "hidden bg-white"
-              } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-white`}
+            className={`${
+              openNavigation ? "flex bg-white" : "hidden bg-white"
+            } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-white`}
           >
             <div className="flex relative flex-col justify-center items-center m-auto space-x-4 max-w-full bg-gradient-to-tr rounded-lg lg:flex-row lg:mr-10 m-30">
               {renderNavigationItems()}
