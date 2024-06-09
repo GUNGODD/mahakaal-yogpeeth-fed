@@ -1,4 +1,3 @@
-
 import Navbar from "../../MainComponents/Navbar";
 import PriceGrid from "../../Pages/Parts/PriceGrid";
 import Footer from "../../MainComponents/Footer";
@@ -8,7 +7,6 @@ import Content from "../AboutUs/TextArea";
 import { Typewriter } from "react-simple-typewriter";
 import { CiClock2 } from "react-icons/ci";
 import { GrYoga } from "react-icons/gr";
-
 
 const TTCTwo = () => {
   return (
@@ -38,70 +36,73 @@ const TTCTwo = () => {
 };
 export default TTCTwo;
 
-
-import { motion } from 'framer-motion';
-
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
     id: 1,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "Paul Starr",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 2,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "Jane Doe",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 3,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "John Smith",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 4,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "Alice Johnson",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 5,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "Michael Brown",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
 ];
 
 const TestimonialScroller = () => {
   const containerStyle = {
-    overflow: 'hidden',
-    width: '100%',
-    position: 'relative',
+    overflow: "hidden",
+    width: "100%",
+    position: "relative",
   };
 
   const scrollerStyle = {
-    display: 'flex',
-    width: 'calc(100% * 2)',
+    display: "flex",
+    width: "calc(100% * 2)",
   };
 
   const cardStyle = {
-    flex: '1 0 33.33%',
-    boxSizing: 'border-box',
-    padding: '20px',
-    background: '#f0f0f0',
-    margin: '10px',
-    borderRadius: '10px',
-    textAlign: 'center',
-    width: '200x',
-    height: '300px',
+    flex: "1 0 33.33%",
+    boxSizing: "border-box",
+    padding: "20px",
+    background: "#f0f0f0",
+    margin: "10px",
+    borderRadius: "10px",
+    textAlign: "center",
+    width: "200x",
+    height: "300px",
   };
 
   const cardStyleMobile = {
     ...cardStyle,
-    flex: '1 0 100%',
+    flex: "1 0 100%",
   };
 
   const isMobile = window.innerWidth <= 768;
@@ -115,8 +116,8 @@ const TestimonialScroller = () => {
         <div style={containerStyle} className="mt-8">
           <motion.div
             style={scrollerStyle}
-            animate={{ x: ['0%', '-100%'] }}
-            transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
+            animate={{ x: ["0%", "-100%"] }}
+            transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
           >
             {testimonials.map((testimonial) => (
               <blockquote
@@ -144,7 +145,9 @@ const TestimonialScroller = () => {
                         </svg>
                       ))}
                     </div>
-                    <p className="mt-0.5 text-lg font-medium text-gray-900">{testimonial.name}</p>
+                    <p className="mt-0.5 text-lg font-medium text-gray-900">
+                      {testimonial.name}
+                    </p>
                   </div>
                 </div>
                 <p className="mt-4 text-gray-700">{testimonial.text}</p>
@@ -156,9 +159,6 @@ const TestimonialScroller = () => {
     </section>
   );
 };
-
-
-
 
 const DailySchedule = () => {
   const schedule = [
@@ -205,7 +205,6 @@ const DailySchedule = () => {
               className="flex py-3 px-4 border-b border-gray-200 transition duration-300 ease-in-out hover:bg-gray-50"
             >
               <div className="flex items-center w-1/2 text-sm text-gray-600">
-
                 <CiClock2 className="mr-2 text-gray-500" /> {item.time}
               </div>
               <div className="flex items-center w-1/2 text-sm text-gray-800">
