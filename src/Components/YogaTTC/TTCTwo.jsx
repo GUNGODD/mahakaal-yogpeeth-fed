@@ -672,7 +672,7 @@ const TypewriterHeading = () => {
   return (
     <section className="py-24 px-4 mx-auto max-w-7xl md:px-12 lg:px-32">
       <div>
-        <h1 className="text-3xl font-semibold tracking-tighter text-center text-gray-900 sm:text-4xl lg:text-5xl text-balance">
+        <h1 className="text-xl font-semibold tracking-tighter text-center text-gray-900 sm:text-4xl lg:text-5xl text-balance">
           Yoga School in Rishikesh - Mahakaal{" "}
           <span className="px-2 text-black bg-indigo-300 rounded-lg border shadow shadow-gray-100">
             <Typewriter
@@ -735,7 +735,7 @@ const TypewriterHeading = () => {
           expanded the range of your skills, deepened your knowledge, and gained
           more confidence in your teaching abilities.
         </p>
-        <h1 className="mt-12 text-3xl font-semibold tracking-tighter text-center text-gray-900 sm:text-4xl lg:text-5xl text-balance">
+        <h1 className="mt-12 text-xl font-semibold tracking-tighter text-center text-gray-900 sm:text-4xl lg:text-5xl text-balance">
           Rishikesh | Your Dream Destination for{" "}
           <span className="px-2 text-black bg-indigo-300 rounded-lg border shadow shadow-gray-100">
             <Typewriter
