@@ -8,7 +8,6 @@ import { Typewriter } from "react-simple-typewriter";
 import { CiClock2 } from "react-icons/ci";
 import { GrYoga } from "react-icons/gr";
 
-
 const TTCOne = () => {
   return (
     <div>
@@ -26,11 +25,9 @@ const TTCOne = () => {
       <FoldBlog />
       <FAQSection />
       <PriceGrid />
-      <FullGallery />
 
       <TestimonialScroller />
 
-      <TeachersCardsSlider />
       <Footer />
     </div>
   );
@@ -38,69 +35,73 @@ const TTCOne = () => {
 
 export default TTCOne;
 
-import { motion } from 'framer-motion';
-
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
     id: 1,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "Paul Starr",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 2,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "Jane Doe",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 3,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "John Smith",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 4,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "Alice Johnson",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 5,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
     name: "Michael Brown",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+    image:
+      "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
 ];
 
 const TestimonialScroller = () => {
   const containerStyle = {
-    overflow: 'hidden',
-    width: '100%',
-    position: 'relative',
+    overflow: "hidden",
+    width: "100%",
+    position: "relative",
   };
 
   const scrollerStyle = {
-    display: 'flex',
-    width: 'calc(100% * 2)',
+    display: "flex",
+    width: "calc(100% * 2)",
   };
 
   const cardStyle = {
-    flex: '1 0 33.33%',
-    boxSizing: 'border-box',
-    padding: '20px',
-    background: '#f0f0f0',
-    margin: '10px',
-    borderRadius: '10px',
-    textAlign: 'center',
-    width: '200x',
-    height: '300px',
+    flex: "1 0 33.33%",
+    boxSizing: "border-box",
+    padding: "20px",
+    background: "#f0f0f0",
+    margin: "10px",
+    borderRadius: "10px",
+    textAlign: "center",
+    width: "200x",
+    height: "300px",
   };
 
   const cardStyleMobile = {
     ...cardStyle,
-    flex: '1 0 100%',
+    flex: "1 0 100%",
   };
 
   const isMobile = window.innerWidth <= 768;
@@ -113,10 +114,9 @@ const TestimonialScroller = () => {
         </h2>
         <div style={containerStyle} className="mt-8">
           <motion.div
-
             style={scrollerStyle}
-            animate={{ x: ['0%', '-100%'] }}
-            transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
+            animate={{ x: ["0%", "-100%"] }}
+            transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
           >
             {testimonials.map((testimonial) => (
               <blockquote
@@ -144,7 +144,9 @@ const TestimonialScroller = () => {
                         </svg>
                       ))}
                     </div>
-                    <p className="mt-0.5 text-lg font-medium text-gray-900">{testimonial.name}</p>
+                    <p className="mt-0.5 text-lg font-medium text-gray-900">
+                      {testimonial.name}
+                    </p>
                   </div>
                 </div>
                 <p className="mt-4 text-gray-700">{testimonial.text}</p>
@@ -156,9 +158,6 @@ const TestimonialScroller = () => {
     </section>
   );
 };
-
-
-
 
 const DailySchedule = () => {
   const schedule = [
@@ -205,7 +204,6 @@ const DailySchedule = () => {
               className="flex py-3 px-4 border-b border-gray-200 transition duration-300 ease-in-out hover:bg-gray-50"
             >
               <div className="flex items-center w-1/2 text-sm text-gray-600">
-
                 <CiClock2 className="mr-2 text-gray-500" /> {item.time}
               </div>
               <div className="flex items-center w-1/2 text-sm text-gray-800">
@@ -435,11 +433,7 @@ const FAQSection = () => {
   );
 };
 
-
-
-
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Box,
   Flex,
@@ -450,7 +444,7 @@ import {
   Avatar,
   useColorModeValue,
   Button,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
@@ -459,27 +453,27 @@ const Testimonial = ({ children }) => {
 const TestimonialContent = ({ children }) => {
   return (
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
-      boxShadow={'lg'}
+      bg={useColorModeValue("white", "gray.800")}
+      boxShadow={"lg"}
       p={8}
-      rounded={'xl'}
-      align={'center'}
-      pos={'relative'}
+      rounded={"xl"}
+      align={"center"}
+      pos={"relative"}
       _after={{
         content: `""`,
         w: 0,
         h: 0,
-        borderLeft: 'solid transparent',
+        borderLeft: "solid transparent",
         borderLeftWidth: 16,
-        borderRight: 'solid transparent',
+        borderRight: "solid transparent",
         borderRightWidth: 16,
-        borderTop: 'solid',
+        borderTop: "solid",
         borderTopWidth: 16,
-        borderTopColor: useColorModeValue('white', 'gray.800'),
-        pos: 'absolute',
-        bottom: '-16px',
-        left: '50%',
-        transform: 'translateX(-50%)',
+        borderTopColor: useColorModeValue("white", "gray.800"),
+        pos: "absolute",
+        bottom: "-16px",
+        left: "50%",
+        transform: "translateX(-50%)",
       }}
     >
       {children}
@@ -489,7 +483,7 @@ const TestimonialContent = ({ children }) => {
 
 const TestimonialHeading = ({ children }) => {
   return (
-    <Heading as={'h3'} fontSize={'xl'}>
+    <Heading as={"h3"} fontSize={"xl"}>
       {children}
     </Heading>
   );
@@ -498,9 +492,9 @@ const TestimonialHeading = ({ children }) => {
 const TestimonialText = ({ children }) => {
   return (
     <Text
-      textAlign={'center'}
-      color={useColorModeValue('gray.600', 'gray.400')}
-      fontSize={'sm'}
+      textAlign={"center"}
+      color={useColorModeValue("gray.600", "gray.400")}
+      fontSize={"sm"}
     >
       {children}
     </Text>
@@ -509,11 +503,11 @@ const TestimonialText = ({ children }) => {
 
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
-    <Flex align={'center'} mt={8} direction={'column'}>
+    <Flex align={"center"} mt={8} direction={"column"}>
       <Avatar src={src} alt={name} mb={2} />
-      <Stack spacing={-1} align={'center'}>
+      <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
+        <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
           {title}
         </Text>
       </Stack>
@@ -529,17 +523,22 @@ export function WithSpeechBubbles() {
   };
 
   const prevTestimonial = () => {
-    setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrent(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
+    );
   };
 
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.700')}>
-      <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={'center'}>
+    <Box bg={useColorModeValue("gray.100", "gray.700")}>
+      <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+        <Stack spacing={0} align={"center"}>
           <Heading>Our Clients Speak</Heading>
           <Text>We have been working with clients around the world</Text>
         </Stack>
-        <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: 10, md: 4, lg: 10 }}>
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          spacing={{ base: 10, md: 4, lg: 10 }}
+        >
           <Button onClick={prevTestimonial}>Previous</Button>
           <motion.div
             key={current}
@@ -550,7 +549,9 @@ export function WithSpeechBubbles() {
           >
             <Testimonial>
               <TestimonialContent>
-                <TestimonialHeading>{testimonials[current].heading}</TestimonialHeading>
+                <TestimonialHeading>
+                  {testimonials[current].heading}
+                </TestimonialHeading>
                 <TestimonialText>{testimonials[current].text}</TestimonialText>
               </TestimonialContent>
               <TestimonialAvatar
@@ -566,7 +567,6 @@ export function WithSpeechBubbles() {
     </Box>
   );
 }
-
 
 const posts = [
   {
