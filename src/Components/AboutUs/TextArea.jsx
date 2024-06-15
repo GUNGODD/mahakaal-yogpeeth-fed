@@ -36,9 +36,9 @@ const Content = () => {
                 height="24"
               />
             </svg>
-            <span className="relative">The</span>
+            <span className="relative">Let's</span>
           </span>{' '}
-          quick, brown fox jumps over a lazy dog
+          Have a Quick Intro here.
         </h2>
       </div>
       <div className="relative w-full max-w-2xl mx-auto border bg-gray-500 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">

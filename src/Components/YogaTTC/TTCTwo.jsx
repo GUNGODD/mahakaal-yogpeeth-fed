@@ -13,8 +13,8 @@ const TTCTwo = () => {
     <div>
       <Navbar />
       <Hero />
-      <div className="mt-28">
-        <LogoHeading heading="Upcoming classes" />
+      <div className="mt-10">
+        <LogoHeading heading="200 Hours Teacher Training Course in Rishikesh" />
       </div>
 
       <Content />
@@ -226,7 +226,7 @@ const YoutubeGrids = () => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-between p-4 bg-gray-100">
+      <div className="p-8 flex flex-wrap justify-between p-4 bg-gray-100">
         <div className="p-2 w-full sm:w-1/2 lg:w-1/2 xl:w-1/2">
           <div
             className="overflow-hidden relative bg-gray-200 rounded-lg"
@@ -266,13 +266,11 @@ export const OnePagerSection = () => {
       <div className="px-8 mx-auto max-w-7xl md:px-12 lg:px-32">
         <div className="text-center">
           <h1 className="text-4xl font-semibold tracking-tighter text-green-800 lg:text-5xl text-balance">
-            Building one pagers together
+          Subjects/Topics covered in 200 Hour Yoga TTC
             <span className="block text-gray-600">wherever and anywhere</span>
           </h1>
           <p className="mt-4 text-base font-medium text-gray-600 text-balance">
-            Control and added security. With decentralization, users have more
-            control over their data and transactions, and the platform is less
-            susceptible to malicious attacks.
+          Embark on a comprehensive and life changing transformational Yoga Teacher Training journey at Mira Yogashala, where our curriculum maintains a Rich order of subjects/Topics designed to deepen your understanding and knowledge of the yoga.
           </p>
         </div>
         <div className="grid gap-x-8 gap-y-12 mt-12 md:grid-cols-2">
@@ -286,11 +284,10 @@ export const OnePagerSection = () => {
             </div>
             <div className="mt-4">
               <p className="font-medium text-green-800">
-                No warranty disclaimer
+              Hatha Yoga
               </p>
               <p className="mt-2 text-sm text-gray-600">
-                The license comes with no warranties. The licensor provides the
-                work "as is," and users must use it at their own risk.
+              How to Practice Asanas in the Way of Meditative.
               </p>
             </div>
           </div>
@@ -303,28 +300,9 @@ export const OnePagerSection = () => {
               />
             </div>
             <div className="mt-4">
-              <p className="font-medium text-green-800">Modification Freedom</p>
+              <p className="font-medium text-green-800">Ashtanga Yoga</p>
               <p className="mt-2 text-sm text-gray-600">
-                You can adapt, remix, transform, and build upon the licensed
-                work.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
-            <div className="overflow-hidden rounded-3xl border border-gray-200">
-              <img
-                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
-                alt="Zen Image"
-                className="object-cover mx-auto w-full h-48 rounded-2xl"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-medium text-green-800">
-                Commercial use allowed
-              </p>
-              <p className="mt-2 text-sm text-gray-600">
-                You are allowed to use the licensed work for both non-commercial
-                and commercial purposes.
+               Be in Flow Your Daily Practice With Ashtanga Vinyasa
               </p>
             </div>
           </div>
@@ -338,11 +316,129 @@ export const OnePagerSection = () => {
             </div>
             <div className="mt-4">
               <p className="font-medium text-green-800">
-                Share alike (SA) absence
+              Meditation
               </p>
               <p className="mt-2 text-sm text-gray-600">
-                The CC BY 3.0 License does not include a "Share Alike" (SA)
-                provision.
+              Heal Your Mind through Meditation
+              </p>
+            </div>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="object-cover mx-auto w-full h-48 rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">
+              Pranayama
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+              Learn Different Types of Breathing Technique
+              </p>
+            </div>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="object-cover mx-auto w-full h-48 rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">
+              Yoga Philosophy
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+              Learn About Yoga and its Branches
+              </p>
+            </div>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="object-cover mx-auto w-full h-48 rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">
+              Yoga Anatomy
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+              Learn About your Body and its parts
+              </p>
+            </div>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="object-cover mx-auto w-full h-48 rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">
+              Kundalini Yoga
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+              know About Kundalini Chakras & its Kriyas
+              </p>
+            </div>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="object-cover mx-auto w-full h-48 rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">
+              Mantra Chanting
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+              Be in Peace of Mind with Mantra chanting
+              </p>
+            </div>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="object-cover mx-auto w-full h-48 rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">
+              Mindfullness
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+              Learn how you can be in Fully present in the current moment.
+              </p>
+            </div>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
+            <div className="overflow-hidden rounded-3xl border border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
+                alt="Zen Image"
+                className="object-cover mx-auto w-full h-48 rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-medium text-green-800">
+              Relaxation
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+              Learn about How to decrease Stress from your body and mind.
               </p>
             </div>
           </div>
