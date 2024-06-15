@@ -4,19 +4,19 @@ import ReactPlayer from "react-player";
 const YoutubeGrids = () => {
   const videos = [
     {
-      url: "https://www.youtube.com/watch?v=aC_EFwr6GJs",
+      url: "https://youtube.com/shorts/S0i3mjIjGrQ",
       description: "Yoga for Beginners - Start Your Journey"
     },
     {
-      url: "https://www.youtube.com/watch?v=aC_EFwr6GJs",
+      url: "https://youtube.com/shorts/oPOA7DyzSLw",
       description: "Advanced Yoga Techniques"
     },
     {
-      url: "https://www.youtube.com/watch?v=aC_EFwr6GJs",
+      url: "https://youtube.com/shorts/QyYlTpz9dsg?feature=share",
       description: "Yoga for Flexibility and Strength"
     },
     {
-      url: "https://www.youtube.com/watch?v=aC_EFwr6GJs",
+      url: "https://youtube.com/shorts/-tI4Ix8jvFA",
       description: "Morning Yoga Routine"
     }
   ];
