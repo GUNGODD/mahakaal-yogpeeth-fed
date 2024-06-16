@@ -8,7 +8,7 @@ const Pricing = () => {
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
         <h2 className="text-lg font-medium text-gray-900">
-          100 Hours Yoga TTC
+          Yoga Retreat
           <span className="sr-only">Plan</span>
         </h2>
 
@@ -44,7 +44,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> 10 users </span>
+            <span className="text-gray-700">Accomodation</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -59,7 +59,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> 2GB of storage </span>
+            <span className="text-gray-700">Meal</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -74,7 +74,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> Email support </span>
+            <span className="text-gray-700">Study Material</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -89,7 +89,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
 
-            <span className="text-gray-700"> Help center access </span>
+            <span className="text-gray-700">Fees for Visa</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -104,7 +104,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
 
-            <span className="text-gray-700"> Phone support </span>
+            <span className="text-gray-700">Delhi Airport Pickup</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -119,7 +119,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
 
-            <span className="text-gray-700"> Community access </span>
+            <span className="text-gray-700">Flight Fare</span>
           </li>
         </ul>
       </div>
@@ -128,7 +128,7 @@ const Pricing = () => {
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
         <h2 className="text-lg font-medium text-gray-900">
-        300 Hours Yoga TTC
+        100 Hours Yoga TTC
           <span className="sr-only">Plan</span>
         </h2>
 
@@ -164,7 +164,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> 20 users </span>
+            <span className="text-gray-700">Accomodation</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -179,7 +179,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> 5GB of storage </span>
+            <span className="text-gray-700"> Meal </span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -194,7 +194,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> Email support </span>
+            <span className="text-gray-700"> Study Material </span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -209,7 +209,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> Help center access </span>
+            <span className="text-gray-700">Delhi Airport Pickup (On demand)</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -224,7 +224,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
 
-            <span className="text-gray-700"> Phone support </span>
+            <span className="text-gray-700"> Air-conditioner/Heater </span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -239,7 +239,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
 
-            <span className="text-gray-700"> Community access </span>
+            <span className="text-gray-700">Flight Fare</span>
           </li>
         </ul>
       </div>
@@ -248,7 +248,7 @@ const Pricing = () => {
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
         <h2 className="text-lg font-medium text-gray-900">
-        500 Hours Yoga TTC
+        200 Hours Yoga TTC
           <span className="sr-only">Plan</span>
         </h2>
 
@@ -284,7 +284,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> 50 users </span>
+            <span className="text-gray-700">Accomodation</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -299,7 +299,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> 20GB of storage </span>
+            <span className="text-gray-700">Meal</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -314,7 +314,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> Email support </span>
+            <span className="text-gray-700">Study Material</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -329,7 +329,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> Help center access </span>
+            <span className="text-gray-700">Delhi Airport Pickup (On demand)</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -344,7 +344,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> Phone support </span>
+            <span className="text-gray-700">Air Conditioner/Heater(On demand)</span>
           </li>
 
           <li className="flex items-center gap-1">
@@ -359,7 +359,7 @@ const Pricing = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
 
-            <span className="text-gray-700"> Community access </span>
+            <span className="text-gray-700">Flight Reservation(On demand)</span>
           </li>
         </ul>
       </div>

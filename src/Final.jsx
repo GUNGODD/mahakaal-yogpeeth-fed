@@ -23,6 +23,7 @@ import Form from "./Design/Form";
 import InfScroll from "./Pages/Parts/InfScroll";
 import Pricing from "./MainComponents/Pricing";
 import LogoHeading from "./Pages/LogoHeading";
+import { FoldBlog } from "./Components/YogaTTC/TTCTwo";
 
 
 // import ImgScroll from "./Pages/Parts/ImgScroll"
@@ -63,8 +64,8 @@ const Final = () => (
     <FAQ />
     <HoverImageLinks />
     <InfScroll/>
-    <Blogs />
-      
+    {/* <Blogs /> */}
+      <FoldBlog/>
     <Footer />
     {/*
         <Slider /> */}
