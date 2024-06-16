@@ -27,7 +27,7 @@ const TTCOne = () => {
       <ImageCarousel/>
       <OnePagerSection />
       <DailySchedule />
-      <FoldBlog />
+      
       <FAQSection />
       <PriceGrid />
       <div className="md:p-10 flex justify-center items-center">
@@ -39,6 +39,7 @@ const TTCOne = () => {
 </div>
 
       <TestimonialScroller />
+      <FoldBlog />
 
       <Footer />
     </div>

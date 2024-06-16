@@ -26,16 +26,21 @@ const TTCTwo = () => {
         <LogoHeading heading={"Accomodation"}/>
       </div>
       <ImageCarousel/>
+      <div className="mt-10">
+        <LogoHeading heading={"Yogic Food"}/>
+      </div>
+      <ImageCarousel/>
     
       <OnePagerSection />
       <DailySchedule />
-      <FoldBlog />
+      
       <FAQSection />
       <PriceGrid />
       <FullGallery />
       <div className="mt-10 mb-10">
       <LogoHeading heading={"Inclusion & Exclusion With 200 Hour Yoga TTC in Rishikesh"}/>
       </div>
+      
       
 <div className="md:p-10 flex justify-center items-center">
   <Included />
@@ -48,7 +53,8 @@ const TTCTwo = () => {
       
       <TestimonialScroller />
 
-      <TeachersCardsSlider />
+      
+      <FoldBlog />
       <Footer />
     </div>
   );
@@ -61,28 +67,28 @@ const testimonials = [
   {
     id: 1,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
-    name: "Paul Starr",
+    name: "Kapil Sajwan",
     image:
       "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 2,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
-    name: "Jane Doe",
+    name: "Subham Rana",
     image:
       "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 3,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
-    name: "John Smith",
+    name: "Deepak Chauhan",
     image:
       "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
   {
     id: 4,
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus error officiis atque voluptates magnam!",
-    name: "Alice Johnson",
+    name: "Vikal Sajwan",
     image:
       "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
   },
@@ -130,7 +136,7 @@ const TestimonialScroller = () => {
     <section className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Read trusted reviews from our customers
+          Our Talents
         </h2>
         <div style={containerStyle} className="mt-8">
           <motion.div
