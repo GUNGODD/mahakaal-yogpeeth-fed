@@ -7,6 +7,8 @@ import Content from "../AboutUs/TextArea";
 import { Typewriter } from "react-simple-typewriter";
 import { CiClock2 } from "react-icons/ci";
 import { GrYoga } from "react-icons/gr";
+// import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const TTCTwo = () => {
   return (
@@ -20,6 +22,11 @@ const TTCTwo = () => {
       <Content />
       <TypewriterHeading />
       <YoutubeGrids />
+      <div className="mt-10">
+        <LogoHeading heading={"Accomodation"}/>
+      </div>
+      <ImageCarousel/>
+    
       <OnePagerSection />
       <DailySchedule />
       <FoldBlog />
@@ -38,7 +45,7 @@ const TTCTwo = () => {
   <NotIncluded />
 </div>
 
-
+      
       <TestimonialScroller />
 
       <TeachersCardsSlider />
@@ -171,6 +178,107 @@ const TestimonialScroller = () => {
     </section>
   );
 };
+
+
+
+
+const ButtonWrapper = () => {
+  return (
+    <div className="flex min-h-[100px] items-center justify-center bg-gray-100 px-4">
+      <SpotlightButton />
+    </div>
+  );
+};
+
+const SpotlightButton = () => {
+  const btnRef = useRef(null);
+  const spanRef = useRef(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const { width } = e.target.getBoundingClientRect();
+      const offset = e.offsetX;
+      const left = `${(offset / width) * 100}%`;
+
+      spanRef.current.animate({ left }, { duration: 250, fill: "forwards" });
+    };
+
+    const handleMouseLeave = () => {
+      spanRef.current.animate(
+        { left: "50%" },
+        { duration: 100, fill: "forwards" }
+      );
+    };
+
+    btnRef.current.addEventListener("mousemove", handleMouseMove);
+    btnRef.current.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      btnRef.current.removeEventListener("mousemove", handleMouseMove);
+      btnRef.current.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
+  return (
+    <motion.button
+      whileTap={{ scale: 0.985 }}
+      ref={btnRef}
+      className="relative w-52 max-w-xs overflow-hidden rounded-lg bg-indigo-600 px-4 py-3 text-lg font-medium text-white"
+    >
+      <span className="pointer-events-none relative z-10 mix-blend-difference">
+        View more
+      </span>
+      <span
+        ref={spanRef}
+        className="pointer-events-none absolute left-[50%] top-[50%] h-32 w-32 -translate-x-[50%] -translate-y-[50%] rounded-full bg-slate-100"
+      />
+    </motion.button>
+  );
+};
+
+
+
+
+const ImageCarousel = () => {
+  return (
+    <div className="text-center bg-gray-100">
+      
+      <div className="wrapper flex overflow-x-scroll scrollbar-hide">
+        <div className="item item1 mx-2">
+          <img src="https://i.ibb.co/sjBSR96/gallery1.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item2 mx-2">
+          <img src="https://i.ibb.co/wMjVbjz/gallery2.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item3 mx-2">
+          <img src="https://i.ibb.co/D7dRr8T/gallery3.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item4 mx-2">
+          <img src="https://i.ibb.co/0XPFFZG/gallery4.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item5 mx-2">
+          <img src="https://i.ibb.co/25dfSK7/gallery5.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item6 mx-2">
+          <img src="https://i.ibb.co/7Rkf9T3/gallery6.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item7 mx-2">
+          <img src="https://i.ibb.co/xXP0rKM/gallery7.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item8 mx-2">
+          <img src="https://i.ibb.co/VvGSnQW/gallery8.jpg" alt="" className="rounded-lg" />
+        </div>
+      </div>
+      <p className="mt-6 text-gray-700 px-4 md:px-20">
+        Our yoga school is situated in the most beautiful and colorful root valleys of Himalayan mountain ranges. It is the most eco-friendly and atmospheric place to learn the art of yogic science. The school offers the best accommodation to the students. We provide neat and clean rooms with attached bathrooms to our students. Each room is airy, well-ventilated, and packed with all the necessary facilities. The school also makes sure that none of the students face any problems and each student has a comfortable stay.
+      </p>
+      <ButtonWrapper/>
+    </div>
+  );
+};
+
+
+
 
 const DailySchedule = () => {
   const schedule = [

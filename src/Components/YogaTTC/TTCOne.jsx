@@ -7,6 +7,7 @@ import Content from "../AboutUs/TextArea";
 import { Typewriter } from "react-simple-typewriter";
 import { CiClock2 } from "react-icons/ci";
 import { GrYoga } from "react-icons/gr";
+import { useEffect, useRef } from "react";
 
 const TTCOne = () => {
   return (
@@ -20,11 +21,22 @@ const TTCOne = () => {
       <Content />
       <TypewriterHeading />
       <YoutubeGrids />
+      <div className="mt-10">
+      <LogoHeading heading={"Accomodation"}/>
+      </div>
+      <ImageCarousel/>
       <OnePagerSection />
       <DailySchedule />
       <FoldBlog />
       <FAQSection />
       <PriceGrid />
+      <div className="md:p-10 flex justify-center items-center">
+  <Included />
+</div>
+
+<div className="md:px-80 px-4 flex justify-center items-center">
+  <NotIncluded />
+</div>
 
       <TestimonialScroller />
 
@@ -156,6 +168,102 @@ const TestimonialScroller = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+
+const ButtonWrapper = () => {
+  return (
+    <div className="flex min-h-[100px] items-center justify-center bg-gray-100 px-4">
+      <SpotlightButton />
+    </div>
+  );
+};
+
+const SpotlightButton = () => {
+  const btnRef = useRef(null);
+  const spanRef = useRef(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const { width } = e.target.getBoundingClientRect();
+      const offset = e.offsetX;
+      const left = `${(offset / width) * 100}%`;
+
+      spanRef.current.animate({ left }, { duration: 250, fill: "forwards" });
+    };
+
+    const handleMouseLeave = () => {
+      spanRef.current.animate(
+        { left: "50%" },
+        { duration: 100, fill: "forwards" }
+      );
+    };
+
+    btnRef.current.addEventListener("mousemove", handleMouseMove);
+    btnRef.current.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      btnRef.current.removeEventListener("mousemove", handleMouseMove);
+      btnRef.current.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
+  return (
+    <motion.button
+      whileTap={{ scale: 0.985 }}
+      ref={btnRef}
+      className="relative w-52 max-w-xs overflow-hidden rounded-lg bg-indigo-600 px-4 py-3 text-lg font-medium text-white"
+    >
+      <span className="pointer-events-none relative z-10 mix-blend-difference">
+        View more
+      </span>
+      <span
+        ref={spanRef}
+        className="pointer-events-none absolute left-[50%] top-[50%] h-32 w-32 -translate-x-[50%] -translate-y-[50%] rounded-full bg-slate-100"
+      />
+    </motion.button>
+  );
+};
+
+
+
+
+const ImageCarousel = () => {
+  return (
+    <div className="text-center bg-gray-100">
+      
+      <div className="wrapper flex overflow-x-scroll scrollbar-hide">
+        <div className="item item1 mx-2">
+          <img src="https://i.ibb.co/sjBSR96/gallery1.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item2 mx-2">
+          <img src="https://i.ibb.co/wMjVbjz/gallery2.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item3 mx-2">
+          <img src="https://i.ibb.co/D7dRr8T/gallery3.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item4 mx-2">
+          <img src="https://i.ibb.co/0XPFFZG/gallery4.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item5 mx-2">
+          <img src="https://i.ibb.co/25dfSK7/gallery5.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item6 mx-2">
+          <img src="https://i.ibb.co/7Rkf9T3/gallery6.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item7 mx-2">
+          <img src="https://i.ibb.co/xXP0rKM/gallery7.jpg" alt="" className="rounded-lg" />
+        </div>
+        <div className="item item8 mx-2">
+          <img src="https://i.ibb.co/VvGSnQW/gallery8.jpg" alt="" className="rounded-lg" />
+        </div>
+      </div>
+      <p className="mt-6 text-gray-700 px-4 md:px-20">
+        Our yoga school is situated in the most beautiful and colorful root valleys of Himalayan mountain ranges. It is the most eco-friendly and atmospheric place to learn the art of yogic science. The school offers the best accommodation to the students. We provide neat and clean rooms with attached bathrooms to our students. Each room is airy, well-ventilated, and packed with all the necessary facilities. The school also makes sure that none of the students face any problems and each student has a comfortable stay.
+      </p>
+      <ButtonWrapper/>
+    </div>
   );
 };
 
@@ -780,5 +888,186 @@ const TypewriterHeading = () => {
         </p>
       </div>
     </section>
+  );
+};
+
+
+
+const Included = () => {
+  return (
+    <div className="p-10 flow-root rounded-lg border border-gray-100 py-3 shadow-sm">
+      <div className="relative mb-6">
+        
+        <div className="bg-indigo-600 h-12 flex items-center justify-center" style={{ clipPath: "polygon(0 0, 100% 0, 95% 100%, 0% 100%)" }}></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h2 className="text-black text-lg text-2xl font-semibold">What’s Included</h2>
+        </div>
+      </div>
+      <ul className="list-disc pl-5 text-sm space-y-3">
+        <li>
+          <span className="text-lg font-medium text-gray-700">Fire Carmony (Hawan) as Inauguration Program</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">23 days of intense Yoga Classes</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">7 Hours to 8 Hours Classes Every day</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Course duration- 1st- Arrival - to 26th- The departure of each month</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">200-Hours RYT Yoga Alliance Certification</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">26 Days Accommodation with Spacious Space, Private Balcony and Mountain View</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">3 Times daily nutritious vegetarian or Vegan meals</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Amenities upon arrival - toilet paper, soap etc.</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Herbal Tea & Fresh Fruit Juice</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Filtered Drinking Water</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Weekend excursions</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Himalayas sightseeing trip</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Course material such as Manuals, Books, notebooks & stationery.</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Beach Yoga Sessions</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">World Famous Ganga Aarti</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Indian Classical Music Sessions / Bollywood Dance Class Sessions</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">24/7 Free High Speed 5G Internet Connection</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">27/7 Hot Water Facility</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Bhakti Yoga Classes</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Sound Healing and Kirtan Sessions</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Complimentary Body Movement Workshop</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Special Yoga Nidra Classes</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Special Kundalini and Chakra Meditation Classes</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Special Yoga Workshop During the Training From Guest Lectures</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Weekly Room Cleaning</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">E-books of the most important yoga books</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Serious Study Environment</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Yoga Mats and material for all activities</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">FREE Airport Pick Up from Dehradun Airport</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Cultural Program in the Closing Ceremony / Graduation Ceremony</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Lots of Love and Hugs</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+
+const NotIncluded = () => {
+  return (
+    <div className="p-10 flow-root rounded-lg border border-gray-100 py-3 shadow-sm">
+      <div className="relative mb-6">
+        
+        <div className="bg-indigo-600 h-12 flex items-center justify-center" style={{ clipPath: "polygon(0 0, 100% 0, 95% 100%, 0% 100%)" }}></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h2 className="text-black text-lg text-2xl font-semibold">What’s Not Included</h2>
+        </div>
+      </div>
+      <ul className="list-disc pl-5 text-sm space-y-3">
+      <li>
+        <span className="text-lg font-medium text-gray-700">Air conditioner / Heater (available per request)</span> 
+        <span className="hidden md:inline text-white">mahakaaalyogpeeth@gmail.com rishikesh dehradun</span>
+      </li>
+
+        <li>
+          <span className="text-lg font-medium text-gray-700">Fees for visa</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Flight Fare</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Pick up from New Delhi (available per request)</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        <li>
+          <span className="text-lg font-medium text-gray-700">Massages</span> 
+          <span className="text-gray-700"> </span>
+        </li>
+        
+      </ul>
+    </div>
   );
 };
