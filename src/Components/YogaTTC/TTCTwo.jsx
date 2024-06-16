@@ -808,22 +808,55 @@ export function WithSpeechBubbles() {
 const posts = [
   {
     id: 1,
-    title: "Boost your conversion rate",
+    title: "Yoga TTC 100 Hours",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "It's been great Learning in Mahakaal Yogpeeth, and Great Memories and Hours as Well",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
+    category: { title: "France", href: "#" },
     author: {
       name: "Michael Foster",
-      role: "Co-Founder / CTO",
+      role: "",
       href: "#",
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
-  // More posts...
+  {
+    id: 1,
+    title: "Yoga Retreat 7 Days",
+    href: "#",
+    description:
+      "It's been great Learning in Mahakaal Yogpeeth, and Great Memories and Hours as Well",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "England", href: "#" },
+    author: {
+      name: "Devaki",
+      role: "",
+      href: "#",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  {
+    id: 1,
+    title: "Yoga TTC 200",
+    href: "#",
+    description:
+      "It's been great Learning in Mahakaal Yogpeeth, and Great Memories and Hours as Well",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "America", href: "#" },
+    author: {
+      name: "Jassy",
+      role: "",
+      href: "#",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
 ];
 
 export function FoldBlog() {
