@@ -15,7 +15,7 @@ const Food = () => {
         <div className="m-12">
           <Navbar />
         </div>
-        <LogoHeading heading={"THIS IS HEADING"} />
+        <LogoHeading heading={"Food and Accomodation"} />
 
         <FuzzyHeadings heading={"Accommodation"} typography={""} />
         <FuzzyHeadings heading={"Food"} typography={""} />
@@ -26,9 +26,12 @@ const Food = () => {
         {/*  Tetcher Heading */}
 
         <Content />
-        <OnePagerSection />
-        <TeachersTestimonials />
+        {/* <OnePagerSection /> */}
+        {/* <TeachersTestimonials /> */}
+        
         <FAQSection />
+        <TestimonialScroller/>
+        <FoldBlog/>
         <Footer />
       </div>
     </>
@@ -129,6 +132,7 @@ export const ImageCarousel = () => {
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import { FoldBlog, TestimonialScroller } from "../YogaTTC/TTCTwo";
 
 // Fix for default marker icon issue
 

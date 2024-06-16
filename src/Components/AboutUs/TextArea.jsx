@@ -38,7 +38,7 @@ const Content = () => {
             </svg>
             <span className="relative">Let's</span>
           </span>{' '}
-          Have a Quick Intro here.
+          What Our Students Say About Our Yoga Course
         </h2>
       </div>
       <div className="relative w-full max-w-2xl mx-auto border bg-gray-500 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
