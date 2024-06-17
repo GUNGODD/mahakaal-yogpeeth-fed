@@ -3,12 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const AiCard = ({title}) => {
   const initialCards = [
-    "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/a36d2695-58f8-4644-9e19-71988334e345",
-    "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/9f9148ad-74c2-4ebc-a769-bb90fec7b9a5",
-    "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ff35104e-3a7e-458f-8077-7ea2780706fa",
-    "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/060546fb-1cbb-428e-b48d-eae2711a0c83",
-    "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/7feb903b-33f7-4326-90eb-a4f54c86c68e",
-    "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/417d1d6b-4100-4419-9e01-37561a354b80",
+    "https://i.ibb.co/sCkDHwh/Photo-Gallery1.jpg",
+    "https://i.ibb.co/61tVwwG/Photo-Gallery2.jpg",
+    "https://i.ibb.co/nQ1XTTF/Photo-Gallery3jpg.jpg",
+    "https://i.ibb.co/8sjB2BF/Photo-Gallery4jpg.jpg",
+    "https://i.ibb.co/TPMrfxP/Photo-Gallery5.jpg",
   ];
 
   const [cards, setCards] = useState(initialCards);
