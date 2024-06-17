@@ -59,7 +59,7 @@ const Screen = () => {
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
       
-      <img height={100} width={100} src="https://i.ibb.co/JKngSW4/Mahakaal-Logo2.png" alt="Mahakaal Yogpeeth" />
+      <img height={100} width={100} src="https://i.ibb.co/CwW5Q5R/Mahakaal-Logo.png" alt="Mahakaal Yogpeeth" />
 
       
 
