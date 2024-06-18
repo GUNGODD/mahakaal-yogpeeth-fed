@@ -21,7 +21,7 @@ export const navigation = [
   {
     id: "3",
     title: "Gallery",
-    url: "/PhotoGallery",
+    url: "/PhotoGallery/Photos",
     Expand: true,
     submenu: [
       { id: "3-1", title: "Photo Gallery", url: "/PhotoGallery/Photos" },
