@@ -9,7 +9,7 @@ export const navigation = [
   {
     id: "2",
     title: "Retreat",
-    url: "/Retreat",
+    url: "/Retreat/Yoga10",
     Expand: true,
     tagName: "Retreat",
     submenu: [
@@ -31,7 +31,7 @@ export const navigation = [
   {
     id: "4",
     title: "About",
-    url: "/about",
+    url: "/About/AboutUs",
     Expand: true,
     submenu: [
       { id: "4-1", title: "About Mahakaal Yogpeeth", url: "/About/AboutUs" },
@@ -42,7 +42,7 @@ export const navigation = [
   {
     id: "5",
     title: "Yoga TTC",
-    url: "/ttcyoga",
+    url: "/ttcyoga/TTC100",
     Expand: true,
     submenu: [
       { id: "5-1", title: "Yoga TTC 100", url: "/ttcyoga/TTC100" },
