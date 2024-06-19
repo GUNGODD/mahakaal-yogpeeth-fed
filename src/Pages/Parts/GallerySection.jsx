@@ -5,10 +5,10 @@ export default function GallerySection() {
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-               Next Station is Shibuya!
+               Interior Shots!
               </h1>
               <p className="mt-4 text-xl text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa placeat a in excepturi consectetur ratione minus. Soluta dolore qui quos laudantium obcaecati provident ducimus autem voluptas reiciendis a. Vitae, rerum.
+              Photos of the studio’s interior, including practice rooms, reception area, and any special features (like a meditation corner or relaxation lounge).
               </p>
             </div>
             <div>
