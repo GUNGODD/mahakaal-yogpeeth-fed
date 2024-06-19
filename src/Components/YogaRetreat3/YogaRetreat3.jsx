@@ -16,7 +16,7 @@ const YogaRetreat3 = () => {
   return (
     <div>
         <Navbar/>
-        <HeroImage wallpaper={"https://upload.wikimedia.org/wikipedia/commons/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg"} Heading={"This is Heading"}/>
+        <HeroImage wallpaper={"https://upload.wikimedia.org/wikipedia/commons/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg"} Heading={"Welcome to Yog Nagari Rishikesh"}/>
         <div className='mt-10 mb-10'>
         <LogoHeading heading={"3 Days Yoga Retreat in Rishikesh Overview"}/>
         </div>
