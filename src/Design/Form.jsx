@@ -153,9 +153,11 @@ const Form = () => {
                 onChange={(e) => setCourse(e.target.value)}
               >
                 <option value="">Select Course</option>
-                <option value="course1">Course 1</option>
-                <option value="course2">Course 2</option>
-                <option value="course3">Course 3</option>
+                <option value="course1">Yoga TTC 100 Hours</option>
+                <option value="course2">Yoga TTC 200 Hours</option>
+                <option value="course3">Yoga Retreat 10 Days</option>
+                <option value="course4">Yoga Retreat 7 Days</option>
+                <option value="course5">Yoga Retreat 3 Days</option>
               </select>
             </div>
 
