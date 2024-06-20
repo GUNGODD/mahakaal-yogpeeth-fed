@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PriceGrid = ({inr,usd}) => {
+const PriceGrid = ({inr,usd,heading}) => {
   return (
     <div>
       {/*
@@ -8,8 +8,14 @@ const PriceGrid = ({inr,usd}) => {
 
   This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
 */}
-
-      <div className="overflow-x-auto p-20 align-baseline">
+      <div className="relative mb-6">
+        
+        <div className="bg-indigo-600 h-12 flex items-center justify-center" style={{ clipPath: "polygon(0 0, 100% 0, 95% 100%, 0% 100%)" }}></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h2 className="text-black text-lg text-2xl font-semibold">{heading}</h2>
+        </div>
+      </div>
+      <div className="overflow-x-auto align-baseline">
         <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
           <thead className="ltr:text-left rtl:text-right font-bold text-2xl capitalize ">
             <tr>

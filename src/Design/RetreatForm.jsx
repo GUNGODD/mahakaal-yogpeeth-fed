@@ -14,6 +14,11 @@ export default function RetreatForm (){
         const serviceId = 'service_w3uhl3d';
         const templateId = 'template_490kqw5';
         const publicKey = 'VkJWkfkjPxDvdLiRA';
+
+        if(!fullName || !email || !country || !whatsapp || !message){
+          alert("Fill all the required fields");
+          return;
+        }
     
         const templateParams = {
           from_name: fullName,

@@ -15,6 +15,13 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Check if any field is empty
+    if (!fullName || !email || !whatsapp || !gender || !month || !course || !country || !message) {
+      alert("Please fill in all the required fields.");
+      return;
+    }
+
     setLoading(true); // Start the loader
 
     const serviceId = 'service_w3uhl3d';
