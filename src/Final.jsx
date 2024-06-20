@@ -11,6 +11,8 @@ import FAQ from "./Pages/Parts/FAQ";
 import InfScroll from "./Pages/Parts/InfScroll";
 import { FoldBlog } from "./Components/YogaTTC/TTCTwo";
 import WhatsappButton from "./Components/Contact/WhatsappButton";
+import Navbar from "./MainComponents/Navbar";
+import Footer from "./MainComponents/Footer";
 
 const Final = () => {
   return (
@@ -27,12 +29,11 @@ const Final = () => {
           <path d="M100 200V.5M.5 .5H200" fill="none" />
         </pattern>
       </defs>
-      {/* Main content of your website */}
+      <Navbar />
       <ShuffleHero />
       <TDmobile />
       <TextArea />
       <ContentArea />
-      {/* Add other components as needed */}
       <RunningCards />
       <Features />
       <LogoHeading heading={"PRICING FOR YOGA TTC"} />
@@ -41,8 +42,8 @@ const Final = () => {
       <HoverImageLinks />
       <InfScroll />
       <FoldBlog />
-      {/* Floating WhatsApp button */}
       <WhatsappButton />
+      <Footer />
     </div>
   );
 };
