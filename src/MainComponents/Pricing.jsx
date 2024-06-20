@@ -135,7 +135,7 @@ const Pricing = () => {
         <p className="mt-2 text-gray-700">Limited-time offer! `Cheapest in market`</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 200$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 399$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -255,7 +255,7 @@ const Pricing = () => {
         <p className="mt-2 text-gray-700">Flexible pricing options to fit your needs.</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 399$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 599$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
