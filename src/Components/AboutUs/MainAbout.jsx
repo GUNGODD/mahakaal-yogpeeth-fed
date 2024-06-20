@@ -51,14 +51,13 @@ export const TypewriterHeading = ({ heading, TypingParagraph }) => {
           </span>
         </h1>
         <p className="mt-4 text-base font-medium text-gray-500 text-balance">
-          Mira Yogashala is so much more than just a yoga school in Rishikesh.
+        Mahakaal Yogpeeth is so much more than just a yoga school in Rishikesh.
           It is a place that gives you a real feel of Home away from home and
           where you will find your long-lost family. We are committed to share
           and spread the awareness of our Yoga lineage, proceeding to motivate
           and develop yoga practitioners everywhere in the world. Having a dream
           of the present and keep moving to the shapeless goal is the prime
-          maxim of this Yoga teacher training school in Rishikesh. We at Mira
-          Yogashala like do not hoard our knowledge gained from our gurus, but
+          maxim of this Yoga teacher training school in Rishikesh. We at Mahakaal Yogpeeth like do not hoard our knowledge gained from our gurus, but
           believe in spreading it to everyone, which will surely benefit the
           lives of people. Our yoga certification Courses are designed and
           formed with this in mind as it will provide the students a deep
@@ -81,7 +80,7 @@ export const TypewriterHeading = ({ heading, TypingParagraph }) => {
           serene location also known as the gateway of Himalayas. Located in
           Rishikesh, the yoga capital of the world, and nestled in the foothills
           of the Himalayas where the Ganga River flows, makes this a truly
-          unique place to practice yoga. We at Mira Yogashala, are committed to
+          unique place to practice yoga. We at Mahakaal Yogpeeth, are committed to
           educational yoga teaching standards around the world with our 200 Hour
           Yoga TTC, 300 Hour Yoga TTC and 500-hour yoga TTC programs in
           Rishikesh. Our Yoga TTC in Rishikesh isn’t just for aspiring yogis,
@@ -95,7 +94,7 @@ export const TypewriterHeading = ({ heading, TypingParagraph }) => {
           Teacher Training is the beginning of a life-transforming journey
           Through yoga or a new chapter in your life. It is not the final
           objective or goal in your life, but a beautiful step towards life on
-          the path of Yoga. When you leave Mira Yogashala, you will have
+          the path of Yoga. When you leave Mahakaal Yogpeeth, you will have
           expanded the range of your skills, deepened your knowledge, and gained
           more confidence in your teaching abilities.
         </p>
@@ -122,8 +121,8 @@ export const TypewriterHeading = ({ heading, TypingParagraph }) => {
           festival to practice Yoga Meditation. This festival gives an
           opportunity to attend a yoga classees in Rishikesh with world-famous
           yoga teachers. There are several yoga institute in Rishikesh as well.
-          Mira Yogashala always aims in keeping the originality of the Yoga as
-          it is. The main purpose of starting Mira Yogashala is to provide
+          Mahakaal Yogpeeth always aims in keeping the originality of the Yoga as
+          it is. The main purpose of starting Mahakaal Yogpeeth is to provide
           proper yoga training in Rishikesh and help people to re-experience
           their physique and transform it in a balanced way that you will yet
           again connect with your soul. Great Sages and Yogis have been

@@ -425,14 +425,13 @@ const TypewriterHeading = () => {
           </span>
         </h1>
         <p className="mt-4 text-base font-medium text-gray-500 text-balance">
-          Mira Yogashala is so much more than just a yoga school in Rishikesh.
+        Mahakaal Yogpeeth is so much more than just a yoga school in Rishikesh.
           It is a place that gives you a real feel of Home away from home and
           where you will find your long-lost family. We are committed to share
           and spread the awareness of our Yoga lineage, proceeding to motivate
           and develop yoga practitioners everywhere in the world. Having a dream
           of the present and keep moving to the shapeless goal is the prime
-          maxim of this Yoga teacher training school in Rishikesh. We at Mira
-          Yogashala like do not hoard our knowledge gained from our gurus, but
+          maxim of this Yoga teacher training school in Rishikesh. We at Mahakaal Yogpeeth like do not hoard our knowledge gained from our gurus, but
           believe in spreading it to everyone, which will surely benefit the
           lives of people. Our yoga certification Courses are designed and
           formed with this in mind as it will provide the students a deep
@@ -455,7 +454,7 @@ const TypewriterHeading = () => {
           serene location also known as the gateway of Himalayas. Located in
           Rishikesh, the yoga capital of the world, and nestled in the foothills
           of the Himalayas where the Ganga River flows, makes this a truly
-          unique place to practice yoga. We at Mira Yogashala, are committed to
+          unique place to practice yoga. We at Mahakaal Yogpeeth, are committed to
           educational yoga teaching standards around the world with our 200 Hour
           Yoga TTC, 300 Hour Yoga TTC and 500-hour yoga TTC programs in
           Rishikesh. Our Yoga TTC in Rishikesh isn’t just for aspiring yogis,
@@ -469,7 +468,7 @@ const TypewriterHeading = () => {
           Teacher Training is the beginning of a life-transforming journey
           Through yoga or a new chapter in your life. It is not the final
           objective or goal in your life, but a beautiful step towards life on
-          the path of Yoga. When you leave Mira Yogashala, you will have
+          the path of Yoga. When you leave Mahakaal Yogpeeth, you will have
           expanded the range of your skills, deepened your knowledge, and gained
           more confidence in your teaching abilities.
         </p>
@@ -496,8 +495,8 @@ const TypewriterHeading = () => {
           festival to practice Yoga Meditation. This festival gives an
           opportunity to attend a yoga classees in Rishikesh with world-famous
           yoga teachers. There are several yoga institute in Rishikesh as well.
-          Mira Yogashala always aims in keeping the originality of the Yoga as
-          it is. The main purpose of starting Mira Yogashala is to provide
+          Mahakaal Yogpeeth always aims in keeping the originality of the Yoga as
+          it is. The main purpose of starting Mahakaal Yogpeeth is to provide
           proper yoga training in Rishikesh and help people to re-experience
           their physique and transform it in a balanced way that you will yet
           again connect with your soul. Great Sages and Yogis have been
@@ -598,7 +597,7 @@ const WhyChoose = () => {
           Why Choose Mahakaal Yogpeeth for Your Yoga Retreat
           </p>
           <p className="mt-4 text-base font-medium text-gray-500">
-          Choosing Mira Yogashala for your Yoga Retreat is an investment in a transformative and enriching experience. Here are compelling reasons why Mira Yogashala stands out as a premier destination for those seeking a holistic and authentic yoga retreat:
+          Choosing Mahakaal Yogpeeth for your Yoga Retreat is an investment in a transformative and enriching experience. Here are compelling reasons why Mahakaal Yogpeeth stands out as a premier destination for those seeking a holistic and authentic yoga retreat:
           </p>
         </div>
 
@@ -608,7 +607,7 @@ const WhyChoose = () => {
             Holistic Approach to Well-Being:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Mira Yogashala is committed to providing more than just traditional yoga classes. Our retreats incorporate a diverse range of activities, including meditation, sound healing, Ayurvedic therapies, and cultural excursions. This holistic approach ensures a comprehensive journey toward physical, mental, and spiritual well-being.
+            Mahakaal Yogpeeth is committed to providing more than just traditional yoga classes. Our retreats incorporate a diverse range of activities, including meditation, sound healing, Ayurvedic therapies, and cultural excursions. This holistic approach ensures a comprehensive journey toward physical, mental, and spiritual well-being.
             </dd>
           </div>
           <div>
@@ -624,7 +623,7 @@ const WhyChoose = () => {
             Serene and Spiritual Setting:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Nestled in the spiritual haven of Rishikesh, Mira Yogashala provides a tranquil and serene environment conducive to self-discovery and healing. The picturesque landscapes and proximity to the sacred Ganges River create an ideal backdrop for a transformative retreat experience.
+            Nestled in the spiritual haven of Rishikesh, Mahakaal Yogpeeth provides a tranquil and serene environment conducive to self-discovery and healing. The picturesque landscapes and proximity to the sacred Ganges River create an ideal backdrop for a transformative retreat experience.
             </dd>
           </div>
           <div>
@@ -640,7 +639,7 @@ const WhyChoose = () => {
             Emphasis on Mindfulness and Meditation:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Mira Yogashala recognizes the importance of mindfulness and meditation in promoting stress reduction and concentration. Our retreats include dedicated sessions to cultivate these practices, providing participants with valuable tools for navigating the challenges of daily life.
+            Mahakaal Yogpeeth recognizes the importance of mindfulness and meditation in promoting stress reduction and concentration. Our retreats include dedicated sessions to cultivate these practices, providing participants with valuable tools for navigating the challenges of daily life.
             </dd>
           </div>
           <div>
@@ -664,7 +663,7 @@ const WhyChoose = () => {
             Focus on Ayurvedic Wellness:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Mira Yogashala integrates Ayurvedic principles into the retreat experience. Ayurvedic yoga therapies and wellness practices complement the yoga sessions, providing a holistic approach to health and healing.
+            Mahakaal Yogpeeth integrates Ayurvedic principles into the retreat experience. Ayurvedic yoga therapies and wellness practices complement the yoga sessions, providing a holistic approach to health and healing.
             </dd>
           </div>
           <div>
@@ -680,7 +679,7 @@ const WhyChoose = () => {
             Positive Community and Support System:
             </dt>
             <dd className="mt-2 text-base font-medium text-gray-500">
-            Choosing Mira Yogashala means becoming part of a positive and supportive community. The connections formed during the retreat create a network of like-minded individuals who share the same journey of self-discovery and well-being.
+            Choosing Mahakaal Yogpeeth means becoming part of a positive and supportive community. The connections formed during the retreat create a network of like-minded individuals who share the same journey of self-discovery and well-being.
 
 
             </dd>

@@ -859,7 +859,7 @@ const posts = [
   },
 ];
 
-export function FoldBlog() {
+export function fFoldBlog() {
   return (
     <div className="py-24 bg-gray-50 sm:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
