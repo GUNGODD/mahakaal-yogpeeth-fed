@@ -38,7 +38,7 @@ const YogaRetreat3 = () => {
         <Content title={"Temple Visiting"} content={"Indulge in a daily rejuvenation of mind, body, and spirit with our yoga classes. Led by experienced instructors, our classes encompass Hatha Yoga, Meditation, and Pranayama. Tailored for all levels, these sessions emphasize precise alignment, mindful breathing, and holistic well-being. With personalized guidance and a serene setting in Rishikesh, our Daily Yoga Classes offer a transformative experience, fostering a deeper connection with yourself and the essence of yoga. Join us on the mat for a journey of balance, flexibility, and inner peace.Our Daily Yoga Classes extend beyond physical postures, offering a holistic approach to wellness. Embrace the mind-body connection as you explore the integration of breath and movement. These classes provide a sanctuary for self-reflection and rejuvenation, promoting stress relief and mental clarity. Join our community in Rishikesh for a daily ritual that goes beyond the mat, nurturing a harmonious balance in your life. Whether you're a seasoned yogi or a beginner, our Daily Yoga Classes are designed to inspire, rejuvenate, and elevate your overall well-being."} img={"https://i.ibb.co/1Q0TfDV/temple-Visiting.jpg"}/>
           <LogoHeading heading={"Upcoming Dates for 03 Days Yoga Retreat in Rishikesh"}/>
         
-        <PriceGrid/>
+        <PriceGrid inr={"6000rs"} usd={"125$"}/>
         <LogoHeading heading={"Itinerary of 03 Days Yoga Retreat"}/>
         <DailySchedule1/>
         <DailySchedule2/>

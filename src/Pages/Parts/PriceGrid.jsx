@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PriceGrid = () => {
+const PriceGrid = ({inr,usd}) => {
   return (
     <div>
       {/*
@@ -15,8 +15,8 @@ const PriceGrid = () => {
             <tr>
               <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Date</th>
               <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Availability</th>
-              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Shared</th>
-              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Private</th>
+              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Indian</th>
+              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Foreigners</th>
               <th className="px-4 py-2"></th>
             </tr>
           </thead>
@@ -25,8 +25,8 @@ const PriceGrid = () => {
             <tr>
               <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$500</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$600</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
                   href="#"
@@ -40,8 +40,8 @@ const PriceGrid = () => {
             <tr>
               <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$500</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$600</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
                   href="#"
@@ -55,8 +55,8 @@ const PriceGrid = () => {
             <tr>
               <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$500</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$600</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
                   href="#"
@@ -69,8 +69,8 @@ const PriceGrid = () => {
             <tr>
               <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$500</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$600</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
                   href="#"
@@ -83,8 +83,8 @@ const PriceGrid = () => {
             <tr>
               <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$500</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$600</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
                   href="#"
@@ -97,8 +97,8 @@ const PriceGrid = () => {
             <tr>
               <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$500</td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">$600</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
+              <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
                   href="#"
