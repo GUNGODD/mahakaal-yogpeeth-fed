@@ -23,7 +23,7 @@ const Footer = () => {
                   href="#"
                   class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
                 >
-                  0123456789
+                  +91 83680 30794
                 </a>
               </p>
 
@@ -162,7 +162,7 @@ const Footer = () => {
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      1on1 Coaching{" "}
+                      Yoga TTC 100 hours{" "}
                     </a>
                   </li>
 
@@ -172,7 +172,7 @@ const Footer = () => {
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      Company Review{" "}
+                      Yoga TTC 200 hours{" "}
                     </a>
                   </li>
 
@@ -182,7 +182,7 @@ const Footer = () => {
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      Accounts Review{" "}
+                      Yoga Retreat 10 Days{" "}
                     </a>
                   </li>
 
@@ -192,7 +192,7 @@ const Footer = () => {
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      HR Consulting{" "}
+                      Yoga Retreat 7 Days{" "}
                     </a>
                   </li>
 
@@ -202,7 +202,7 @@ const Footer = () => {
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      SEO Optimisation{" "}
+                      Yoga Retreat 3 Days{" "}
                     </a>
                   </li>
                 </ul>
@@ -238,7 +238,7 @@ const Footer = () => {
                       class="text-gray-700 transition hover:opacity-75"
                     >
                       {" "}
-                      Accounts Review{" "}
+                     
                     </a>
                   </li>
                 </ul>
