@@ -35,7 +35,8 @@ const TTCTwo = () => {
       <DailySchedule />
       
       <FAQSection />
-      <PriceGrid />
+      <PriceGrid heading={"Dormitory price (Bunkbed)"} inr={"11999rs"} usd={"399$"} sub1={"Indian"} sub2={"Foreigners"}/>
+      <PriceGrid heading={"Normal room for Foreigners"} inr={"599$"} usd={"799$"} sub1={"Shared"} sub2={"Private"}/>
       <FullGallery />
       <div className="mt-10 mb-10">
       <LogoHeading heading={"Inclusion & Exclusion With 200 Hour Yoga TTC in Rishikesh"}/>

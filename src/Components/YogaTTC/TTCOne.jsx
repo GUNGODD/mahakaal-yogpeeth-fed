@@ -29,7 +29,8 @@ const TTCOne = () => {
       <DailySchedule />
       
       <FAQSection />
-      <PriceGrid />
+      <PriceGrid heading={"Dormitory price (Bunkbed)"} inr={"7999rs"} usd={"200$"} sub1={"Indian"} sub2={"Foreigners"}/>
+      <PriceGrid heading={"Normal room for Foreigners"} inr={"399$"} usd={"499$"} sub1={"Shared"} sub2={"Private"}/>
       <div className="md:p-10 flex justify-center items-center">
   <Included />
 </div>

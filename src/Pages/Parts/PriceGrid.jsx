@@ -1,8 +1,8 @@
 import React from 'react'
 
-const PriceGrid = ({inr,usd,heading}) => {
+const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
   return (
-    <div>
+    <div className='mb-10'>
       {/*
   Heads up! 👋
 
@@ -21,8 +21,8 @@ const PriceGrid = ({inr,usd,heading}) => {
             <tr>
               <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Date</th>
               <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Availability</th>
-              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Indian</th>
-              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Foreigners</th>
+              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">{sub1}</th>
+              <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">{sub2}</th>
               <th className="px-4 py-2"></th>
             </tr>
           </thead>
