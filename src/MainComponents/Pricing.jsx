@@ -8,14 +8,14 @@ const Pricing = () => {
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
         <h2 className="text-lg font-medium text-gray-900">
-          Yoga Retreat
+          Yoga Retreat (May Vary on Type)
           <span className="sr-only">Plan</span>
         </h2>
 
-        <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className="mt-2 text-gray-700">Get started on your yoga journey today!</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 799$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 300$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -132,10 +132,10 @@ const Pricing = () => {
           <span className="sr-only">Plan</span>
         </h2>
 
-        <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className="mt-2 text-gray-700">Limited-time offer! `Cheapest in market`</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 1249$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 200$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -252,10 +252,10 @@ const Pricing = () => {
           <span className="sr-only">Plan</span>
         </h2>
 
-        <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className="mt-2 text-gray-700">Flexible pricing options to fit your needs.</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 2249$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 399$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
