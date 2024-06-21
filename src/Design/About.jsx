@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
 import { SiGithub, SiTiktok, SiTwitter, SiYoutube } from "react-icons/si";
+import WhatsappButton from "../Components/Contact/WhatsappButton";
 
 export const RevealBento = () => {
   return (
@@ -21,6 +22,7 @@ export const RevealBento = () => {
         <AboutBlock />
         <LocationBlock />
         <EmailListBlock />
+        <WhatsappButton/>
       </motion.div>
       <Footer />
     </div>

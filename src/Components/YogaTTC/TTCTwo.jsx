@@ -54,7 +54,7 @@ const TTCTwo = () => {
       
       <TestimonialScroller />
 
-      
+      <WhatsappButton/>
       <FoldBlog />
       <Footer />
     </div>
@@ -670,6 +670,7 @@ import {
 import FullGallery from "../Video Gallery/GridGallery";
 import Form from "../../Design/Form";
 import TeachersCardsSlider from "../../Pages/TeacherCard";
+import WhatsappButton from "../Contact/WhatsappButton";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;

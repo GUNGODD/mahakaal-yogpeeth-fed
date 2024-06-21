@@ -11,6 +11,7 @@ import { FaClock } from 'react-icons/fa'
 import { GrYoga } from 'react-icons/gr'
 import { OnePagerSection } from '../YogaRetreat3/YogaRetreat3'
 import RetreatForm from '../../Design/RetreatForm'
+import WhatsappButton from '../Contact/WhatsappButton'
 
 const YogaRetreat7 = () => {
   return (
@@ -54,6 +55,7 @@ const YogaRetreat7 = () => {
         <DailySchedule5/>
         <DailySchedule6/>
         <DailySchedule7/>
+        <WhatsappButton/>
         <FAQ/>
         <Footer/>
         

@@ -41,6 +41,7 @@ const TTCOne = () => {
 
       <TestimonialScroller />
       <FoldBlog />
+      <WhatsappButton/>
 
       <Footer />
     </div>
@@ -556,6 +557,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { FoldBlog } from "./TTCTwo";
+import WhatsappButton from "../Contact/WhatsappButton";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;

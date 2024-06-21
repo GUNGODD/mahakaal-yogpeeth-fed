@@ -2,6 +2,7 @@ import Footer from "../../MainComponents/Footer";
 import Navbar from "../../MainComponents/Navbar";
 // import GallerySection from "../../Pages/Parts/GallerySection";
 import ImgScroll from "../../Pages/Parts/ImgScroll";
+import WhatsappButton from "../Contact/WhatsappButton";
 import AiCard from "./AiCard";
 
 
@@ -13,6 +14,7 @@ export default function MainGallery() {
       <ImgScroll/>
       <GallerySection1/>
       <GallerySection2/>
+      <WhatsappButton/>
 
       <Footer />
     </>

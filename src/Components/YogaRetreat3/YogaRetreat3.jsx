@@ -11,6 +11,7 @@ import { PaperClipIcon } from '@heroicons/react/20/solid'
 import { FaClock } from 'react-icons/fa'
 import { GrYoga } from 'react-icons/gr'
 import RetreatForm from '../../Design/RetreatForm'
+import WhatsappButton from '../Contact/WhatsappButton'
 
 const YogaRetreat3 = () => {
   return (
@@ -50,6 +51,7 @@ const YogaRetreat3 = () => {
         </div> */}
         <InfiniteIMGAcc/>
         <InfiniteIMGFood/>
+        <WhatsappButton/>
         <FAQSection/>
         <Footer/>
     </div>

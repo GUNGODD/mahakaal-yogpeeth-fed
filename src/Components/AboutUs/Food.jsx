@@ -32,6 +32,7 @@ const Food = () => {
         <FAQSection />
         <TestimonialScroller/>
         <FoldBlog/>
+        <WhatsappButton/>
         <Footer />
       </div>
     </>
@@ -133,6 +134,7 @@ export const ImageCarousel = () => {
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { FoldBlog, TestimonialScroller } from "../YogaTTC/TTCTwo";
+import WhatsappButton from "../Contact/WhatsappButton";
 
 // Fix for default marker icon issue
 

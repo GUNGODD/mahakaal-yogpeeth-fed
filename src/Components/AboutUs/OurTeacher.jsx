@@ -4,6 +4,7 @@ import LogoHeading from "../../Pages/LogoHeading";
 import Content from "./TextArea";
 import FAQSection from "../../Pages/Parts/FAQ";
 import Footer from "../../MainComponents/Footer";
+import WhatsappButton from "../Contact/WhatsappButton";
 const OurTeacher = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const OurTeacher = () => {
         <Content />
         {/* <OnePagerSection /> */}
         {/* <TeachersTestimonials /> */}
+        <WhatsappButton/>
         <FAQSection />
         <Footer />
       </div>
