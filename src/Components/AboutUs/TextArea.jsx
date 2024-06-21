@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 
 const Content = () => {
-  const videoUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+  const videoUrl = 'https://youtu.be/ZbsG86h074k?si=NDqMS32i-isOgpXc';
 
   return (
     <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
