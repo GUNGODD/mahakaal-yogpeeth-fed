@@ -13,6 +13,7 @@ import { FoldBlog } from "./Components/YogaTTC/TTCTwo";
 import WhatsappButton from "./Components/Contact/WhatsappButton";
 import Navbar from "./MainComponents/Navbar";
 import Footer from "./MainComponents/Footer";
+import { Content } from "./Pages/Parts/ImgContent";
 
 const Final = () => {
   return (
@@ -34,6 +35,7 @@ const Final = () => {
       <TDmobile />
       <TextArea />
       <ContentArea />
+      <Content/>
       <RunningCards />
       <Features />
       <LogoHeading heading={"PRICING FOR YOGA TTC"} />
