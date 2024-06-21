@@ -30,6 +30,7 @@ const TTCOne = () => {
       
       <FAQSection />
       <PriceGrid heading={"Dormitory price (Bunkbed)"} inr={"7999rs"} usd={"200$"} sub1={"Indian"} sub2={"Foreigners"}/>
+      <PriceGrid heading={"Normal room for Indians"} inr={"12000rs"} usd={"18999rs"} sub1={"Shared"} sub2={"Private"}/>
       <PriceGrid heading={"Normal room for Foreigners"} inr={"399$"} usd={"499$"} sub1={"Shared"} sub2={"Private"}/>
       <div className="md:p-10 flex justify-center items-center">
   <Included />

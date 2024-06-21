@@ -36,6 +36,7 @@ const TTCTwo = () => {
       
       <FAQSection />
       <PriceGrid heading={"Dormitory price (Bunkbed)"} inr={"11999rs"} usd={"399$"} sub1={"Indian"} sub2={"Foreigners"}/>
+      <PriceGrid heading={"Normal room for Indians"} inr={"18999rs"} usd={"24999rs"} sub1={"Shared"} sub2={"Private"}/>
       <PriceGrid heading={"Normal room for Foreigners"} inr={"599$"} usd={"799$"} sub1={"Shared"} sub2={"Private"}/>
       <FullGallery />
       <div className="mt-10 mb-10">
