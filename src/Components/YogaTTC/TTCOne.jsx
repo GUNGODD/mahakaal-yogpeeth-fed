@@ -371,97 +371,6 @@ const YoutubeGrids = () => {
   );
 };
 
-export const OnePagerSection = () => {
-  return (
-    <section className="py-24 bg-white">
-      <div className="px-8 mx-auto max-w-7xl md:px-12 lg:px-32">
-        <div className="text-center">
-          <h1 className="text-4xl font-semibold tracking-tighter text-green-800 lg:text-5xl text-balance">
-            Building one pagers together
-            <span className="block text-gray-600">wherever and anywhere</span>
-          </h1>
-          <p className="mt-4 text-base font-medium text-gray-600 text-balance">
-            Control and added security. With decentralization, users have more
-            control over their data and transactions, and the platform is less
-            susceptible to malicious attacks.
-          </p>
-        </div>
-        <div className="grid gap-x-8 gap-y-12 mt-12 md:grid-cols-2">
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
-            <div className="overflow-hidden rounded-3xl border border-gray-200">
-              <img
-                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
-                alt="Zen Image"
-                className="object-cover mx-auto w-full h-48 rounded-2xl"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-medium text-green-800">
-                No warranty disclaimer
-              </p>
-              <p className="mt-2 text-sm text-gray-600">
-                The license comes with no warranties. The licensor provides the
-                work "as is," and users must use it at their own risk.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
-            <div className="overflow-hidden rounded-3xl border border-gray-200">
-              <img
-                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
-                alt="Zen Image"
-                className="object-cover mx-auto w-full h-48 rounded-2xl"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-medium text-green-800">Modification Freedom</p>
-              <p className="mt-2 text-sm text-gray-600">
-                You can adapt, remix, transform, and build upon the licensed
-                work.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
-            <div className="overflow-hidden rounded-3xl border border-gray-200">
-              <img
-                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
-                alt="Zen Image"
-                className="object-cover mx-auto w-full h-48 rounded-2xl"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-medium text-green-800">
-                Commercial use allowed
-              </p>
-              <p className="mt-2 text-sm text-gray-600">
-                You are allowed to use the licensed work for both non-commercial
-                and commercial purposes.
-              </p>
-            </div>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
-            <div className="overflow-hidden rounded-3xl border border-gray-200">
-              <img
-                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1780&q=80"
-                alt="Zen Image"
-                className="object-cover mx-auto w-full h-48 rounded-2xl"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-medium text-green-800">
-                Share alike (SA) absence
-              </p>
-              <p className="mt-2 text-sm text-gray-600">
-                The CC BY 3.0 License does not include a "Share Alike" (SA)
-                provision.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const FAQSection = () => {
   return (
@@ -557,7 +466,7 @@ import {
   useColorModeValue,
   Button,
 } from "@chakra-ui/react";
-import { FoldBlog } from "./TTCTwo";
+import { FoldBlog, OnePagerSection } from "./TTCTwo";
 import WhatsappButton from "../Contact/WhatsappButton";
 
 const Testimonial = ({ children }) => {
