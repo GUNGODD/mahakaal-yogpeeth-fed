@@ -332,8 +332,8 @@ const DailySchedule = () => {
 import ReactPlayer from "react-player";
 
 const YoutubeGrids = () => {
-  const videoUrl1 = "https://www.youtube.com/watch?v=aC_EFwr6GJs";
-  const videoUrl2 = "https://www.youtube.com/watch?v=aC_EFwr6GJs";
+  const videoUrl1 = "https://youtu.be/NL7UUugV6UQ?si=CIuhd0V6uBGeMgzx";
+  const videoUrl2 = "https://youtu.be/xSS__UQ9-eY?si=25Lu_l5h-CFDJoIh";
 
   return (
     <>
