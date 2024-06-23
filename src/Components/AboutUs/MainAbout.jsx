@@ -15,7 +15,7 @@ export const MainAbout = () => {
         </div>
         <HeroImage
           wallpaper={
-            "https://i.pinimg.com/564x/d6/87/ef/d687efe61afd29dde17faa08c6741c3e.jpg"
+            "https://s3.india.com/wp-content/uploads/2024/05/Feature-Image_-Rishikesh-1.jpg?impolicy=Medium_Widthonly&w=700"
           }
           Heading={"About Mahakaal Yogpeeth"}
         />
