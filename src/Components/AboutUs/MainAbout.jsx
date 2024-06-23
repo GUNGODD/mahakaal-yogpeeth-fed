@@ -17,9 +17,9 @@ export const MainAbout = () => {
           wallpaper={
             "https://i.pinimg.com/564x/d6/87/ef/d687efe61afd29dde17faa08c6741c3e.jpg"
           }
-          Heading={"This is Heading"}
+          Heading={"About Mahakaal Yogpeeth"}
         />
-        <LogoHeading heading={"About Us"} />
+        
         <TypewriterHeading />
         <Content />
         <OnePagerSection />
