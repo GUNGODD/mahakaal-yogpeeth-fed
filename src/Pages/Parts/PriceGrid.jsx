@@ -44,7 +44,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
             </tr>
 
             <tr>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
+              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-08-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
@@ -59,7 +59,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
             </tr>
 
             <tr>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
+              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-09-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
@@ -73,7 +73,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               </td>
             </tr>
             <tr>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
+              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-10-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
@@ -87,7 +87,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               </td>
             </tr>
             <tr>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
+              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-11-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
@@ -101,7 +101,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               </td>
             </tr>
             <tr>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-07-2024</td>
+              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">01-12-2024</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">05 seats left</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{inr}</td>
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
