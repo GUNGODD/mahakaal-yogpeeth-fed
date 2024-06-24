@@ -35,7 +35,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
-                  href="#"
+                  href="/enroll"
                   className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                 >
                   Enroll Now!
@@ -50,7 +50,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
-                  href="#"
+                  href="/enroll"
                   className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                 >
                   Enroll Now!
@@ -65,7 +65,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
-                  href="#"
+                  href="/enroll"
                   className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                 >
                   Enroll Now!
@@ -79,7 +79,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
-                  href="#"
+                  href="/enroll"
                   className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                 >
                   Enroll Now!
@@ -93,7 +93,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
-                  href="#"
+                  href="/enroll"
                   className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                 >
                   Enroll Now!
@@ -107,7 +107,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">{usd}</td>
               <td className="whitespace-nowrap px-4 py-2">
                 <a
-                  href="#"
+                  href="/enroll"
                   className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                 >
                   Enroll Now!
