@@ -22,8 +22,8 @@ export const MainAbout = () => {
         
         <TypewriterHeading />
         <Content />
-        <OnePagerSection />
-        <TeachersTestimonials />
+        {/* <OnePagerSection /> */}
+        {/* <TeachersTestimonials /> */}
         <BenefitsSection />
         <FAQSection />
         <Footer />

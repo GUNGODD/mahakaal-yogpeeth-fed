@@ -5,24 +5,18 @@ export const BenefitsSection = () => {
         <div className="flex flex-col justify-center">
           <div className="max-w-xl mb-6">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              The quick, brown fox
+              Course Overview
               <br className="hidden md:block" />
-              jumps over{' '}
-              <span className="relative px-1">
-                <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
-                <span className="relative inline-block text-deep-purple-accent-400">
-                  a lazy dog
-                </span>
-              </span>
+              
+              
+              
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+            Upon completion of our Yoga Teacher Training Course (TTC), you will receive a prestigious certificate from the Yoga Alliance. This certificate is internationally recognized and signifies that you have met the high standards set by the Yoga Alliance for yoga teaching professionals. It not only validates your expertise and dedication to the practice of yoga but also enhances your credibility as a certified yoga instructor. With this certificate, you can confidently pursue teaching opportunities worldwide, knowing that you are equipped with the knowledge and skills required to guide others in their yoga journey effectively.
             </p>
           </div>
           <p className="mb-4 text-sm font-bold tracking-widest uppercase">
-            Features
+            Benefits
           </p>
           <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
             <ul className="space-y-3">
@@ -42,7 +36,7 @@ export const BenefitsSection = () => {
                     />
                   </svg>
                 </span>
-                A slice of heaven
+                Certified Yoga TTC
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -142,7 +136,7 @@ export const BenefitsSection = () => {
         <div>
           <img
             className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-            src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+            src="https://i.ibb.co/82Ttgmk/Multi-Style-200-hour-TTC-Certificate.jpg"
             alt=""
           />
         </div>
