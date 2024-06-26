@@ -17,6 +17,7 @@ import TTCTwo from "./Components/YogaTTC/TTCTwo.jsx";
 import TTCOne from "./Components/YogaTTC/TTCOne.jsx";
 import OurTeacher from "./Components/AboutUs/OurTeacher.jsx";
 import Food from "./Components/AboutUs/Food.jsx";
+import SubmitSuccess from "./Pages/SubmitSuccess.jsx";
 
 // import { createRoot } from 'react-dom/client';
 
@@ -34,71 +35,77 @@ const router = createBrowserRouter([
     path: "/Home",
     element: <App />,
   },
-  // Gallery section 
+  // Gallery section
   {
     path: "/PhotoGallery/Photos",
-    element: <MainGallery />
+    element: <MainGallery />,
   },
 
-  // About us 
-
+  // About us
 
   {
     path: "About/teachers",
-    element: <OurTeacher />
-
+    element: <OurTeacher />,
   },
   {
     path: "/About/f&a",
-    element: <Food />
+    element: <Food />,
   },
 
   {
-    // Gallery Section single  router 
+    // Gallery Section single  router
     path: "/About/AboutUs",
-    element: <MainAbout />
+    element: <MainAbout />,
   },
 
   //  Reach out  & separate  navbar Component
   {
     path: "/Contact",
-    element: <MainContact />
+    element: <MainContact />,
   },
   {
     path: "/enroll",
-    element: <MainForm />
+    element: <MainForm />,
   },
 
-  // Retreat 
+  // Retreat
   {
     path: "/Retreat/Yoga10",
-    element: <YogaRetreat10 />
+    element: <YogaRetreat10 />,
   },
   {
     path: "/Retreat/Yoga7",
-    element: <YogaRetreat7 />
+    element: <YogaRetreat7 />,
   },
   {
     path: "/Retreat/Yoga3",
-    element: <YogaRetreat3 />
+    element: <YogaRetreat3 />,
   },
 
   {
     path: "/PhotoGallery/Videos",
-    element: <MainVideoGallery />
+    element: <MainVideoGallery />,
   },
 
-  // Yoga TTC 
+  // Yoga TTC
   {
     path: "/ttcyoga/TTC100",
-    element: <TTCOne />
+    element: <TTCOne />,
   },
   {
     path: "/ttcyoga/TTC200",
-    element: <TTCTwo />
-  }
-
-
+    element: <TTCTwo />,
+  },
+  // sucessful submission
+  {
+    path: "/successfully-submitted",
+    element: <SubmitSuccess />,
+  },
+  // form home Pages
+  {
+    path: "BackHome",
+    element: <App />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

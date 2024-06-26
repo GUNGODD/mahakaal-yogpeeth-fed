@@ -1,6 +1,6 @@
-import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import TypewriterComponent from "typewriter-effect";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const [fullName, setFullName] = useState("");
@@ -17,7 +17,16 @@ const Form = () => {
     e.preventDefault();
 
     // Check if any field is empty
-    if (!fullName || !email || !whatsapp || !gender || !month || !course || !country || !message) {
+    if (
+      !fullName ||
+      !email ||
+      !whatsapp ||
+      !gender ||
+      !month ||
+      !course ||
+      !country ||
+      !message
+    ) {
       alert("Please fill in all the required fields.");
       return;
     }
@@ -71,6 +80,11 @@ const Form = () => {
         setMessage("");
         alert("Form Submitted Successfully");
         setLoading(false); // Stop the loader
+
+        // Navigate to success page after form submission
+        setTimeout(() => {
+          window.location.href = "/successfully-submitted";
+        }, 2000); // Adjust the delay time (2000 milliseconds = 2 seconds)
       })
       .catch((error) => {
         console.error("Error sending email: ", error);
