@@ -1,6 +1,6 @@
-import emailjs from '@emailjs/browser';
-import { useState } from 'react';
-import TypewriterComponent from 'typewriter-effect';
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import TypewriterComponent from "typewriter-effect";
 
 const Form = () => {
   const [fullName, setFullName] = useState("");
@@ -24,49 +24,69 @@ const Form = () => {
 
     setLoading(true); // Start the loader
 
-    const serviceId = 'service_w3uhl3d';
-    const templateId = 'template_ujh0s9i';
-    const publicKey = 'VkJWkfkjPxDvdLiRA';
+    const serviceId = "service_w3uhl3d";
+    const templateId = "template_ujh0s9i";
+    const publicKey = "VkJWkfkjPxDvdLiRA";
 
     const templateParams = {
       from_name: fullName,
-      to_name: 'Mahakaal Yogpeeth',
+      to_name: "Mahakaal Yogpeeth",
       email: email,
       whatsapp: whatsapp,
       gender: gender,
       month: month,
       course: course,
       country: country,
-      message: message
+      message: message,
     };
 
-    emailjs.send(serviceId, templateId, templateParams, publicKey).then((response) => {
-      console.log("Email has been sent successfully!", response);
-      setFullName('');
-      setEmail('');
-      setWhatsapp('');
-      setGender('');
-      setMonth('');
-      setCourse('');
-      setCountry('');
-      setMessage('');
-      alert("Form Submitted Successfully");
-      setLoading(false); // Stop the loader
-    }).catch((error) => {
-      console.error('Error sending email: ', error);
-      setLoading(false); // Stop the loader
-    });
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email has been sent successfully!", response);
+
+        // Track form submission with Google Analytics
+        if (window.gtag) {
+          window.gtag("event", "form_submission", {
+            event_category: "Form",
+            event_label: "User Details Form",
+            value: 1,
+          });
+        }
+
+        //  fill meta tag with details
+        const metaTag = document.getElementById("user-details");
+        if (metaTag) {
+          metaTag.setAttribute("content", JSON.stringify(templateParams));
+          console.log("Meta tag content:", metaTag.getAttribute("content"));
+        }
+
+        setFullName("");
+        setEmail("");
+        setWhatsapp("");
+        setGender("");
+        setMonth("");
+        setCourse("");
+        setCountry("");
+        setMessage("");
+        alert("Form Submitted Successfully");
+        setLoading(false); // Stop the loader
+      })
+      .catch((error) => {
+        console.error("Error sending email: ", error);
+        setLoading(false); // Stop the loader
+      });
   };
 
   return (
-    <div className='mb-20'>
+    <div className="mb-20">
       <section className="relative flex flex-wrap lg:h-screen lg:items-center">
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
-            <div className='sm:text-6xl text-3xl md:text-5xl font-bold mb-4'>
+            <div className="sm:text-6xl text-3xl md:text-5xl font-bold mb-4">
               <TypewriterComponent
                 options={{
-                  strings: ['Get Started Today!'],
+                  strings: ["Get Started Today!"],
                   autoStart: true,
                   loop: true,
                 }}
@@ -82,9 +102,14 @@ const Form = () => {
               <div className="loader"></div>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+            <form
+              onSubmit={handleSubmit}
+              className="mx-auto mb-0 mt-8 max-w-md space-y-4"
+            >
               <div>
-                <label htmlFor="fullName" className="sr-only">Full Name</label>
+                <label htmlFor="fullName" className="sr-only">
+                  Full Name
+                </label>
                 <input
                   type="text"
                   className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
@@ -96,7 +121,9 @@ const Form = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="sr-only">Email</label>
+                <label htmlFor="email" className="sr-only">
+                  Email
+                </label>
                 <input
                   type="email"
                   className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
@@ -108,7 +135,9 @@ const Form = () => {
               </div>
 
               <div>
-                <label htmlFor="whatsapp" className="sr-only">WhatsApp Number</label>
+                <label htmlFor="whatsapp" className="sr-only">
+                  WhatsApp Number
+                </label>
                 <input
                   type="tel"
                   className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
@@ -120,7 +149,9 @@ const Form = () => {
               </div>
 
               <div>
-                <label htmlFor="gender" className="sr-only">Gender</label>
+                <label htmlFor="gender" className="sr-only">
+                  Gender
+                </label>
                 <select
                   className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                   id="gender"
@@ -135,7 +166,9 @@ const Form = () => {
               </div>
 
               <div>
-                <label htmlFor="month" className="sr-only">Month</label>
+                <label htmlFor="month" className="sr-only">
+                  Month
+                </label>
                 <select
                   className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                   id="month"
@@ -159,7 +192,9 @@ const Form = () => {
               </div>
 
               <div>
-                <label htmlFor="course" className="sr-only">Course Name</label>
+                <label htmlFor="course" className="sr-only">
+                  Course Name
+                </label>
                 <select
                   className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                   id="course"
@@ -176,7 +211,9 @@ const Form = () => {
               </div>
 
               <div>
-                <label htmlFor="country" className="sr-only">Country</label>
+                <label htmlFor="country" className="sr-only">
+                  Country
+                </label>
                 <input
                   type="text"
                   className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
@@ -188,7 +225,9 @@ const Form = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="sr-only">Message</label>
+                <label htmlFor="message" className="sr-only">
+                  Message
+                </label>
                 <textarea
                   className="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm"
                   placeholder="Message"
@@ -201,7 +240,9 @@ const Form = () => {
               <div className="flex items-center justify-between">
                 <p className="text-sm text-gray-500">
                   No account?
-                  <a className="underline" href="#">Sign up</a>
+                  <a className="underline" href="#">
+                    Sign up
+                  </a>
                 </p>
 
                 <button
