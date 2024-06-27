@@ -10,6 +10,7 @@ const PriceGrid = ({inr,usd,heading,sub1,sub2}) => {
 */}
       <div className="relative mb-6">
         
+        
         <div className="bg-indigo-600 h-12 flex items-center justify-center" style={{ clipPath: "polygon(0 0, 100% 0, 95% 100%, 0% 100%)" }}></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h2 className="text-black text-lg text-2xl font-semibold">{heading}</h2>

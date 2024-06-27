@@ -35,7 +35,7 @@ const Footer = () => {
               <ul class="mt-8 flex gap-6">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=100090373700833"
                     rel="noreferrer"
                     target="_blank"
                     class="text-gray-700 transition hover:opacity-75"
@@ -59,7 +59,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/mahakaalyogpeeth?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     rel="noreferrer"
                     target="_blank"
                     class="text-gray-700 transition hover:opacity-75"
