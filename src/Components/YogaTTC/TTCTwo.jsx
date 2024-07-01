@@ -823,7 +823,7 @@ const posts = [
       role: "",
       href: "#",
       imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "",
     },
   },
   {
@@ -831,7 +831,7 @@ const posts = [
     title: "Yoga Retreat 7 Days",
     href: "#",
     description:
-      "It's been great Learning in Mahakaal Yogpeeth, and Great Memories and Hours as Well",
+      "I have cherished my time at Mahakaal Yogpeeth, filled with invaluable learning and unforgettable moments. The hours spent here have left a lasting impression on my journey.",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "England", href: "#" },
@@ -840,7 +840,7 @@ const posts = [
       role: "",
       href: "#",
       imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "",
     },
   },
   {
@@ -848,7 +848,7 @@ const posts = [
     title: "Yoga TTC 200",
     href: "#",
     description:
-      "It's been great Learning in Mahakaal Yogpeeth, and Great Memories and Hours as Well",
+      "My experience at Mahakaal Yogpeeth has been truly enriching, filled with meaningful learning and cherished memories that will stay with me for a lifetime.",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "America", href: "#" },
@@ -857,7 +857,7 @@ const posts = [
       role: "",
       href: "#",
       imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "",
     },
   },
 ];
