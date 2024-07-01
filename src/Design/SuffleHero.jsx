@@ -14,7 +14,7 @@ const ShuffleHero = () => {
           The Best Yoga School in Rishikesh
         </h3>
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-        Namaste and a warm greeting from Mahakaal Yogpeeth! We are delighted to have you here as you explore the path of yoga and embark on a transformative journey towards self-discovery and holistic well-being.We offer the best yoga teacher training in India, nestled in the serene and spiritual land of Rishikesh.
+        Namaste and a heartfelt welcome from Mahakaal Yogpeeth! We are thrilled to have you join us as you delve into the world of yoga and begin a transformative journey toward self-discovery and comprehensive well-being. Located in the tranquil and spiritual town of Rishikesh, we provide premier yoga teacher training in India.
         </p>
         <a 
           href="/enroll" 

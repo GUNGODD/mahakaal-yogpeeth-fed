@@ -4,17 +4,17 @@ const features = [
   {
     name: 'Personal Transformation.',
     description:
-      'Yoga is a holistic practice that encompasses the mind, body, and spirit. Through dedicated teacher training, you embark on a personal journey of self-discovery. It is not just about mastering postures but understanding the underlying philosophy, embracing mindfulness, and cultivating a deeper connection with yourself.',
+      'Yoga is a holistic practice that integrates the mind, body, and spirit. Our dedicated teacher training program guides you on a personal journey of self-discovery. Its not just about mastering postures; its about understanding the underlying philosophy, embracing mindfulness, and cultivating a deeper connection with yourself.',
     icon: CloudArrowUpIcon,
   },
   {
     name: 'Comprehensive Knowledge.',
-    description: 'Yoga teacher training goes beyond the physical aspects of asanas. It equips you with a comprehensive understanding of yogic philosophy, anatomy, and teaching methodologies. This knowledge empowers you to guide others on their yoga journey, ensuring a well-rounded and enriching experience for your future students.',
+    description: 'We recognize that each individuals journey is unique. To meet diverse needs, we provide a variety of yoga teacher training programs, including 100, 200, 300, and 500-hour courses. Whether you are looking for a foundational understanding or seeking advanced expertise, our structured curriculum ensures a seamless progression through the levels of yoga proficiency.',
     icon: LockClosedIcon,
   },
   {
     name: 'Spiritual Awakening.',
-    description: 'Rishikesh, known as the Yoga Capital of the World, is a sacred space that amplifies the spiritual essence of yoga. Our teacher training program immerses you in this spiritual energy, fostering a deep connection with yogas ancient roots. The tranquil surroundings and spiritual guidance contribute to a transformative and enlightening experience.',
+    description: 'Rishikesh, revered as the Yoga Capital of the World, is a sacred haven that magnifies the spiritual essence of yoga. Our teacher training program envelops you in this divine energy, nurturing a profound connection with yogas ancient roots. The serene environment   and spiritual guidance enrich your journey, fostering a transformative and enlightening experience.',
     icon: ServerIcon,
   },
 ]
@@ -29,7 +29,8 @@ export default function ContentArea() {
               <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Aim Of Yoga Teacher Training In Rishikesh India</p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-              Welcome to the transformative world of yoga teacher training at the serene heart of Rishikesh, India. At our school, we believe that yoga is not just a practice but a way of life or a journey that goes beyond the mat and extends into self-discovery and profound transformation. So, let's delve into the objectives that make our yoga teacher training program a life-altering experience.
+              
+Welcome to the transformative journey of yoga teacher training in the tranquil heart of Rishikesh, India. At our school, we embrace yoga as a holistic way of life, extending beyond the mat into realms of self-discovery and profound transformation. Let's explore the objectives that make our yoga teacher training program a life-changing experience.
 
 
               </p>

@@ -56,8 +56,7 @@ export default function TextArea() {
                 <li className="flex gap-x-3">
                   <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Excellence in Education.</strong> We take pride in providing the best yoga teacher training. Our experienced and certified instructors are dedicated to imparting authentic knowledge, blending traditional wisdom with modern teaching techniques. Whether you are a beginner or an advanced practitioner, our courses cater to all levels, ensuring a comprehensive and enriching learning experience.
-                    blanditiis ratione.
+                    <strong className="font-semibold text-gray-900">Excellence in Education.</strong> We are proud to offer top-notch yoga teacher training. Our certified and experienced instructors are committed to sharing authentic knowledge, combining traditional wisdom with contemporary teaching methods. Whether you are a beginner or an advanced practitioner, our courses accommodate all levels, guaranteeing a thorough and enriching learning experience.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -69,7 +68,8 @@ export default function TextArea() {
                 <li className="flex gap-x-3">
                   <ServerIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Yoga Retreats.</strong>  Beyond teacher training, we also provide rejuvenating yoga retreats. Immerse yourself in the tranquil beauty of Rishikesh as you unwind, rejuvenate, and deepen your practice amidst the spiritual energy of the Himalayas. Our retreats offer a perfect blend of relaxation, self-discovery, and connection with like-minded individuals.
+                    <strong className="font-semibold text-gray-900">Yoga Retreats.</strong>  B
+                    We recognize that each individual's journey is unique. To meet diverse needs, we provide various yoga teacher training programs, including 100, 200, 300, and 500-hour courses. Whether you're looking for a foundational understanding or advanced expertise, our structured curriculum ensures a smooth progression through different levels of yoga proficiency
                   </span>
                 </li>
               </ul>
