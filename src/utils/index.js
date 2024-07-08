@@ -1,8 +1,39 @@
 import Mahakaal from "../assets/glimpse/Images/MahakaalLogo.png"
-
+import Mahakaal1 from "../assets/glimpse/Images/Mahakaal1.jpg"
+import Mahakaal2 from "../assets/glimpse/Images/Mahakaal2.jpg"
+import Mahakaal3 from "../assets/glimpse/Images/Mahakaal3.jpg"
+import Mahakaal4 from "../assets/glimpse/Images/Mahakaal4.jpg"
+import Mahakaal5 from "../assets/glimpse/Images/Mahakaal5.jpg"
+import Mahakaal6 from "../assets/glimpse/Images/Mahakaal6.jpg"
+import Mahakaal7 from "../assets/glimpse/Images/Mahakaal7.jpg"
+import Mahakaal8 from "../assets/glimpse/Images/Mahakaal8.jpg"
+import Mahakaal9 from "../assets/glimpse/Images/Mahakaal9.jpg"
+import Mahakaal10 from "../assets/glimpse/Images/Mahakaal10.jpg"
+import Mahakaal11 from "../assets/glimpse/Images/Mahakaal11.jpg"
+import Mahakaal12 from "../assets/glimpse/Images/Mahakaal12.jpg"
+import Mahakaal13 from "../assets/glimpse/Images/Mahakaal13.jpg"
+import Mahakaal14 from "../assets/glimpse/Images/Mahakaal14.jpg"
+import Mahakaal15 from "../assets/glimpse/Images/Mahakaal15.jpg"
+import Mahakaal16 from "../assets/glimpse/Images/Mahakaal16.jpg"
 
 export{
-  Mahakaal
+  Mahakaal,
+  Mahakaal1,
+  Mahakaal2,
+  Mahakaal3,
+  Mahakaal4,
+  Mahakaal5,
+  Mahakaal6,
+  Mahakaal7,
+  Mahakaal8,
+  Mahakaal9,
+  Mahakaal10,
+  Mahakaal11,
+  Mahakaal12,
+  Mahakaal13,
+  Mahakaal14,
+  Mahakaal15,
+  Mahakaal16,
 }
 
 
