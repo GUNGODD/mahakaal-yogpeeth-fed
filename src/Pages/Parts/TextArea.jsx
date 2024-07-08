@@ -1,4 +1,6 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { TextArea1 } from '../../utils';
+import { TextArea2 } from '../../utils';
 
 export default function TextArea() {
   return (
@@ -33,13 +35,13 @@ export default function TextArea() {
           <div className="mb-8 sm:mb-20">
             <img
               className="w-full max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
-              src="https://i.ibb.co/bgZL2q3/beach.jpg"
+              src={TextArea1}
               alt="Workflow illustration"
             />
           </div>
           <img
             className="w-full max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
-            src="https://i.ibb.co/jrV9cgD/carou1.jpg"
+            src={TextArea2}
             alt="Workflow illustration"
           />
         </div>
