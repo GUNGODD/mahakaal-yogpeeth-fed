@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { RxCaretDown } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../Design/SVG/Button";
-import { navigation } from "../utils/index";
+import { Mahakaal, navigation } from "../utils/index";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -160,7 +160,7 @@ const Navbar = () => {
           <a className="block xl:mr-80 w-[12rem]" href="#hero">
             <img
               width="150"
-              src="https://i.ibb.co/CwW5Q5R/Mahakaal-Logo.png"
+              src={Mahakaal}
               alt=""
             />
           </a>

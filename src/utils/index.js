@@ -1,3 +1,10 @@
+import Mahakaal from "../assets/glimpse/Images/MahakaalLogo.png"
+
+
+export{
+  Mahakaal
+}
+
 
 export const navigation = [
   {
