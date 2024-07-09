@@ -1,4 +1,5 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { ContentArea1 } from '../../utils'
 
 const features = [
   {
@@ -49,14 +50,14 @@ Welcome to the transformative journey of yoga teacher training in the tranquil h
           </div>
           <div className='flex flex-col'>
           <img
-            src="https://i.ibb.co/7pY1RGb/beach2.jpg"
+            src={ContentArea1}
             alt="Product screenshot"
             className="w-[24rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem] md:-ml-4 lg:-ml-0 mb-10"
             width={2032}
             height={1442}
           />
           <img                                                // In small devices this should not be displayed; it should be hidden
-            src="https://i.ibb.co/7pY1RGb/beach2.jpg"
+            src={ContentArea1}
             alt="Product screenshot"
             className="hidden sm:block w-[24rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem] md:-ml-4 lg:-ml-0"
             width={2032}

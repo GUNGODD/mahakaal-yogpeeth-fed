@@ -19,6 +19,8 @@ import Mahakaal16 from "../assets/glimpse/Images/Mahakaal16.jpg"
 import TextArea1 from "../assets/glimpse/Images/TextArea1.jpg";
 import TextArea2 from "../assets/glimpse/Images/TextArea2.jpg";
 
+import ContentArea1 from "../assets/glimpse/Images/ContentArea1.jpg" 
+
 export{
   Mahakaal,
   Mahakaal1,
@@ -38,7 +40,8 @@ export{
   Mahakaal15,
   Mahakaal16,
   TextArea1,
-  TextArea2
+  TextArea2,
+  ContentArea1
 }
 
 

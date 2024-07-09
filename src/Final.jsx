@@ -34,7 +34,7 @@ const Final = () => {
       <ShuffleHero />
       <TDmobile />
       <TextArea />
-      <Content  Area />
+      <ContentArea />
       <Content/>
       <RunningCards />
       <Features />
