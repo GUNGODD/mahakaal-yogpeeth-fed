@@ -2,6 +2,7 @@ import Footer from "../../MainComponents/Footer";
 import Navbar from "../../MainComponents/Navbar";
 // import GallerySection from "../../Pages/Parts/GallerySection";
 import ImgScroll from "../../Pages/Parts/ImgScroll";
+import { Grid1, Grid2, Grid3, Grid4, Grid5, Grid6, Grid7 } from "../../utils";
 import WhatsappButton from "../Contact/WhatsappButton";
 import AiCard from "./AiCard";
 
@@ -45,14 +46,14 @@ const GallerySection1=()=> {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                         <img
-                          src="https://i.ibb.co/SdDZtCj/reception.jpg"
+                          src={Grid1}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://i.ibb.co/kGT6jWB/meditation.jpg"
+                          src={Grid2}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -61,21 +62,21 @@ const GallerySection1=()=> {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://i.ibb.co/GRQJZTZ/bedroom.jpg"
+                          src={Grid3}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://i.ibb.co/C0LYnYJ/corridor.jpg"
+                          src={Grid4}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img 
-                          src="https://i.ibb.co/dgZYmfD/kitchen.jpg"  
+                          src={Grid5} 
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -84,14 +85,14 @@ const GallerySection1=()=> {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://i.ibb.co/ZMWtnD8/food.jpg"
+                          src={Grid6}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://i.ibb.co/3yDXxcy/bathroom.jpg"
+                          src={Grid7}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />

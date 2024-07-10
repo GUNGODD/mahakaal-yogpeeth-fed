@@ -67,6 +67,14 @@ import Ai3 from "../assets/glimpse/Gallery/Ai3.jpg"
 import Ai4 from "../assets/glimpse/Gallery/Ai4.jpg"
 import Ai5 from "../assets/glimpse/Gallery/Ai5.jpg"
 
+import Grid1 from "../assets/glimpse/Gallery/Grid1.jpg"
+import Grid2 from "../assets/glimpse/Gallery/Grid2.jpg"
+import Grid3 from "../assets/glimpse/Gallery/Grid3.jpg"
+import Grid4 from "../assets/glimpse/Gallery/Grid4.jpg"
+import Grid5 from "../assets/glimpse/Gallery/Grid5.jpg"
+import Grid6 from "../assets/glimpse/Gallery/Grid6.jpg"
+import Grid7 from "../assets/glimpse/Gallery/Grid7.jpg"
+
 
 export{
   Mahakaal,
@@ -123,6 +131,13 @@ export{
   Gallery6,
   Gallery7,
   Gallery8,
+  Grid1,
+  Grid2,
+  Grid3,
+  Grid4,
+  Grid5,
+  Grid6,
+  Grid7
 }
 
 
