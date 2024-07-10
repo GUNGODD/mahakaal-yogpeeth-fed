@@ -75,6 +75,18 @@ import Grid5 from "../assets/glimpse/Gallery/Grid5.jpg"
 import Grid6 from "../assets/glimpse/Gallery/Grid6.jpg"
 import Grid7 from "../assets/glimpse/Gallery/Grid7.jpg"
 
+import About1 from "../assets/glimpse/About/About1.avif"
+import Certificate from "../assets/glimpse/About/Certificate.jpg"
+
+
+import OnePage1 from "../assets/glimpse/OnePage/OnePage1.jpg";
+import OnePage2 from "../assets/glimpse/OnePage/OnePage2.jpg";
+import OnePage3 from "../assets/glimpse/OnePage/OnePage3.jpg";
+import OnePage4 from "../assets/glimpse/OnePage/OnePage4.jpg";
+import OnePage5 from "../assets/glimpse/OnePage/OnePage5.jpg";
+import OnePage6 from "../assets/glimpse/OnePage/OnePage6.webp";
+import OnePage7 from "../assets/glimpse/OnePage/OnePage7.jpg";
+import OnePage8 from "../assets/glimpse/OnePage/OnePage8.jpg";
 
 export{
   Mahakaal,
@@ -141,8 +153,18 @@ export{
   Ai1,
   Ai2,
   Ai3,
-  Ai4,
-  Ai5
+  Ai4,  
+  Ai5,
+  About1,
+  Certificate,
+  OnePage1,
+  OnePage2,
+  OnePage3,
+  OnePage4,
+  OnePage5,
+  OnePage6,
+  OnePage7,
+  OnePage8
 }
 
 

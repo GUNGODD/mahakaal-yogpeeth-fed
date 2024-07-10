@@ -405,7 +405,7 @@ export const OnePagerSection = () => {
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
             <div className="overflow-hidden rounded-3xl border border-gray-200">
               <img
-                src="https://hips.hearstapps.com/hmg-prod/images/hatha-yoga-1568385148.jpg?crop=1xw:0.7639180951167187xh;center,top&resize=2048:*"
+                src={OnePage1}
                 alt="Zen Image"
                 className="object-cover mx-auto w-full h-48 rounded-2xl"
               />
@@ -422,7 +422,7 @@ export const OnePagerSection = () => {
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
             <div className="overflow-hidden rounded-3xl border border-gray-200">
               <img
-                src="https://images.ctfassets.net/1tp0n7niw68j/7mrvPZkg3O7WQAHwgglulG/e76e702812fe95b742be6ff496fddda9/18.jpg"
+                src={OnePage2}
                 alt="Zen Image"
                 className="object-cover mx-auto w-full h-48 rounded-2xl"
               />
@@ -437,7 +437,7 @@ export const OnePagerSection = () => {
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
             <div className="overflow-hidden rounded-3xl border border-gray-200">
               <img
-                src="https://media.cnn.com/api/v1/images/stellar/prod/220531190304-woman-meditation-stock.jpg?c=original"
+                src={OnePage3}
                 alt="Zen Image"
                 className="object-cover mx-auto w-full h-48 rounded-2xl"
               />
@@ -454,7 +454,7 @@ export const OnePagerSection = () => {
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
             <div className="overflow-hidden rounded-3xl border border-gray-200">
               <img
-                src="https://blog.cdn.level.game/2023/09/manishaleveldesigner_a_woman_in_a_black_sports_performs_yoga_in_26df54d8-d195-4e1e-a35c-8ce9bb4c9f76.png"
+                src={OnePage4}
                 alt="Zen Image"
                 className="object-cover mx-auto w-full h-48 rounded-2xl"
               />
@@ -471,7 +471,7 @@ export const OnePagerSection = () => {
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
             <div className="overflow-hidden rounded-3xl border border-gray-200">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzo_FDod5AOWsJ6248ImQMZYt-lDmNwhBZA&s"
+                src={OnePage5}
                 alt="Zen Image"
                 className="object-cover mx-auto w-full h-48 rounded-2xl"
               />
@@ -488,7 +488,7 @@ export const OnePagerSection = () => {
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
             <div className="overflow-hidden rounded-3xl border border-gray-200">
               <img
-                src= "https://arohanyoga.com/wp-content/uploads/2024/03/The-Spine-and-Backbends.jpg"
+                src= {OnePage6}
                 alt="Zen Image"
                 className="object-cover mx-auto w-full h-48 rounded-2xl"
               />
@@ -505,7 +505,7 @@ export const OnePagerSection = () => {
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
             <div className="overflow-hidden rounded-3xl border border-gray-200">
               <img
-                src="https://www.lotuscrafts.com/cdn/shop/articles/kundalini-yoga-art-lotuscrafts_4514ec10-c77f-4dbf-b1ff-4e060c4e8b92.jpg?v=1707303513&width=1920"
+                src={OnePage7}
                 alt="Zen Image"
                 className="object-cover mx-auto w-full h-48 rounded-2xl"
               />
@@ -522,7 +522,7 @@ export const OnePagerSection = () => {
           <div className="p-6 bg-gray-50 rounded-3xl shadow-md transition-shadow duration-300 transform hover:shadow-lg hover:-translate-y-1">
             <div className="overflow-hidden rounded-3xl border border-gray-200">
               <img
-                src="https://www.ekhartyoga.com/media/image/articles/The-science-and-magic-of-mantra.jpg"
+                src={OnePage8}
                 alt="Zen Image"
                 className="object-cover mx-auto w-full h-48 rounded-2xl"
               />
@@ -672,6 +672,7 @@ import FullGallery from "../Video Gallery/GridGallery";
 import Form from "../../Design/Form";
 import TeachersCardsSlider from "../../Pages/TeacherCard";
 import WhatsappButton from "../Contact/WhatsappButton";
+import { OnePage1, OnePage2, OnePage3, OnePage4, OnePage5, OnePage6, OnePage7, OnePage8 } from "../../utils";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;

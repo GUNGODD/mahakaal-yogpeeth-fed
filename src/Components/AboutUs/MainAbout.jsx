@@ -6,6 +6,7 @@ import LogoHeading from "../../Pages/LogoHeading";
 import BenefitsSection from "../../Pages/BenefitsSection";
 import { useAnimation, motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
+import { About1 } from "../../utils";
 export const MainAbout = () => {
   return (
     <>
@@ -15,7 +16,7 @@ export const MainAbout = () => {
         </div>
         <HeroImage
           wallpaper={
-            "https://s3.india.com/wp-content/uploads/2024/05/Feature-Image_-Rishikesh-1.jpg?impolicy=Medium_Widthonly&w=700"
+            About1
           }
           Heading={"About Mahakaal Yogpeeth"}
         />

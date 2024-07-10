@@ -239,28 +239,28 @@ const ImageCarousel = () => {
       
       <div className="wrapper flex overflow-x-scroll scrollbar-hide">
         <div className="item item1 mx-2">
-          <img src="https://i.ibb.co/sjBSR96/gallery1.jpg" alt="" className="rounded-lg" />
+          <img src={Gallery1} alt="" className="rounded-lg" />
         </div>
         <div className="item item2 mx-2">
-          <img src="https://i.ibb.co/wMjVbjz/gallery2.jpg" alt="" className="rounded-lg" />
+          <img src={Gallery2} alt="" className="rounded-lg" />
         </div>
         <div className="item item3 mx-2">
-          <img src="https://i.ibb.co/D7dRr8T/gallery3.jpg" alt="" className="rounded-lg" />
+          <img src={Gallery3} alt="" className="rounded-lg" />
         </div>
         <div className="item item4 mx-2">
-          <img src="https://i.ibb.co/0XPFFZG/gallery4.jpg" alt="" className="rounded-lg" />
+          <img src={Gallery4} alt="" className="rounded-lg" />
         </div>
         <div className="item item5 mx-2">
-          <img src="https://i.ibb.co/25dfSK7/gallery5.jpg" alt="" className="rounded-lg" />
+          <img src={Gallery5} alt="" className="rounded-lg" />
         </div>
         <div className="item item6 mx-2">
-          <img src="https://i.ibb.co/7Rkf9T3/gallery6.jpg" alt="" className="rounded-lg" />
+          <img src={Gallery6} alt="" className="rounded-lg" />
         </div>
         <div className="item item7 mx-2">
-          <img src="https://i.ibb.co/xXP0rKM/gallery7.jpg" alt="" className="rounded-lg" />
+          <img src={Gallery7} alt="" className="rounded-lg" />
         </div>
         <div className="item item8 mx-2">
-          <img src="https://i.ibb.co/VvGSnQW/gallery8.jpg" alt="" className="rounded-lg" />
+          <img src={Gallery8} alt="" className="rounded-lg" />
         </div>
       </div>
       <p className="mt-6 text-gray-700 px-4 md:px-20">
@@ -468,6 +468,7 @@ import {
 } from "@chakra-ui/react";
 import { FoldBlog, OnePagerSection } from "./TTCTwo";
 import WhatsappButton from "../Contact/WhatsappButton";
+import { Gallery1, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6, Gallery7, Gallery8 } from "../../utils";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
