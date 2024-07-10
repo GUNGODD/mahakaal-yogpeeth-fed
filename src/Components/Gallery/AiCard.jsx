@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Ai1, Ai2, Ai3, Ai4, Ai5 } from '../../utils';
 
 const AiCard = ({title}) => {
   const initialCards = [
-    "https://i.ibb.co/sCkDHwh/Photo-Gallery1.jpg",
-    "https://i.ibb.co/61tVwwG/Photo-Gallery2.jpg",
-    "https://i.ibb.co/nQ1XTTF/Photo-Gallery3jpg.jpg",
-    "https://i.ibb.co/8sjB2BF/Photo-Gallery4jpg.jpg",
-    "https://i.ibb.co/TPMrfxP/Photo-Gallery5.jpg",
+    Ai1,
+    Ai2,
+    Ai3,
+    Ai4,
+    Ai5,
   ];
 
   const [cards, setCards] = useState(initialCards);
