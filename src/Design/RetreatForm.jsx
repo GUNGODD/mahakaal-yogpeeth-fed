@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import { RetreatFormImg } from "../utils";
 
 export default function RetreatForm (){
     const [fullName,setFullName]=useState("");
@@ -50,7 +51,7 @@ export default function RetreatForm (){
       <section className="relative flex h-32 items-end rounded-lg bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6 ">
         <img
           alt=""
-          src="https://img.etimg.com/thumb/msid-77107804,width-640,height-480,imgsize-574047,resizemode-4/pictures-shared.jpg"
+          src={RetreatFormImg}
           className="absolute inset-0 h-full w-full object-cover opacity-80"
         />
   

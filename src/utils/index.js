@@ -33,6 +33,25 @@ import Facebook from "../assets/glimpse/Images/Facebook.avif"
 
 import FooterImg from "../assets/glimpse/Images/FooterImg.jpg"
 
+import RetreatCarousel from "../assets/glimpse/Images/RetreatCarousel.jpg"
+import RetreatFormImg from "../assets/glimpse/Images/RetreatFormImg.png"
+
+import Retreat1 from "../assets/glimpse/Retreat/Retreat1.jpg"
+import Retreat2 from "../assets/glimpse/Retreat/Retreat2.jpg"
+import Retreat3 from "../assets/glimpse/Retreat/Retreat3.jpg"
+import Retreat4 from "../assets/glimpse/Retreat/Retreat4.jpg"
+import Retreat5 from "../assets/glimpse/Retreat/Retreat5.jpg"
+import Retreat6 from "../assets/glimpse/Retreat/Retreat6.webp"
+import Retreat7 from "../assets/glimpse/Retreat/Retreat7.jpg"
+import Retreat8 from "../assets/glimpse/Retreat/Retreat8.jpg"
+import Retreat9 from "../assets/glimpse/Retreat/Retreat9.jpg"
+import Retreat10 from "../assets/glimpse/Retreat/Retreat10.jpg"
+import Retreat11 from "../assets/glimpse/Retreat/Retreat11.jpg"
+import Retreat12 from "../assets/glimpse/Retreat/Retreat12.png"
+import Retreat13 from "../assets/glimpse/Retreat/Retreat13.jpg"
+import Retreat14 from "../assets/glimpse/Retreat/Retreat14.jpg"
+import Retreat15 from "../assets/glimpse/Retreat/Retreat15.avif"
+
 export{
   Mahakaal,
   Mahakaal1,
@@ -62,7 +81,24 @@ export{
   Linkdin,
   Twitter,
   Facebook,
-  FooterImg
+  FooterImg,
+  RetreatCarousel,
+  RetreatFormImg,
+  Retreat1,
+  Retreat2,
+  Retreat3,
+  Retreat4,
+  Retreat5,
+  Retreat6,
+  Retreat7,
+  Retreat8,
+  Retreat9,
+  Retreat10,
+  Retreat11,
+  Retreat12,
+  Retreat13,
+  Retreat14,
+  Retreat15
 }
 
 
