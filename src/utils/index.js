@@ -25,6 +25,14 @@ import TextArea2 from "../assets/glimpse/Images/TextArea2.jpg";
 
 import ContentArea1 from "../assets/glimpse/Images/ContentArea1.jpg" 
 
+import Youtube from "../assets/glimpse/Images/Youtube.avif" 
+import Instagram from "../assets/glimpse/Images/Instagram.avif"
+import Linkdin from "../assets/glimpse/Images/Linkdin.avif"
+import Twitter from "../assets/glimpse/Images/Twitter.avif"
+import Facebook from "../assets/glimpse/Images/Facebook.avif"
+
+import FooterImg from "../assets/glimpse/Images/FooterImg.jpg"
+
 export{
   Mahakaal,
   Mahakaal1,
@@ -48,7 +56,13 @@ export{
   ContentArea1,
   Content1,
   Content2,
-  Content3
+  Content3,
+  Youtube,
+  Instagram,
+  Linkdin,
+  Twitter,
+  Facebook,
+  FooterImg
 }
 
 
