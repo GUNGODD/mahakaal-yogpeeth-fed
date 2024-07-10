@@ -52,6 +52,22 @@ import Retreat13 from "../assets/glimpse/Retreat/Retreat13.jpg"
 import Retreat14 from "../assets/glimpse/Retreat/Retreat14.jpg"
 import Retreat15 from "../assets/glimpse/Retreat/Retreat15.avif"
 
+import Gallery1 from "../assets/glimpse/Gallery/gallery1.jpg"
+import Gallery2 from "../assets/glimpse/Gallery/gallery2.jpg"
+import Gallery3 from "../assets/glimpse/Gallery/gallery3.jpg"
+import Gallery4 from "../assets/glimpse/Gallery/gallery4.jpg"
+import Gallery5 from "../assets/glimpse/Gallery/gallery5.jpg"
+import Gallery6 from "../assets/glimpse/Gallery/gallery6.jpg"
+import Gallery7 from "../assets/glimpse/Gallery/gallery7.jpg"
+import Gallery8 from "../assets/glimpse/Gallery/gallery8.jpg"
+
+import Ai1 from "../assets/glimpse/Gallery/Ai1.jpg"
+import Ai2 from "../assets/glimpse/Gallery/Ai2.jpg"
+import Ai3 from "../assets/glimpse/Gallery/Ai3.jpg"
+import Ai4 from "../assets/glimpse/Gallery/Ai4.jpg"
+import Ai5 from "../assets/glimpse/Gallery/Ai5.jpg"
+
+
 export{
   Mahakaal,
   Mahakaal1,
@@ -98,7 +114,15 @@ export{
   Retreat12,
   Retreat13,
   Retreat14,
-  Retreat15
+  Retreat15,
+  Gallery1,
+  Gallery2,
+  Gallery3,
+  Gallery4,
+  Gallery5,
+  Gallery6,
+  Gallery7,
+  Gallery8,
 }
 
 

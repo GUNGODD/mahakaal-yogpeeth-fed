@@ -13,7 +13,7 @@ export default function MainGallery() {
       <AiCard title="This is Photo Gallery"/>
       <ImgScroll/>
       <GallerySection1/>
-      <GallerySection2/>
+      {/* <GallerySection2/> */}
       <WhatsappButton/>
 
       <Footer />
