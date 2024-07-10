@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Content1, Content2, Content3 } from '../../utils';
 const ImgContent = () => {
   return (
     <section>
@@ -9,7 +10,7 @@ const ImgContent = () => {
             <div className="relative h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
-                src="https://i.ibb.co/k9pDbXM/carousel3.jpg"
+                src={Content1}
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
@@ -52,7 +53,7 @@ export const ImgContentMid = () => {
             <div className="relative h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
-                src="https://i.ibb.co/QHfYFqr/mainpage2.jpg"
+                src={Content2}
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
@@ -97,7 +98,7 @@ export const ImgContentLast = () => {
             <div className="relative h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
-                src="https://i.ibb.co/YhpVyCJ/mainpage3.jpg"
+                src={Content3}
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
