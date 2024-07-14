@@ -14,6 +14,7 @@ import WhatsappButton from "./Components/Contact/WhatsappButton";
 import Navbar from "./MainComponents/Navbar";
 import Footer from "./MainComponents/Footer";
 import { Content } from "./Pages/Parts/ImgContent";
+import AboutTeachersCards from "./Components/AboutUs/AboutTeachersCards";
 
 const Final = () => {
   return (
@@ -35,7 +36,7 @@ const Final = () => {
       <TDmobile />
       <TextArea />
       <ContentArea />
-      <Content/>
+      <Content />
       <RunningCards />
       <Features />
       <LogoHeading heading={"PRICING FOR YOGA TTC"} />
@@ -43,7 +44,9 @@ const Final = () => {
       <FAQ />
       <HoverImageLinks />
       <InfScroll />
+
       <FoldBlog />
+      <AboutTeachersCards />
       <WhatsappButton />
       <Footer />
     </div>
